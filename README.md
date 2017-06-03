@@ -1,1 +1,2 @@
-# This is Jann Benjamin's New Wesbite Hosted on Github
+# I decided to host my website on Github for a change. 
+# The business of paid hosting is a smelly social construct.  

@@ -2,7 +2,7 @@ Jann's Current Website
 ===========================
 
 [![Build Status](https://travis-ci.org/humhub/humhub.svg?branch=master)](https://travis-ci.org/humhub/humhub)
-[![thatsparrow](https://img.shields.io/badge/Powered_by-Yii_Framework-green.svg?style=flat)](https://jannbenjam.in/)
+[![thatsparrow](https://)](https://jannbenjam.in/)
 
 The plan was to do less than 50 lines of HTML and 200 lines of CSS. I failed.
 

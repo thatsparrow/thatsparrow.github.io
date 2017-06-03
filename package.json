@@ -1,15 +1,15 @@
 {
-    "name": "startbootstrap-scrolling-nav",
-    "title": "Scrolling Nav",
-    "version": "3.3.7",
-    "homepage": "http://startbootstrap.com/template-overviews/scrolling-nav",
-    "author": "Start Bootstrap",
+    "name": "Jann's Personal Website",
+    "title": "Jann Benjamin",
+    "version": "2.0",
+    "homepage": "https://jannbenjam.in",
+    "author": "thatsparrow",
     "license": {
         "type": "MIT",
-        "url": "https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE"
+        "url": "https://opensource.org/licenses/MIT"
     },
     "repository": {
         "type": "git",
-        "url": "https://github.com/BlackrockDigital/startbootstrap-scrolling-nav.git"
+        "url": "https://github.com/thatsparrow/startbootstrap-scrolling-nav.git"
     }
 }

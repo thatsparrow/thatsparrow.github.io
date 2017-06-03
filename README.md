@@ -1,10 +1,7 @@
 Jann's Current Website
 ===========================
 
-[![Build Status](https://travis-ci.org/humhub/humhub.svg?branch=master)](https://travis-ci.org/humhub/humhub)
-[![thatsparrow](https://)](https://jannbenjam.in/)
-
-The plan was to do less than 50 lines of HTML and 200 lines of CSS. I failed.
+The plan was to do less than 50/100 lines of HTML/CSS. I failed. 
 
 Copyright and License:
 - [Homepage & Demo](http://www.jannbenjam.in)

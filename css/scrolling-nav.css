@@ -29,7 +29,7 @@ html {
     background: #FFFFFF;
 }
 .devops-section {
-    height: 100%;
+    height: auto;
     padding-top: 50px;
     text-align: left;
     background: #FFFFFF;

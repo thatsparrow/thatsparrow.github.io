@@ -23,7 +23,7 @@ html {
     }
 }
 .about-section {
-    height: 100%;
+    height: auto;
     padding-top: 100px;
     text-align: left;
     background: #FFFFFF;

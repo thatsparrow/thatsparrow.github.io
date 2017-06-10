@@ -1,3 +1,13 @@
+/*
+          /\
+         (..)             Powered by thatsparrow
+      .--.\/.--.          Last updated: June 2017
+     (/`\_\/_/`\)         Acer Chromebook 11 CB3-111 running Gallium OS 2.1
+     '  {____}  '         @Sparrow.io, Founder & Software Architect
+        '-\/-'            @Dentsu Aegis Network, Public Relations Executive
+       ,_//\\_,
+*/
+
 body {
     width: 100%;
     height: 100%;
@@ -31,17 +41,17 @@ html {
 .developer-section {
     height: auto;
     padding-top: 50px;
-    text-align: left;
+    text-align: center;
     background: #FFFFFF;
 }
 .publicist-section {
-    height: auto%;
+    height: auto;
     padding-top: 50px;
-    text-align: left;
+    text-align: center;
     background: #FFFFFF;
 }
-.author-section {
-    height: auto%;
+.writer-section {
+    height: auto;
     padding-top: 50px;
     text-align: left;
     background: #FFFFFF;

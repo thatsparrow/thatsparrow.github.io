@@ -1,4 +1,4 @@
-#Redirect www.thatsparrow.github.io to thatsparrow.github.io
+#Redirect www.jannbenjam.in to thatsparrow.github.io
 RewriteEngine On
 RewriteBase /
 RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]

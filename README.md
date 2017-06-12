@@ -1,7 +1,7 @@
 Jann's Current Website
 ===========================
 
-The plan was to do less than 63/112/0 lines of HTML/CSS/JS. I failed. 
+The plan was to do less than 63/112/0 lines of HTML/CSS/JS. I failed.
 
 Copyright and License:
 - [Demo](http://www.jannbenjam.in)
@@ -9,4 +9,4 @@ Copyright and License:
 - [Licence](https://opensource.org/licenses/MIT)
 
 Errors can be found here:
-- [Results] (https://validator.w3.org/nu/?doc=https%3A%2F%2Fthatsparrow.github.io%2F)
+- [Results](https://validator.w3.org/nu/?doc=https%3A%2F%2Fthatsparrow.github.io%2F)

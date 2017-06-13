@@ -35,30 +35,34 @@ html {
 .about-section {
     height: auto;
     padding-top: 50px;
+    padding-bottom: 50px;
     text-align: left;
     background: #FFFFFF;
 }
 .developer-section {
     height: auto;
     padding-top: 50px;
+    padding-bottom: 50px;
     text-align: center;
-    background: #FFFFFF;
+    background: #F5F5F5;
 }
 .publicist-section {
     height: auto;
     padding-top: 50px;
+    padding-bottom: 50px;
     text-align: center;
     background: #FFFFFF;
 }
 .writer-section {
     height: auto;
     padding-top: 50px;
+    padding-bottom: 50px;
     text-align: left;
-    background: #FFFFFF;
+    background: #F5F5F5;
 }
 .footnote-section {
     height: auto;
-    padding-top: 0px;
+    padding-top: 50px;
     text-align: center;
     background: #FFFFFF;
 }

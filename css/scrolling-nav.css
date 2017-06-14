@@ -20,7 +20,7 @@ html {
 
 @media(min-width:767px) {
     .navbar {
-        padding: 0px 0;
+        padding: 0px;
         background-color: #FFFFFF;
         border-color: #DCDCDC;
         -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
@@ -34,10 +34,10 @@ html {
 }
 .about-section {
     height: auto;
-    padding-top: 50px;
+    padding-top: 60px;
     padding-bottom: 50px;
     text-align: left;
-    background: #FFFFFF;
+    background: #FFFFCC;
 }
 .developer-section {
     height: auto;

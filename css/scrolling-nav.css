@@ -51,7 +51,7 @@ html {
     padding-top: 50px;
     padding-bottom: 50px;
     text-align: center;
-    background: #FFFFFF;
+    background: #99FF99;
 }
 .writer-section {
     height: auto;
@@ -71,4 +71,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 p, div {
     font-family: 'Quicksand', sans-serif;
+}
+.carousel-control.left, .carousel-control.right {
+   background-image:none !important;
+   filter:none !important;
 }

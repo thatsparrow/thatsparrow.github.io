@@ -44,27 +44,27 @@ html {
     padding-top: 50px;
     padding-bottom: 50px;
     text-align: center;
-    background: #F5F5F5;
+    background: #F0F8FF;
 }
 .publicist-section {
     height: auto;
     padding-top: 50px;
     padding-bottom: 50px;
     text-align: center;
-    background: #99FF99;
+    background: #FFFFFF;
 }
 .writer-section {
     height: auto;
     padding-top: 50px;
     padding-bottom: 50px;
     text-align: left;
-    background: #F5F5F5;
+    background: #F0F8FF;
 }
 .footnote-section {
     height: auto;
     padding-top: 50px;
     text-align: center;
-    background: #FFFFFF;
+    background: #1E90FF;
 }
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Quicksand', sans-serif;
@@ -75,4 +75,22 @@ p, div {
 .carousel-control.left, .carousel-control.right {
    background-image:none !important;
    filter:none !important;
+}
+.carousel-indicators li {
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+    margin: 10px;
+    text-indent: 0;
+    cursor: pointer;
+    border: none;
+    border-radius: 50%;
+    background-color: #ffffff;
+    box-shadow: inset 1px 1px 1px 1px rgba(0,0,0,0.5);
+}
+.carousel-indicators .active {
+    width: 48px;
+    height: 48px;
+    margin: 10px;
+    background-color: #ffff99;
 }

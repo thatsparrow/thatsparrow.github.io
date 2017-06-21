@@ -10,7 +10,6 @@ html {
 
 @media(min-width:1000px) {
     .navbar {
-        padding: 0px;
         background-color: #FFFFFF;
         border-color: #DCDCDC;
         -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
@@ -28,7 +27,7 @@ a:hover,
 }
 .about-section {
     height: auto;
-    padding-top: 60px;
+    padding-top: 50px;
     padding-bottom: 50px;
     text-align: left;
     background: #FFFFFF;

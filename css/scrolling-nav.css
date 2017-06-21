@@ -32,12 +32,17 @@ html {
         padding: 0px;
     }
 }
+a:hover,
+.a:hover {
+   text-decoration: none !important;
+}
 .about-section {
     height: auto;
     padding-top: 60px;
     padding-bottom: 50px;
     text-align: left;
     background: #FFFFFF;
+    /*background-image: url("file:///home/sparrow/thatsparrow.github.io/img/giphy2.gif"); */
 }
 .developer-section {
     height: auto;
@@ -50,7 +55,7 @@ html {
     height: auto;
     padding-top: 50px;
     padding-bottom: 50px;
-    text-align: center;
+    text-align: left;
     background: #FFFFFF;
 }
 .writer-section {
@@ -71,26 +76,23 @@ h1, h2, h3, h4, h5, h6 {
 }
 p, div {
     font-family: 'Quicksand', sans-serif;
-}
-.carousel-control.left, .carousel-control.right {
-   background-image:none !important;
-   filter:none !important;
+
 }
 .carousel-indicators li {
     display: inline-block;
-    width: 48px;
-    height: 48px;
+    width: 96px;
+    height: 96px;
     margin: 10px;
     text-indent: 0;
     cursor: pointer;
     border: none;
     border-radius: 50%;
-    background-color: #ffffff;
+    background-color: #000000;
     box-shadow: inset 1px 1px 1px 1px rgba(0,0,0,0.5);
 }
 .carousel-indicators .active {
-    width: 48px;
-    height: 48px;
+    width: 96px;
+    height: 96px;
     margin: 10px;
-    background-color: #ffff99;
+    background-color: #000000;
 }

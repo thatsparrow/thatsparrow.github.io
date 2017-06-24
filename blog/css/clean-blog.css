@@ -403,3 +403,8 @@ img::-moz-selection {
 body {
   -webkit-tap-highlight-color: #0085A1;
 }
+}
+a:hover,
+.a:hover {
+   text-decoration: none !important;
+}

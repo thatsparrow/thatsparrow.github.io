@@ -42,12 +42,12 @@ $(document).ready(function() {
 jQuery(document).ready(function($) {
 
   // set animation timing
-  var animationDelay = 6500,
+  var animationDelay = 10500,
       // loading bar effect
-      barAnimationDelay = 6800,
+      barAnimationDelay = 1800,
       barWaiting = barAnimationDelay - 6000, // 3s is the duration of the transition on the loading bar - set in CSS
       // letters effect
-      lettersDelay = 50;
+      lettersDelay = 1000;
 
   initHeadline();
 

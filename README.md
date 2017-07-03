@@ -12,7 +12,6 @@ Errors can be found here:
 - [Results](https://validator.w3.org/nu/?doc=https%3A%2F%2Fthatsparrow.github.io%2F)
 
 To Do List:
-- About: Social Icons instead of buttons
-- Dev: Add portfolio on github
-- Publicist: Change background/ work samples images to 1000px by 500px
-- Writer: Add Other Writing
+- Dev: Unload portfolio on github and update sample logos
+- Publicist: Upload pdfs on google drive
+- Writer: Revise content (applies to dev and publicist sections)

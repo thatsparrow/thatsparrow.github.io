@@ -29,9 +29,9 @@ a:hover,
     height: auto;
     padding-top: 50px;
     padding-bottom: 50px;
-    text-align: left;
+    text-align: left  ;
     background: #FFFFFF;
-    background-image: url("https://www.jannbenjam.in/img/thatsparrow_background.svg");
+    background-image: url("https://www.jannbenjam.in/img/home3.svg");
 }
 .developer-section {
     height: auto;

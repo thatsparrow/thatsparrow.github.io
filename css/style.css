@@ -27,25 +27,27 @@ a:hover,
 }
 .about-section {
     height: auto;
-    padding-top: 50px;
+    padding-top: 46px;
     padding-bottom: 50px;
-    text-align: left  ;
-    background: #FFFFFF;
-    background-image: url("https://www.jannbenjam.in/img/home3.svg");
+    text-align: left;
+    background: #FEFCFF;
+    /*background-image: url("http://hdqwalls.com/download/minimalist-mountains-black-and-white-ap-1366x768.jpg");
+    */
+
 }
 .developer-section {
     height: auto;
     padding-top: 50px;
     padding-bottom: 50px;
     text-align: center;
-    background: #FFFFFF;
+    background: #FEFCFF;
 }
 .publicist-section {
     height: auto;
     padding-top: 50px;
     padding-bottom: 50px;
     text-align: left;
-    background: #FFFFFF;
+    background: #FEFCFF;
 }
 .writer-section {
 
@@ -53,7 +55,7 @@ a:hover,
     padding-top: 50px;
     padding-bottom: 50px;
     text-align: left;
-    background: #FFFFFF;
+    background: #FEFCFF;
 }
 .footnote-section {
     height: auto;

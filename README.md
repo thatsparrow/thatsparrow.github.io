@@ -18,4 +18,6 @@ To Do List:
 - General: Content before beauty
 
 Notes:
-- There are four index files. 'index4' is currently being revised.
+- There are four index files. 'index4' is currently being revised. Expect push
+  soon.
+- Sole-proprietorship & 2checkout 

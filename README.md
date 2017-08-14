@@ -1,8 +1,8 @@
-Jann's Current Website
+Jann's Awesome Website
 ===========================
 
-The plan was to use less than 200 lines of HTML/CSS/JS.
-Fuck that shit, I said.  
+The plan was to write less than 200 lines of HTML/CSS/JS.
+"Fuck that shit," I said.  
 
 Copyright and License:
 - [Demo](http://www.jannbenjam.in)
@@ -12,12 +12,30 @@ Copyright and License:
 Errors can be found here:
 - [Results](https://validator.w3.org/nu/?doc=https%3A%2F%2Fthatsparrow.github.io%2F)
 
-To Do List:
-- Upload projects on github  
-- Google Drive or Mega?  
-- General: Content before beauty
-
 Notes:
-- There are four index files. 'index4' is currently being revised. Expect push
-  soon.
-- Sole-proprietorship & 2checkout 
+- There are a total of four index files. 'index4' is currently being revised. Expect a push once my to do list is done. Sorry, brah.
+- Look into sole-proprietorship & 2checkout
+
+To Do List:
+
+- Upload developer projects on Github !!!
+
++ Live Image Translator: WIP 
++ Audio-to-text generator: WIP
++ Demon: mp3 scrapper for python  
++ Sparrow Pad: Minimalistic writing pad that runs offline   
++ Type: Animated/ Simulation of a human typing
++ Lucid: Collaborative Compiler for 7 languages 
+
+- Upload sample copy (either Mega or Google Drive) !!!
+
++ Microsoft
++ SAP SE
++ DELL EMC
++ Shangri-La
++ Metropolitan/ Micromax
++ RB (Veet + Harpic + Dettol)
++ Ceylon Tea Board (None)
++ Careems (Jewellery) 
+
+- General: Content before beauty

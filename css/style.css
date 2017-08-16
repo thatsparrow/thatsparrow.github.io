@@ -10,8 +10,8 @@ html {
 
 @media(min-width:1000px) {
     .navbar {
-        background-color: #FFFFFF;
-        border-color: #DCDCDC;
+        background-color: #000000;
+        border-color: #000;
         -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
         -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
         transition: background .5s ease-in-out,padding .5s ease-in-out;
@@ -27,12 +27,12 @@ a:hover,
 }
 .about-section {
     height: auto;
-    padding-top: 46px;
-    padding-bottom: 50px;
+    padding-top: 20px;
+    padding-bottom: 0px;
     text-align: left;
     background: #FEFCFF;
-    /*background-image: url("http://hdqwalls.com/download/minimalist-mountains-black-and-white-ap-1366x768.jpg");
-    */
+    background-image: url("https://raw.githubusercontent.com/thatsparrow/thatsparrow.github.io/master/img/background1.png");
+    /*http://hdqwalls.com/download/minimalist-mountains-black-and-white-ap-1366x768.jpg*/
 
 }
 .developer-section {
@@ -67,7 +67,9 @@ h1, h2, h3, h4, h5, h6 {
     font-family: 'Quicksand', sans-serif;
 }
 p, div {
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'Quicksand', sans-serif; /*
+    font-family: 'Roboto Condensed', sans-serif; 
+    font-family: 'Noto Serif', serif; */
 
 }
 .carousel-control.left, .carousel-control.right {
@@ -664,3 +666,8 @@ xscale
 }
 
 /*meow*/
+
+
+
+/*meow*/
+

@@ -1,0 +1,23 @@
+                           
+/* TEAM */
+                     
+Developer: thatsparrow       
+Admin: Jann Benjamin                           
+Email: thatsparrow@protonmail.ch                           
+Location: Mount Lavinia, Sri Lanka
+                                         
+                        [...]
+													
+/* THANKS */
+							
+Name: Github, Google Domains and Cloudflare
+					
+                 
+                        [...]
+                                   
+/* SITE */
+                          
+Last update: 2017/07/12     
+Standards: HTML5, CSS3, JS2                           
+Components: Bootstrap, jQuery, etc.
+Software: Atom, Sublime Text 3 Beta, VIM, Git, GIMP

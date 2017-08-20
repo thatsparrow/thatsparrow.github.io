@@ -1,13 +1,10 @@
-Jann's Awesome Website
+A Personal Website
 ===========================
 
-The plan was to write less than 200 lines of HTML/CSS/JS.
-"Fuck that shit," I said.  
-
 Copyright and License:
-- [Demo](http://www.jannbenjam.in)
+- [Demo](https://www.jannbenjam.in)
 - 2012-2017 Jann Benjamin
-- [Licence](https://opensource.org/licenses/MIT)
+- [Licence](https://jannbenjam.in/LICENSE.md)
 
 Errors can be found here:
 - [Results](https://validator.w3.org/nu/?doc=https%3A%2F%2Fthatsparrow.github.io%2F)

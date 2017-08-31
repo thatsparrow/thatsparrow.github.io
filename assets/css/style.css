@@ -58,13 +58,13 @@ a:hover,
 .developer-section {
     height: auto;
     padding-top: 50px;
-    padding-bottom: 50px;
+    padding-bottom: 20px;
     text-align: center;
     background: #FFFFFF;
 }
 .publicist-section {
     height: auto;
-    padding-top: 50px;
+    padding-top: 20px;
     padding-bottom: 50px;
     text-align: left;
     background: #FFFFFF;

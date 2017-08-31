@@ -60,7 +60,9 @@
           crossorigin="anonymous"><!--Courtesy project Bootstrap-->
     <link href="assets/css/animsition.min.css" rel="stylesheet"><!--Fade-in effect-->
     <noscript><style type="text/css">.animsition { opacity: 1; }</style></noscript>
+
   </head>
+
   <body class="animsition" id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
     <!--THATSPARROWTHATSPARROWTHATSPARROWTHATSPARROWTHATSPARROWTHATSPARROWTHATSPARROWTHATSPARROWTHATSPARROWTHATSPARROWTHATSPARROWOWTHATSPARROWTHATSPARROWTHATSPARROWTHATSPARROWTHATSPARROWTHATSPARROWTHATSPARROWTHATSPARROWTHATSPARR--> 
     <section id="about" class="about-section"><!--ABOUT SECTION-->
@@ -91,13 +93,14 @@
                     </div>
                       
                 </div>
+             
             
                  <div class="col-lg-6"><!--Long Description-->
-                  <h1 class="text-left"><strong>Hello</strong> there,</h1>
+                  <h1 class="text-center"><strong>Hello</strong> there,</h1>
 
                   <h2 class="text-left">and welcome to my slice of the web.</h2>                
-                  <h3 class="text-left">The name is <strong>Jann</strong>.</h3>
-                  <h4 class="text-left">My interests lie in cognitive science, and I strive to write clean <a class="page-scroll" class ="text-info" id="code" href="#developer" target="_blank">code</a> and succinct <a class="page-scroll" class ="text-info" id="" href="#publicist" target="_blank">copy</a> for practical reasons.</h4>
+                  <h3 class="text-center">The name is <strong>Jann</strong>.</h3>
+                  <h4 class="text-left">My interests lie in objectivity, and I strive to write clean <a class="page-scroll" class ="text-info" id="code" href="#developer" target="_blank">code</a> and crispt <a class="page-scroll" class ="text-info" id="" href="#publicist" target="_blank">copy</a> for practical reasons.</h4>
                   <h4 class="text-left">On this web page you will find some of my personal projects, resources and various writings.</p></h4>
                   
                   <address> <!--contact me section-->
@@ -112,9 +115,11 @@
                               |<a class ="text-info" id="blog" href="" target="_blank"> Downloads</a></solid>
                               </br>
                               <p>Crafted with ❤ by thatsparrow</p>
-
-                               <span class="glyphicon glyphicon-sunglasses fa-4x"></span>
-
+                              <i class="fa fa-circle-o-notch fa-spin fa-3x fa-fw"></i><br>
+                               
+                                <p>
+                      The source-code can be found <a href="https://github.com/thatsparrow/thatsparrow.github.io/">here</a>
+                    </p>
                               </div>
                             
                             <p>
@@ -123,9 +128,9 @@
             </div>
             <div class="col-lg-2"><!--Shout-out-->
               <footer class="inverse-container-fluid footer text-center"><!--Credits-->
-                    <p>Fiat Lux
-                    <p>
-                      <a href="https://www.jannbenjam.in" class=back-to-top><i class="fa fa-hand-paper-o fa-3x"></i></a>
+                     <p>
+                      <i class="fa fa-circle-o-notch fa-spin fa-3x fa-fw"></i><br>
+                      
                     </p>
                     <p>This site is hosted on
                       <a href="https://pages.github.com">Github Pages</a>, protected by
@@ -133,11 +138,9 @@
                       <a href="https://getbootstrap.com/getting-started/">Bootstrap</a>
                     </p>
                     <p>
-                      <i class="fa fa-circle-o-notch fa-spin fa-3x fa-fw"></i><br>
+                      <span class="glyphicon glyphicon-sunglasses fa-2x"></span>
                     </p>
-                    <p>
-                      The source-code can be found <a href="https://github.com/thatsparrow/thatsparrow.github.io/">here</a>
-                    </p>
+                   
                     <p>
                     
                      <a href="https://www.torproject.org/"><img alt="Tor Project" src="assets/img/thatsparrow_tor.png" height="90" width="120" style="border: 0px solid"></a>
@@ -198,6 +201,59 @@
         </div>
         </div>
     </section>
+
+<section>
+  <h2>Instagram - <a href="https://instagram.com/bunsenmcdubbs">@bunsenmcdubbs</a></h2>
+  <div id="instagram-pictures">
+    <div class="wait-spinner">
+      <i class="fa fa-spinner fa-3x spin" aria-hidden="true"></i>
+    </div>
+  </div>
+
+  <template id="template-instagram-post">
+    <div class="instagram-post">
+      <a>
+        <img src="" alt="">
+        <p class="caption"></p>
+        <p class="meta"></p>
+      </a>
+    </div>
+  </template>
+</section>
+
+<section>
+  <h2>Github - <a href="https://github.com/bunsenmcdubbs">bunsenmcdubbs</a></h2>
+  <div id="github-feed">
+    <div class="wait-spinner">
+      <i class="fa fa-spinner fa-3x spin" aria-hidden="true"></i>
+    </div>
+  </div>
+  <a href="https://github.com/bunsenmcdubbs">See more&hellip;</a>
+
+  <template id="template-github-time-ago">
+    <div class="github-event github-time-ago"><span class="meta"></span></div>
+  </template>
+  <template id="template-github-pushed">
+    <div class="github-event">
+      Pushed <span class="num_commits"></span> to <a class="repository"></a>
+    </div>
+  </template>
+  <template id="template-github-issue">
+    <div class="github-event">
+      <span class="action"></span> issue
+      <a class="issue_id"></a>
+      on <a class="repository"></a>
+    </div>
+  </template>
+  <template id="template-github-pull-request">
+    <div class="github-event">
+      <span class="action"></span> pull request
+      <a class="pr_id"></a>
+      on <a class="repository"></a>
+    </div>
+  </template>
+</section>
+    
     <!--THATSPARROWTHATSPARROWTHATSPARROWTHATSPARROWTHATSPARROWTHATSPARROWTHATSPARROWTHATSPARROWTHATSPARROWTHATSPARROWTHATSPARROWOWTHATSPARROWTHATSPARROWTHATSPARROWTHATSPARROWTHATSPARROWTHATSPARROWTHATSPARROWTHATSPARROWTHATSPARR-->
    <script
     src="https://code.jquery.com/jquery-3.2.1.min.js"

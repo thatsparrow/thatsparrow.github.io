@@ -49,9 +49,9 @@ a:hover,
 .about-section {
     height: auto;
     padding-top: 20px;
-    padding-bottom: 0px;
+    padding-bottom: 50px;
     text-align: left;
-    background: #FFFFFF;
+    background: #EEE;
     /*background-image: url("https://aw.githubusercontent.com/thatsparrow/thatsparrow.github.io/master/img/background1.png");*/
  
 }
@@ -241,6 +241,7 @@ p, div {
     margin-left: 5%;
   }
 }
+
 @media only screen and (min-width: 1040px) {
   .three-up > * {
     width: 32%;

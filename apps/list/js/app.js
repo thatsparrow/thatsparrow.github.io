@@ -1,6 +1,5 @@
-//Problem: User interaction doesnt provide desired results
-//Solution: Add interactivity so user can manage daily tasks
-
+// I waste too much paper. 
+// Last updated: 2014 
 
 var taskInput = document.getElementById("new-task"); //new-task
 var addButton = document.getElementsByTagName("button")[0]; //First Button
@@ -39,7 +38,6 @@ var createNewTaskElement = function (taskString) {
   deleteButton.className = "delete";
 
   label.innerText = taskString;
-
 
 
   //Each element neeeds appeneding

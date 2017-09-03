@@ -31,7 +31,6 @@ a:hover,
     padding-bottom: 50px;
     text-align: center;
     background: #FFFFFF;
-    background-image: url("https://www.annbenjam.in/img/thatsparrow_background.svg");
 }
 .developer-section {
     height: auto;
@@ -59,15 +58,15 @@ a:hover,
     height: auto;
     padding-top: 0px;
     text-align: center;
-    background: #FFFFFF;
+    background: #F8F8F8;
 }
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Quicksand', sans-serif;
 }
 p, div {
-    font-family: 'Quicksand', sans-serif;
-
-}
+    font-family: 'Quicksand', sans-serif; /*
+    font-family: 'Roboto Condensed', sans-serif; 
+    font-family: 'Noto Serif', serif; */
 .carousel-control.left, .carousel-control.right {
   background: none !important;
   filter: progid: none !important;

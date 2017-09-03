@@ -60,7 +60,7 @@
                 <i class="fa fa-bar-chart fa-1x fa-fw"></i> 1.80m & 65kg
 
                     <div class="text-center">
-                      <a href="mailto:thatsparrow@protonmail.ch" target="_blank"> <i class="fa fa-envelope-square fa-5x"></i></a>
+                      <a href="/cdn-cgi/l/email-protection#2f5b474e5b5c5f4e5d5d40586f5f5d405b4041424e4643014c47" target="_blank"> <i class="fa fa-envelope-square fa-5x"></i></a>
                       <a href="https://github.com/thatsparrow" target="_blank"> <i class="fa fa-github fa-4x"></i></a>
                       <a href="https://instagram.com/thatsparrow" target="_blank"> <i class="fa fa-instagram fa-3x"></i></a>       
                       <a href="https://api.whatsapp.com/send?phone=940766970959" target="_blank"> <i class="fa fa-whatsapp fa-2x"></i></a>
@@ -164,6 +164,19 @@
    <script src="assets/js/style.js"></script><!--Custom Javascript Defer-->
    <script src="assets/js/animsition.min.js"></script><!--Transition Effects by https://github.com/blivesta/animsition-->
    <script>$(".animsition").animsition();</script><!--Call animsition-->
+   <!--No Right-click or ctrl+c-->
+   <script
+        type="text/javascript">
+        $(document).ready(function () {
+          //Disable cut copy paste
+          $('body').bind('cut copy paste', function (e) {
+            e.preventDefault();
+          });
+          //Disable mouse right click
+          $("body").on("contextmenu",function(e){
+            return false;
+          });
+        });</script>
    <script>/*Google Analytics*/
      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -171,6 +184,7 @@
      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
      ga('create', 'UA-100462785-1', 'auto');
      ga('send', 'pageview');</script>
+ <script>/* <![CDATA[ */(function(d,s,a,i,j,r,l,m,t){try{l=d.getElementsByTagName('a');t=d.createElement('textarea');for(i=0;l.length-i;i++){try{a=l[i].href;s=a.indexOf('/cdn-cgi/l/email-protection');m=a.length;if(a&&s>-1&&m>28){j=28+s;s='';if(j<m){r='0x'+a.substr(j,2)|0;for(j+=2;j<m&&a.charAt(j)!='X';j+=2)s+='%'+('0'+('0x'+a.substr(j,2)^r).toString(16)).slice(-2);j++;s=decodeURIComponent(s)+a.substr(j,m-j)}t.innerHTML=s.replace(/</g,'&lt;').replace(/\>/g,'&gt;');l[i].href='mailto:'+t.value}}catch(e){}}}catch(e){}})(document);/* ]]> */</script>
   </body>
   <!--0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000-->
 </html>

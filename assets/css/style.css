@@ -61,19 +61,18 @@ a:hover,
     padding-top: 20px;
     padding-bottom: 20px;
     text-align: center;
+    background: #FFF;
 }
 .publicist-section {
     height: auto;
     padding-top: 20px;
     padding-bottom: 50px;
     text-align: left;
-    background: #FFFFFF; 
 }
 .footnote-section {
     height: auto;
     padding-top: 0px;
     text-align: center;
-    background: #FFFFFF;
 }
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Quicksand', sans-serif;

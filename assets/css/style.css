@@ -33,7 +33,7 @@ a:hover,
     z-index: 100;
 }
 #links a{
-    background-color: #666;
+    background-color: #000;
     color: #fff;
     padding: 0.5rem;
     text-decoration: none;
@@ -56,6 +56,7 @@ a:hover,
     background: -webkit-linear-gradient(to top, #ffffff, #fffc00);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to top, #ffffff, #E0FFFF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     }
+    
 .developer-section {
     height: auto;
     padding-top: 20px;

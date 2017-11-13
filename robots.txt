@@ -1,1 +1,5 @@
+# robots.txt for https://jannbenjam.in/
+
 User-agent: *
+Disallow: /assets/
+Disallow: /resume/

@@ -1,21 +1,18 @@
-                           
+This site is built by a human named Jann in a remote site on Earth. It is updated continuously, and built with more tools and technologies than I can shake a stick at. If you'd like to help him out, see https://www.effectivealtruism.org/.
+
 /* TEAM */
                      
-Developer: thatsparrow       
-Admin: thatsparrow                          
-Email: thatsparrow@protonmail.ch                           
-                                         
-                        [...]
-													
+Jann B.                     
+thatsparrow@protonmail.ch                           
+Mount Lavinia, Sri Lanka
+												
 /* THANKS */
 							
-Platform: Github, Google Domains and Cloudflare				
-                 
-                        [...]
+Github, Google Domains and Cloudflare				
                                    
 /* SITE */
                           
-Last updated: September 4th, 2017     
-Standards: HTML5, CSS3, JS2                           
-Components: Bootstrap, jQuery, etc.
-Tools: Atom, Sublime Text 3 Beta, Notepad++, VIM, Git, GIMP, Fish (Shell)
+2017/10/12  
+HTML5, CSS3, JS2                           
+Bootstrap, jQuery, etc.
+Sublime Text, Notepad++, VIM, Git, GIMP, Bash 

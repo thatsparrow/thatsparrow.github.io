@@ -1,18 +1,18 @@
-This site is built by a human named Jann in a remote site on Earth. It is updated continuously, and built with more tools and technologies than I can shake a stick at. If you'd like to help him out, see https://www.effectivealtruism.org/.
+This site was built by a human named Jann at a remote site on Earth. It's updated continuously, and built with more tools and technologies than I can shake a stick at. If you'd like to help him out, point your browser to https://www.effectivealtruism.org/.
 
-/* TEAM */
-                     
-Jann B.                     
-thatsparrow@protonmail.ch                           
-Mount Lavinia, Sri Lanka
-												
+/* TEAM */   
+
+        Chef, UI developer, One-eyed illustrator, Standard man, Web designer: Jann Benjamin                     
+        Contact: thatsparrow [at] protonmail.ch                           
+        From: Mount Lavinia, Sri Lanka                                                        
+
 /* THANKS */
-							
-Github, Google Domains and Cloudflare				
-                                   
-/* SITE */
-                          
-2017/10/12  
-HTML5, CSS3, JS2                           
-Bootstrap, jQuery, etc.
-Sublime Text, Notepad++, VIM, Git, GIMP, Bash 
+
+        Support: Github, Google Domains, Cloudflare				                                   
+
+/* SITE */                          
+
+        Last update: 2017/10/12  
+        Language: English                           
+        Doctype: HTML5
+        IDE: Sublime Text, Notepad++, Bash, Git, GIMP 

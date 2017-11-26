@@ -1,8 +1,9 @@
+// Hello.
+
 var corpus1 =
-"Hello.\n\
-I am Type.\n\
-I am a naïve simulation of a human typing. I was written in a few lines of CoffeeScript, so I'm not meant to be very accurate. I'm just a parlor trick you can use in your own projects.\n\
-Notice that I occasionally make mistakes. Please excuse me, and note that you can easily change my typing accuracy level and speed.\n\
+"Sup?\n\
+\n\
+I'm a naïve simulation of a human typing. I was written in a few lines of CoffeeScript, so I'm not meant to be very accurate. Note that you can easily change my typing accuracy level and speed.\n\
 Check this out!";
 
 var corpus2 =
@@ -26,7 +27,7 @@ var cb1 = function(){
 var cb2 = function(){
     setTimeout(function(){
         el.value = '';
-        new TuringType(el, 'Or maybe wildly inaccurate and very fast for an interesting effect.', { accuracy: .3, interval: 15, callback: cb3 });
+        new TuringType(el, 'Or maybe wildly inaccurate and very fast?', { accuracy: .3, interval: 15, callback: cb3 });
     }, 2000);
 }
 

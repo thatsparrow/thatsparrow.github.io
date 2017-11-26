@@ -30,24 +30,3 @@ textarea{
     height: 100%;
     resize: none;
 }
-#links{
-    position: fixed;
-    right: 0;
-    padding: 1rem;
-    z-index: 100;
-}
-#links a{
-    background-color: #333;
-    color: #fff;
-    padding: 0.5rem;
-    text-decoration: none;
-    font-size: 1.4rem;
-    position: relative;
-    font-weight: bold
-}
-#links a:hover{
-    background-color: #555;
-}
-#links a:active{
-    top: 1px;
-}

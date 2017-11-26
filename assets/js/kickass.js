@@ -342,7 +342,7 @@
                 }, this.updateWindowInfo(), this.world = new World(this), this.bulletManager = new BulletManager, this.bulletManager.game = this, this.bulletManager.updateEnemyIndex(), this.explosionManager = new ExplosionManager, this.explosionManager.game = this, this.ui = new UIManager, this.ui.game = this, this.bombManager = new BombManager, this.bombManager.game = this, this.sessionManager = new SessionManager, this.sessionManager.game = this, this.lastUpdate = now(), this.keyMap = {}, this.keydownEvent = bind(this, this.keydown), this.keyupEvent = bind(this, this.keyup), this.multiplier = 10, window.KickAssStyle && "white" === window.KickAssStyle && (GameGlobals.bulletColor = "white"), addEvent(document, "keydown", this.keydownEvent), addEvent(document, "keyup", this.keyupEvent), addEvent(document, "keypress", this.keydownEvent)
             },
             begin: function() {
-                this.addPlayer(), this.ui.showMessage("Press Space to Shoot<br>&larr;&uarr;&darr;&rarr; to Move"), this.sessionManager.isPlaying = !0, GameGlobals.useAnimationFrame || (this.loopTimer = window.setInterval(bind(this, this.loop), 1e3 / GameGlobals.FPS)), GameGlobals.useAnimationFrame && requestAnimFrame(bind(this, this.loop))
+                this.addPlayer(), this.ui.showMessage("Press SPACE to shoot,<br>and &larr;&uarr;&darr;&rarr; to move."), this.sessionManager.isPlaying = !0, GameGlobals.useAnimationFrame || (this.loopTimer = window.setInterval(bind(this, this.loop), 1e3 / GameGlobals.FPS)), GameGlobals.useAnimationFrame && requestAnimFrame(bind(this, this.loop))
             },
             keydown: function(t) {
                 var e = code(t.keyCode);
@@ -805,7 +805,7 @@
                 this.bombShowDelay = 8, this.nextBomb = this.bombShowDelay
             },
             update: function(t) {
-                this.game.isKeyPressed("F") && this.isReady() && this.blow(), -1 !== this.nextBomb && this.game.sessionManager.isPlaying && (this.nextBomb -= t, this.nextBomb < 0 && (this.nextBomb = -1, this.game.ui.showMessage("BOMB IS READY<br />(Type F)")))
+                this.game.isKeyPressed("F") && this.isReady() && this.blow(), -1 !== this.nextBomb && this.game.sessionManager.isPlaying && (this.nextBomb -= t, this.nextBomb < 0 && (this.nextBomb = -1, this.game.ui.showMessage("Press F,<br /> the Bomb is ready!")))
             },
             blow: function() {
                 var t = this.game.ui.showMessage("3...", 5e3);

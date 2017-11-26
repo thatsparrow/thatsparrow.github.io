@@ -15,7 +15,7 @@ body{
     margin: 0;
 }
 textarea{
-    font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+    font-family: 'Quicksand', sans-serif;
     position: absolute;
     top: 0;
     bottom: 0;
@@ -30,3 +30,4 @@ textarea{
     height: 100%;
     resize: none;
 }
+

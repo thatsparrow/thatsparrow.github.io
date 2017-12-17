@@ -12,7 +12,6 @@
 
 	<head>
 	  <meta charset="utf-8">
-	  <!--
 	  <title>353 Clothing | Blend Out</title>
 	  <meta content="width=device-width, initial-scale=1.0" name="viewport">
 	  <meta name="description" content="A boutique apparel company based in Sri Lanka.">
@@ -45,7 +44,7 @@
 
 	  <!-- Google Fonts -->
 	  <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,700|Roboto:400,900" rel="stylesheet">
-	  <link href="https://fonts.googleapis.com/css?family=Quicksand:500" rel="stylesheet"><!--font by andrew paglinawan-->	
+	  <link href="https://fonts.googleapis.com/css?family=Quicksand:500" rel="stylesheet">
 	  
 	  <!-- Bootstrap CSS File -->
 	  <link href="assets/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -60,7 +59,21 @@
 
 	  
 	  <noscript><style type="text/css">.animsition { opacity: 1; }</style></noscript>
-	
+
+	  <!-- Mobile version 
+	  <script type="text/javascript">
+		if (screen.width <= 699) {
+		document.location = "mobile.html";
+		}
+	  </script>
+
+	  <script language=javascript>
+		if ((navigator.userAgent.match(/iPhone/i)) || (navigator.userAgent.match(/iPod/i))) {
+		   location.replace("http://url-to-send-them/iphone.html");
+		}
+	  </script>
+	  <!-- /Mobile version--> 
+	   
 	</head>
 
     <!--888888b.                 888
@@ -82,18 +95,16 @@
 		<div class="container">
 
 		  <div id="logo" class="pull-left">
-			<a href="index.html"><img src="img/353_logo.svg" alt="" title="353 Clothing"/></img></a>
+			<a href="index.html"><img src="img/353_logo.png" alt="" title="353 Clothing"/></img></a>
 		  </div>
 
 		  <nav id="nav-menu-container">
 			<ul class="nav-menu">
-			  <li><a href="#about">About</a></li>
-			  <li class="menu-has-children"><a href="">Lookbook</a></li>			  
-			  <li><a href="#contact">Store</a></li> 
+			  <li><a href="about.html">About</a></li>
+			  <li class="menu-has-children"><a href="lookbook.html">Lookbook</a></li>			  
+			  <li><a href="store.html">Store</a></li> 
 			</ul>
-		  </nav>
-		  <!-- 
-		   form 
+		  </nav> 
 		  <!-- #nav-menu-container -->
 		  <nav class="nav social-nav pull-right d-none d-lg-inline">
 			<a href="www.instagram.com/353clothing"><i class="fa fa-instagram"></i></a> 
@@ -102,6 +113,7 @@
 			<a href="mailto:contact@353clothing.com"><i class="fa fa-linkedin"></i></a>
 			<a href="mailto:contact@353clothing.com"><i class="fa fa-envelope"></i></a>
 		  </nav>
+		
 		</div>
 	  </header>
 	  <!-- /Header -->   
@@ -111,10 +123,10 @@
 		<div class="portfolio-grid">
 		  <div class="row">
 			<!-- [X][ ][ ][ ][ ][ ] -->
-			<div class="col-xs-2 col-sm-2 col-lg-2 col-lg-offset-5">
+			<div class="col-xs-1 col-sm-6 col-lg-2">
 			 <div class="text-center"><h6>Coal</h6></div><p>
 			  <div class="card card-block">
-				<a href="#"><img alt="" src="img/fulls/b1.png">
+				<a href="lookbook.html"><img alt="" src="img/fulls/b1a.png">
 				  <div class="portfolio-over">
 					<div>
 					  <p class="card-text">
@@ -143,10 +155,10 @@
 			  </div>
 			</div>
 			<!-- [ ][X][ ][ ][ ][ ] -->
-			<div class="col-xs-2 col-sm-2 col-lg-2 col-md-offset-5">
+			<div class="col-xs-1 col-sm-6 col-lg-2">
 			<div class="text-center"><h6>Burgundy</h6></div><p>
 			  <div class="card card-block">
-				<a href="#"><img alt="" src="img/fulls/n2.png">
+				<a href="lookbook.html"><img alt="" src="img/fulls/b2a.png">
 				  <div class="portfolio2-over">
 					<div>
 					    <p class="card-text">
@@ -175,10 +187,10 @@
 			  </div>
 			</div>
 			<!-- [ ][ ][X][ ][ ][ ] -->
-			<div class="col-xs-2 col-sm-2 col-lg-2 col-md-offset-5">
+			<div class="col-xs-1 col-sm-6 col-lg-2">
 			<div class="text-center"><h6>Kush</h6></div><p>
 			  <div class="card card-block">
-				<a href="#"><img alt="" src="img/fulls/n3.png">
+				<a href="lookbook.html"><img alt="" src="img/fulls/b3a.png">
 				  <div class="portfolio3-over">
 					<div>
 					    <p class="card-text">
@@ -207,10 +219,10 @@
 			  </div>
 			</div>
 			<!-- [ ][ ][ ][X][ ][ ] -->
-			<div class="col-xs-2 col-sm-2 col-lg-2 col-md-offset-5">
+			<div class="col-xs-1 col-sm-6 col-lg-2">
 			<div class="text-center"><h6>Flu</h6></div><p>
 			  <div class="card card-block">
-				<a href="#"><img alt="" src="img/fulls/n4.png">
+				<a href="lookbook.html"><img alt="" src="img/fulls/b2a.png">
 				  <div class="portfolio4-over">
 					<div>
 					    <p class="card-text">
@@ -239,10 +251,10 @@
 			  </div>
 			</div>
 			<!-- [ ][ ][ ][ ][X][ ] -->
-			<div class="col-xs-2 col-sm-2 col-lg-2 col-md-offset-5">
+			<div class="col-xs-1 col-sm-6 col-lg-2">
 			<div class="text-center"><h6>Steel-your-girl<h6></div><p>
 			  <div class="card card-block">
-				<a href="#"><img alt="" src="img/fulls/n5.png">
+				<a href="lookbook.html"><img alt="" src="img/fulls/b1a.png">
 				  <div class="portfolio5-over">
 					<div>
 					    <p class="card-text">
@@ -271,10 +283,10 @@
 			  </div>
 			</div>
 			<!-- [ ][ ][ ][ ][ ][X] -->
-			<div class="col-xs-2 col-sm-2 col-lg-2">
+			<div class="col-xs-1 col-sm-6 col-lg-2">
 			<div class="text-center"><h6>Not-white</h6></div><p>
 			  <div class="card card-block">
-				<a href="#"><img alt="" src="img/fulls/n6.png">
+				<a href="lookbook.html"><img alt="" src="img/fulls/b2a.png">
 				  <div class="portfolio6-over">
 					<div>
 					    <p class="card-text">
@@ -316,15 +328,12 @@
 			  <div class="col-lg-6 col-xs-12 text-lg-left text-center">
 				<p class="copyright-text">
 				  &copy; 353clothing.com<br>
-					"Reward yourself." - DJ Khaled
+						&ldquo;Reward yourself.&rdquo; - DJ Khaled
 				</p>
 			  </div>
 
 			  <div class="col-lg-6 col-xs-12 text-lg-right text-center">
 				<ul class="list-inline">
-				  <li class="list-inline-item">
-					<a href="updates">Updates</a>
-				  </li>
 				
 				  <li class="list-inline-item">
 					<a href="gallery">Gallery</a>

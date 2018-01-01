@@ -10,13 +10,13 @@
 	  <meta name="author" href="https://jannbenjam.in">
 
 	  <!--Device Icons-->
-      <meta name="msapplication-config" content="img/ico/browserconfig.xml">
-      <link rel="apple-touch-icon" sizes="180x180" href="img/ico/apple-touch-icon.png">
-      <link rel="icon" type="image/png" sizes="32x32" href="img/ico/favicon-32x32.png">
-      <link rel="icon" type="image/png" sizes="16x16" href="img/ico/favicon-16x16.png">
-      <link rel="manifest" href="img/ico/manifest.json">
-      <link rel="mask-icon" href="img/ico/safari-pinned-tab.svg" color="#5bbad5">
-      <link rel="shortcut icon" href="img/ico/favicon.ico">
+    <meta name="msapplication-config" content="img/ico/browserconfig.xml">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/ico/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/ico/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/ico/favicon-16x16.png">
+    <link rel="manifest" href="img/ico/manifest.json">
+    <link rel="mask-icon" href="img/ico/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="img/ico/favicon.ico">
 
 	  <!-- Facebook Opengraph integration: https://developers.facebook.com/docs/sharing/opengraph -->
 	  <meta property="og:url" content="http://www.353clothing.com">
@@ -49,7 +49,40 @@
 	  
 	  <link href="assets/css/animsition.min.css" rel="stylesheet"><!--credit to blivesta-->
 	  
-	  <noscript><style type="text/css">.animsition { opacity: 1; }</style></noscript>
+		<noscript><style type="text/css">.animsition { opacity: 1; }</style></noscript>
+		
+		<style class="cp-pen-styles">.gallery-content {
+			position: relative;
+			left: 0;
+			right: 0;
+			margin-right: auto;
+			margin-left: auto;
+			display: flex;
+			max-width: 1200px;
+			width: 94%;
+		}
+		.gallery-content__item {
+			width: 30%;
+		}
+		.gallery-content__item:nth-child(2) {
+			width: 70%;
+			display: flex;
+			flex-wrap: wrap;
+		}
+		.gallery-content__small {
+			width: 50%;
+			outline: 5px solid #fff;
+		}
+		.gallery-content__large {
+			height: 100%;
+		}
+		
+		img {
+			max-width: 100%;
+			display: block;
+		}
+		</style>
+
 	</head>
 
 	<body class="animsition" >
@@ -81,53 +114,22 @@
 			</div>
 	    </header> 
 
+		<section>
+			<h4 class="text-center">353 Clothing Co. | Colombo | 5:41 pm</h4><p>
+			<div class="gallery-content">
+				<div class="gallery-content__item">
+					<div class="gallery-content__large">
+						<img src="https://i.pinimg.com/736x/d4/a5/d8/d4a5d82201ab0ece129c363034b693ef--red-fashion-high-fashion.jpg" alt="Burgundy"/></div>
+				</div>
 
-<style class="cp-pen-styles">.gallery-content {
-  position: relative;
-  left: 0;
-  right: 0;
-  margin-right: auto;
-  margin-left: auto;
-  display: flex;
-  max-width: 1200px;
-  width: 94%;
-}
-.gallery-content__item {
-  width: 30%;
-}
-.gallery-content__item:nth-child(2) {
-  width: 70%;
-  display: flex;
-  flex-wrap: wrap;
-}
-.gallery-content__small {
-  width: 50%;
-  outline: 5px solid #fff;
-}
-.gallery-content__large {
-  height: 100%;
-}
-
-img {
-  max-width: 100%;
-  display: block;
-}
-</style>
-
-<section>
-<h4 class="text-center">353 Clothing Co. | Colombo | 5:41 pm</h4><p>
-<div class="gallery-content">
-  <div class="gallery-content__item">
-    <div class="gallery-content__large"><img src="https://i.pinimg.com/736x/d4/a5/d8/d4a5d82201ab0ece129c363034b693ef--red-fashion-high-fashion.jpg" alt=""/></div>
-  </div>
-  <div class="gallery-content__item">
-    <div class="gallery-content__small"><img src="http://blog.rtve.es/.a/6a014e6089cbd5970c017ee3f53c78970d-pi" alt=""/></div>
-    <div class="gallery-content__small"><img src="https://i.pinimg.com/736x/de/34/24/de34249d405158616159778ead06702f--existential-crisis-female-fitness.jpg" alt=""/></div>
-    <div class="gallery-content__small"><img src="http://diariojudio.net/wp-content/uploads/2012/07/7929_22.jpg" alt=""/></div>
-    <div class="gallery-content__small"><img src="http://eslamoda.com/wp-content/uploads/sites/2/2016/08/ulzzaaang-chica.jpg" alt=""/></div>
-  </div><p><br>
-</div>
-</section>
+				<div class="gallery-content__item">
+					<div class="gallery-content__small"><img src="http://www.redant.com/assets/images/red-ant-02b39ad5ff.svg" alt=""/></div>
+					<div class="gallery-content__small"><img src="https://mikasasports.com/wp-content/uploads/2016/12/W5000RED-2016.png" alt=""/></div>
+					<div class="gallery-content__small"><img src="http://diariojudio.net/wp-content/uploads/2012/07/7929_22.jpg" alt=""/></div>
+					<div class="gallery-content__small"><img src="https://upload.wikimedia.org/wikipedia/commons/3/34/RedHandOfUlster_DexterHand.png" alt=""/></div>
+				</div><p><br>
+			</div>
+		</section>
 
 	  <!-- Footer -->   
 	  <footer class="site-footer"> 
@@ -136,15 +138,15 @@ img {
 			<div class="row">
 
 			  <div class="col-lg-6 col-xs-12 text-lg-left text-center">
-				<p class="copyright-text">
-					Copyright &copy; 2018 353 Clothing LLC | COLOMBO 3:31pm 
-				</p>
+					<p class="copyright-text">
+						Copyright &copy; 2018 353 Clothing LLC  
+					</p>
 			  </div>
 
 			  <div class="col-lg-6 col-xs-12 text-lg-right text-center">
-				<p class="copyright-text">
-					"Reward yourself." - DJ Khaled
-				  </p>
+					<p class="copyright-text">
+						"Reward yourself." - DJ Khaled
+					</p>
 			  </div>
 
 			</div>
@@ -156,10 +158,6 @@ img {
 	  <!-- Arrow Up-->
 	  <a class="scrolltop" href="#"><span class="fa fa-angle-up"></span></a>
 	  <!-- /Arrow Up -->
-
-
-
-
 	
 	  <!-- JavaScript -->
 	  <script src="assets/lib/jquery/jquery.min.js"></script>

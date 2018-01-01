@@ -161,7 +161,7 @@ a:hover {
   Header Styling
 ================================================== */
 #header {
-  background: #fff;
+  
   height: 70px;
 }
 
@@ -187,7 +187,7 @@ a:hover {
 #header #logo img {
   padding: 0;
   margin: 0;
-  max-height: 40px;
+  max-height: 50px;
 }
 
 @media (max-width: 768px) {
@@ -518,7 +518,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   Features Styling
   ================================================== */
 .features {
-  padding-bottom: 45px;
+  padding-bottom: 5px;
 }
 
 .features h2 {
@@ -1055,10 +1055,10 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 /* ==================================================
   Contact Section
-  ================================================== 
+  ================================================== */
 #contact {
-  background: #f7f7f7;
-  padding: 80px 0;
+  background: #fff;
+  padding: 50px 0;
 }
 
 #contact h2 {
@@ -1144,6 +1144,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 .site-footer p {
   opacity: .75;
   line-height: 2.0925;
+   font-size: 15px;
 }
 
 .site-footer h2,
@@ -1229,7 +1230,8 @@ body.mobile-nav-active #mobile-nav-toggle {
     font-size: 14px;
   }
   .hero {
-    padding: 75px 0;
+    padding: 5px 0;
+    background-color: #fff;
   }
   .stats-col {
     margin-bottom: 25px;
@@ -1293,7 +1295,7 @@ html {
 }
 
 body {
-  background: #efefef;
+  background: #fff;
   color: #333;
   font-family: "Raleway";
   height: 100%;
@@ -1328,7 +1330,7 @@ body h1 {
       -ms-flex-direction: row;
           flex-direction: row;
   position: relative;
-  height: 70vh;
+  height: 70%;
   width: 100%;
 }
 .gallery .wrap {
@@ -1587,4 +1589,151 @@ body h1 {
     box-shadow: 0 0 0 100vmin rgba(24, 33, 45, 0.6), 0 0 10vmin rgba(13, 21, 31, 0.6);
   }
 }
+
+/* Animated 3 Intro */
+
+	#bg {
+		-moz-transition: opacity 2s ease-in-out;
+		-webkit-transition: opacity 2s ease-in-out;
+		-ms-transition: opacity 2s ease-in-out;
+		transition: opacity 2s ease-in-out;
+		height: 100%;
+		left: 0px;
+		opacity: 0.75;
+		position: fixed;
+		top: 0px;
+		width: 100%;
+		z-index: 1;
+	}
+
+		#bg div {
+			-moz-transition: opacity 3s ease, visibility 3s;
+			-webkit-transition: opacity 3s ease, visibility 3s;
+			-ms-transition: opacity 3s ease, visibility 3s;
+			transition: opacity 3s ease, visibility 3s;
+			background-size: cover;
+			height: 100%;
+			left: 0;
+			opacity: 0;
+			position: absolute;
+			top: 0;
+			visibility: hidden;
+			width: 110%;
+		}
+
+			#bg div.visible {
+				-moz-animation: bg 45s linear infinite;
+				-webkit-animation: bg 45s linear infinite;
+				-ms-animation: bg 45s linear infinite;
+				animation: bg 45s linear infinite;
+				opacity: 1;
+				visibility: visible;
+				z-index: 1;
+			}
+
+				#bg div.visible.top {
+					z-index: 2;
+				}
+
+				@media screen and (max-width: 1280px) {
+
+					#bg div.visible {
+						-moz-animation: bg 29.25s linear infinite;
+						-webkit-animation: bg 29.25s linear infinite;
+						-ms-animation: bg 29.25s linear infinite;
+						animation: bg 29.25s linear infinite;
+					}
+
+				}
+
+				@media screen and (max-width: 736px) {
+
+					#bg div.visible {
+						-moz-animation: bg 18s linear infinite;
+						-webkit-animation: bg 18s linear infinite;
+						-ms-animation: bg 18s linear infinite;
+						animation: bg 18s linear infinite;
+					}
+
+				}
+
+			#bg div:only-child {
+				-moz-animation-direction: alternate !important;
+				-webkit-animation-direction: alternate !important;
+				-ms-animation-direction: alternate !important;
+				animation-direction: alternate !important;
+			}
+
+		body.is-loading #bg {
+			opacity: 0;
+		}
+
+	@-moz-keyframes bg {
+		0% {
+			-moz-transform: translateX(0);
+			-webkit-transform: translateX(0);
+			-ms-transform: translateX(0);
+			transform: translateX(0);
+		}
+
+		100% {
+			-moz-transform: translateX(-25%);
+			-webkit-transform: translateX(-25%);
+			-ms-transform: translateX(-25%);
+			transform: translateX(-25%);
+		}
+	}
+
+	@-webkit-keyframes bg {
+		0% {
+			-moz-transform: translateX(0);
+			-webkit-transform: translateX(0);
+			-ms-transform: translateX(0);
+			transform: translateX(0);
+		}
+
+		100% {
+			-moz-transform: translateX(-25%);
+			-webkit-transform: translateX(-25%);
+			-ms-transform: translateX(-25%);
+			transform: translateX(-25%);
+		}
+	}
+
+	@-ms-keyframes bg {
+		0% {
+			-moz-transform: translateX(0);
+			-webkit-transform: translateX(0);
+			-ms-transform: translateX(0);
+			transform: translateX(0);
+		}
+
+		100% {
+			-moz-transform: translateX(-25%);
+			-webkit-transform: translateX(-25%);
+			-ms-transform: translateX(-25%);
+			transform: translateX(-25%);
+		}
+	}
+
+	@keyframes bg {
+		0% {
+			-moz-transform: translateX(0);
+			-webkit-transform: translateX(0);
+			-ms-transform: translateX(0);
+			transform: translateX(0);
+		}
+
+		100% {
+			-moz-transform: translateX(-25%);
+			-webkit-transform: translateX(-25%);
+			-ms-transform: translateX(-25%);
+			transform: translateX(-25%);
+		}
+	}
+
+
+
+
+/*kjkokoji*/
 

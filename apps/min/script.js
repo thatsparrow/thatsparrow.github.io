@@ -98,19 +98,19 @@ function compileContent() {
     var a = "hc.liamnotorp/worrapstaht".split("").reverse().join("").replace("/", "@");
     var b = {
         NAME: "Jann Benjamin",
-        TITLE: ["Writer", "Software Developer"],
+        TITLE: ["Technical Writer", "Software Developer"],
         WORK: {
             position: ["Public Relations Executive", "Content Writer"],
             company: '<a href="http://dentsugrantgroup.com/">Dentsu Aegis Network</a>',
             location: "Colombo, Sri Lanka"
         },
         PORTFOLIO: {
-            a: '<a href="work/sparrowpad">work/print</a>',
-            b: '<a href="work/sparrowpad">work/digital</a>',
-            c: '<a href="work/sparrowpad">work/other</a>',
+            a: '<a href="work/print">work/print</a>',
+            b: '<a href="work/digital">work/digital</a>',
+            c: '<a href="work/other">work/other</a>',
         },
 		PLAY: {
-            position: ["Software Developer", "Illustrator"],
+            position: ["Co-Founder","Developer"],
             company: '<a href="http://osiris.agency">Osiris</a>',
             location: "Mount Lavinia, Sri Lanka"
         },
@@ -121,19 +121,22 @@ function compileContent() {
             4: '<a href="apps/sparrowpad">apps/list</a>',
             5: '<a href="apps/sparrowpad">apps/webcompile</a>',
             6: '<a href="apps/sparrowpad">apps/float</a>',
-            7: '<a href="apps/sparrowpad">apps/353</a>',
+            7: '<a href="apps/sparrowpad">apps/353clothing</a>',
             8: '<a href="apps/sparrowpad">apps/insight</a>',
-            9: '<a href="apps/sparrowpad">apps/kento</a>',
+            9: '<a href="apps/sparrowpad">apps/kyoto</a>',
         },
 
 
         INTERESTS: {
             art: ["Impressionism", "Photorealism"], 
-            music: ["Nu jazz", "Lounge"]
+            music: ["Nu jazz", "Lounge","Experimental"]
         },
 		
-        CONTACT: ['<a class="item" href="mailto:' + a + '">' + a + "</a>", '<a class="item" href="https://api.whatsapp.com/send?phone=940766970959">WhatsApp</a>', '<a class="item" href="http://instagram.com/thatsparrow">Instagram</a>'],
-		LINKS: ['<a class="item" href="about.txt">About</a>','<a class="item" href="projects/">Projects</a>', '<a class="item" href="resume/">Resume</a>', '<a class="item" href="blog/">Blog</a>']
+        CONTACT: ['<a class="item" href="mailto:' + a + '">' + a + "</a>", '<a class="item" href="https://api.whatsapp.com/send?phone=940766970959">WhatsApp</a>', '<a class="item" href="http://instagram.com/thatsparrow">Instagram</a>', '<a class="item" href="https://portfolium.com/thatsparrow">Portfolium</a>'],
+        LINKS: ['<a class="item" href="about.txt">About</a>','<a class="item" href="art/">Art</a>', '<a class="item" href="resume/">Résumé</a>', '<a class="item" href="blog/">Blog</a>'],
+        TOKENS: ['<a class="item" href="about.txt">PGP</a>','<a class="item" href="art/">README.md</a>', '<a class="item" href="resume/">Notes</a>']
     };
     return "<pre id='" + contentId + "'>" + JSON.convertToHumanReadableString(b, 2, window.innerHeight > window.innerWidth) + "</pre>"
 };
+
+

@@ -15,4 +15,7 @@ This site was built by a human named Jann at a remote site on Earth. It's update
         Last update: 2017/10/12  
         Language: English                           
         Doctype: HTML5
-        IDE: Sublime Text, Notepad++, Bash, Git, GIMP 
+        IDE: Sublime Text, Notepad++, Bash, Git, GIMP
+        Platform1: Acer Chromebook 11 CB3-111 (Gallium OS 2.0) 
+        Platform2: DAMRO 32" HD TV + Compaq Presario CQ62 (Windows 7 Ultimate + Ubuntu 16.04)
+        Platform3: Samsung Galaxy Note 3 (Android 5.0.1 + Desbian)  

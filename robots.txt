@@ -1,4 +1,4 @@
-# robots.txt for http://www.353clothing.com/
+# robots.txt for https://jannbenjam.in/
 
 User-agent: *
 Disallow: /assets/

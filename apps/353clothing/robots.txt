@@ -1,5 +1,0 @@
-# robots.txt for http://www.353clothing.com/
-
-User-agent: *
-
-Sitemap: http://353clothing.com/sitemap.xml

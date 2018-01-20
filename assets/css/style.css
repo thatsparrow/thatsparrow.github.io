@@ -9,22 +9,14 @@
 body {
 	background-color: white;
 	color: black;
-	/*background-image: url("https://www.xmple.com/wallpaper/gradient-white-linear-1920x1080-c2-fffaf0-f0fff0-a-120-f-14.svg");*/
 }
 
 /*
-https://cdn-images-1.medium.com/max/2000/1*csVdFihM8KAKXiSJrdTeWw.gif
-https://www.wallpaperup.com/uploads/wallpapers/2014/02/17/257134/5cbe999429cdb5144a3d6357a48e1ef9.jpg
-https://cdnb.artstation.com/p/assets/images/images/004/359/175/original/creogram-agency-kreska-1920x1080.gif?1482922393
-https://www.wallpaperup.com/uploads/wallpapers/2014/02/17/257134/5cbe999429cdb5144a3d6357a48e1ef9.jpg
-
 pre {
-	padding: 2px;
+	padding: 0px;
 	line-height: 18px;
 }
-
 */
-
 .value {
 	color: #003300;	
 }
@@ -38,11 +30,11 @@ a {
 }
 
 #content {
-	position: absolute;
+	position: sticky;
 }
 
 .item {
-	line-height: 20px;
+	line-height: 25px;
 }
 
 

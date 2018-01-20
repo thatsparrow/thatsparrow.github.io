@@ -30,7 +30,7 @@ a {
 }
 
 #content {
-	position: sticky;
+	position: static;
 }
 
 .item {

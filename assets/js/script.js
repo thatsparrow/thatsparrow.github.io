@@ -107,10 +107,9 @@ function compileContent() {
             location: "Colombo, Sri Lanka"
         },
         PORTFOLIO: {
-            a: '<a href="work/print">work/print</a>',
-            b: '<a href="work/digital">work/digital</a>',
-            c: '<a href="work/other">work/digital</a>',
-            d: '<a href="work/other">work/satire</a>',
+            a: '<a href="#">work/print</a>',
+            b: '<a href="#">work/digital</a>',
+            c: '<a href="#">work/other</a>',
         },
 		PLAY: {
             position: ["Co-Founder","Developer"],

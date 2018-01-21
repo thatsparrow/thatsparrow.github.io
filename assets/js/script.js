@@ -118,15 +118,15 @@ function compileContent() {
             location: "Mount Lavinia, Sri Lanka"
         },
         PROJECTS: {
-            1: '<a href="apps/sparrowpad">apps/flow</a>',
-            2: '<a href="apps/sparrowpad">apps/type</a>',
-            3: '<a href="apps/sparrowpad">apps/osiris</a>',
-            4: '<a href="apps/sparrowpad">apps/list</a>',
-            5: '<a href="apps/sparrowpad">apps/compile</a>',
-            6: '<a href="apps/sparrowpad">apps/float</a>',
-            7: '<a href="apps/sparrowpad">apps/353</a>',
-            8: '<a href="apps/sparrowpad">apps/insight</a>',
-            9: '<a href="apps/sparrowpad">apps/kyoto</a>',
+            1: '<a href="#">apps/flow</a>',
+            2: '<a href="#">apps/type</a>',
+            3: '<a href="#">apps/osiris</a>',
+            4: '<a href="#">apps/list</a>',
+            5: '<a href="#">apps/compile</a>',
+            6: '<a href="#">apps/float</a>',
+            7: '<a href="#">apps/353</a>',
+            8: '<a href="#">apps/insight</a>',
+            9: '<a href="#">apps/kyoto</a>',
         },
 
 
@@ -137,7 +137,7 @@ function compileContent() {
 		
         CONTACT: ['<a class="item" href="mailto:' + a + '">' + a + "</a>", '<a class="item" href="https://api.whatsapp.com/send?phone=940766970959">WhatsApp</a>', '<a class="item" href="http://instagram.com/thatsparrow">Instagram</a>', '<a class="item" href="https://portfolium.com/thatsparrow">Portfolium</a>'],
         LINKS: ['<a class="item" href="about/">About</a>','<a class="item" href="art/">Art</a>', '<a class="item" href="resume/">Résumé</a>', '<a class="item" href="blog/">Blog</a>'],
-        TOKENS: ['<a class="item" href="key.md">PGP</a>','<a class="item" href="README.md">README.md</a>', '<a class="item" href="resume/">Notes</a>']
+        TOKENS: ['<a class="item" href="key.md">PGP</a>','<a class="item" href="LICENSE.md">LICENSE.md</a>', '<a class="item" href="#">Notes</a>']
     };
     return "<pre id='" + contentId + "'>" + JSON.convertToHumanReadableString(b, 2, window.innerHeight > window.innerWidth) + "</pre>"
 };

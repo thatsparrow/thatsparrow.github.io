@@ -123,7 +123,7 @@ function compileContent() {
             4: '<a href="#">apps/list</a>',
             5: '<a href="#">apps/compile</a>',
             6: '<a href="#">apps/float</a>',
-            7: '<a href="#">apps/353</a>',
+            7: '<a href="https://github.com/353clothing/353clothing.github.io">apps/353</a>',
             8: '<a href="#">apps/insight</a>',
             9: '<a href="#">apps/kyoto</a>',
         },

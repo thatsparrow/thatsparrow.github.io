@@ -134,11 +134,11 @@ function compileContent() {
             music: ["Nu jazz", "Lounge","Experimental"]
         },
 		
-        CONTACT: ['<a class="item" href="mailto:' + a + '">' + a + "</a>", '<a class="item" href="https://api.whatsapp.com/send?phone=940766970959">WhatsApp</a>', '<a class="item" href="http://instagram.com/thatsparrow">Instagram</a>', '<a class="item" href="https://portfolium.com/thatsparrow">Portfolium</a>'],
+        CONTACT: ['<a class="item" href="mailto:' + a + '">' + a + "</a>", '<a class="item" href="https://api.whatsapp.com/send?phone=940766970959">WhatsApp</a>', '<a class="item" href="http://instagram.com/thatsparrow">Instagram</a>', '<a class="item" href="https://github.com/thatsparrow">GitHub</a>'],
         LINKS: ['<a class="item" href="about/">About</a>','<a class="item" href="art/">Art</a>', '<a class="item" href="resume/">Résumé</a>', '<a class="item" href="blog/">Blog</a>'],
         TOKENS: ['<a class="item" href="key.md">PGP</a>','<a class="item" href="LICENSE.md">LICENSE.md</a>', '<a class="item" href="#">Notes</a>']
     };
     return "<pre id='" + contentId + "'>" + JSON.convertToHumanReadableString(b, 2, window.innerHeight > window.innerWidth) + "</pre>"
-};
+}
 
 

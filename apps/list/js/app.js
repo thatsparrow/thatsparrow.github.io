@@ -1,5 +1,4 @@
-// I waste too much paper. 
-// Last updated: 2014 
+// @thatsparrow 
 
 var taskInput = document.getElementById("new-task"); //new-task
 var addButton = document.getElementsByTagName("button")[0]; //First Button
@@ -186,11 +185,8 @@ var ajaxRequest = function () {
 addButton.addEventListener("click", addTask);
 addButton.addEventListener("click", ajaxRequest);
 
-
-
 //Set Default values for text input (Task Input Box)
 taskInput.value = " ";
-
 
 //cycle over incomplete task holder ul list items
 for (var i = 0; i < incompleteTasksHolder.children.length; i++) {
@@ -198,14 +194,11 @@ for (var i = 0; i < incompleteTasksHolder.children.length; i++) {
   bindTaskEvents(incompleteTasksHolder.children[i], taskCompleted);
 }
 
-
 //cycle over complete task holder ul list items
 for (var i = 0; i < completedTasksHolder.children.length; i++) {
   //bind events to list item's children (taskInComplete)
   bindTaskEvents(completedTasksHolder.children[i], taskIncomplete);
 }
-
-
 
 //jQuery Test if working
 window.onload = function () {
@@ -226,9 +219,3 @@ $(function () {
     })
   });
 });
-
-
-//To Fix:
-
-//Checkbox not appearing after checkbox was checked in 'edit mode'  See line: 123.
-

@@ -120,7 +120,7 @@ function compileContent() {
             1: '<a href="#">apps/flow</a>',
             2: '<a href="#">apps/type</a>',
             3: '<a href="https://github.com/OSIRISagency/OSIRISagency.github.io">apps/osiris</a>',
-            4: '<a href="#">apps/list</a>',
+            4: '<a href="apps/list">apps/list</a>',
             5: '<a href="apps/compile/">apps/compile</a>',
             6: '<a href="#">apps/float</a>',
             7: '<a href="https://github.com/353clothing/353clothing.github.io">apps/353</a>',

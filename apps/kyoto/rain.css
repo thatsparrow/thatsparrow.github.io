@@ -198,7 +198,7 @@ img {
 }
 
 body {
-	background: url("http://www.halaljapan.com/wp-content/uploads/2015/07/kyoto-gets-the-best-city-award.jpeg") no-repeat center center fixed;
+	/* background: url("http://www.halaljapan.com/wp-content/uploads/2015/07/kyoto-gets-the-best-city-award.jpeg") no-repeat center center fixed; */
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;

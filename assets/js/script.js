@@ -99,45 +99,13 @@ function reloadContent() {
 function compileContent() {
     var a = "hc.liamnotorp/worrapstaht".split("").reverse().join("").replace("/", "@");
     var b = {
-        NAME: "Jann Benjamin",
-        TITLE: ["Technical Writer", "Software Consultant"],
-        WORK: {
-            position: ["Public Relations Executive", "Content Writer"],
-            company: '<a title="A multinational media and digital marketing communications company" href="http://www.dentsuaegisnetwork.com/">Dentsu Aegis Network</a>',
-            location: "Colombo, Sri Lanka"
-        },
-        PORTFOLIO: {
-            a: '<a title="Press Releases, Features, Thought Leadership Articles, AV Scripts, Case Studies" href="#">work/print</a>',
-            b: '<a title="Music, Logos, Product Listings, Web Copy, Social Media Copy, Corporate Videos" href="#">work/digital</a>',
-            c: '<a title="Software Documentation, Reference Manuals" href="#">work/other</a>',
-        },
-		PLAY: {
-            position: ["Co-Founder","Software Developer"],
-            company: '<a title="A software consultancy specialising in UI/UX development" href="http://osiris.agency">Osiris</a>',
-            location: "Mount Lavinia, Sri Lanka"
-        },
-        PROJECTS: {
-            1: '<a title="A minimal notepad for heavy deadlines" href="#">apps/flow</a>',
-            2: '<a title="A UX effect to simulate a human typing" href="#">apps/type</a>',
-            3: '<a title="A static website crafted with Jekyll, HTML5, CSS3 and Javascript" href="https://github.com/OSIRISagency/OSIRISagency.github.io">apps/osiris</a>',
-            4: '<a title="A to-do list interface" href="apps/list">apps/list</a>',
-            5: '<a title="A collaborative code compiler (Python, Java, C, C#, C++, Haskell, Perl, Ruby) built on Heroku and Firebase" href="apps/compile/">apps/compile</a>',
-            6: '<a title="A collection of CSS3 effects" href="apps/float">apps/float</a>',
-            7: '<a title="A static website crafted with Bootstrap, HTML5, CSS3 and JavaScript" href="https://github.com/353clothing/353clothing.github.io">apps/353</a>',
-            8: '<a title="An Android app that finds petrol stations and splits costs" href="#">apps/insight</a>',
-            9: '<a title="A music interface for helping stay focused" href="apps/kyoto">apps/kyoto</a>',
-        },
+        ERROR : "Jann will be back.",
+        
 
+	
 
-        INTERESTS: {
-            art: ["Impressionism", "Photorealism"], 
-            music: ["Nu jazz", "Lounge","Experimental"]
-        },
-		
-        CONTACT: ['<a class="item" href="mailto:' + a + '">' + a + "</a>", '<a class="item" href="https://api.whatsapp.com/send?phone=940766970959">WhatsApp</a>', '<a class="item" href="http://instagram.com/thatsparrow">Instagram</a>', '<a class="item" href="https://github.com/thatsparrow">GitHub</a>'],
-        LINKS: ['<a class="item" href="about/">About</a>','<a class="item" href="art/">Art</a>', '<a class="item" href="resume/">Résumé</a>'],
-        TOKENS: ['<a class="item" href="PGP.md">PGP</a>','<a class="item" href="LICENSE.md">LICENSE.md</a>', '<a class="item" href="#">Notes</a>']
-    };
+   
+ };
     return "<pre id='" + contentId + "'>" + JSON.convertToHumanReadableString(b, 2, window.innerHeight > window.innerWidth) + "</pre>"
 }
 

@@ -6,9 +6,13 @@
 	
 */
 
+@import url('https://fonts.googleapis.com/css?family=Quicksand:500');
 body {
 	background-color: white;
-	color: black;
+	color: #696969;
+	        font-family: 'Quicksand', sans-serif;
+	font-size: 13px;
+	
 }
 
 /*
@@ -18,7 +22,10 @@ pre {
 }
 */
 .value {
-	color: #080;	
+	color: #808000;
+        font-family: 'Quicksand', sans-serif;
+	font-size: 13px;
+	padding: 2px;	
 }
 
 a {
@@ -26,15 +33,19 @@ a {
 	cursor: pointer;
 	color: inherit !important;
 	text-decoration: none;
-	border-bottom: 1px solid #080;
+	border-bottom: 1px solid #808000;
+	        font-family: 'Quicksand', sans-serif;
+	font-size: 13px;
 }
 
 #content {
 	position: absolute;
+	        font-family: 'Quicksand', sans-serif;
+	font-size: 13px;
 }
 
 .item {
-	line-height: 25px;
+	line-height: 0px;
 }
 
 

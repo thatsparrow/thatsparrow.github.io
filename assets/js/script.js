@@ -97,42 +97,42 @@ function reloadContent() {
 function compileContent() {
      var a = "hc.liamnotorp/worrapstaht".split("").reverse().join("").replace("/", "@");
      var b = {
-         NAME: "Jann Benjamin",
+         NAME: "JANN BENJAMIN",
          TITLE: ["Candid Writer", "Agile Developer"],
-         LINKS: ['<a class="item" href="about/">About</a>','<a class="item" href="art/">Art</a>', '<a class="item" href="resume/">Résumé</a>'],
+         LINKS: ['<a class="item" title="A man of mystery and charm whose charm is exceeded only by his mystery" href="about/">About</a>','<a class="item" title="An ode to symmetry" href="art/">Art</a>', '<a class="item" title="A summary of my background and skills" href="resume/">Résumé</a>'],
          WORK: {
-             position: ["Public Relations Executive", "Consultant"],
+             position: ["Public Relations Executive", "Content Writer"],
              company: '<a title="A multinational media and digital marketing communications company" href="http://www.dentsuaegisnetwork.com/">Dentsu Aegis Network</a>',
              location: "Colombo, Sri Lanka"
          },
                  PLAY: {
-             position: ["Software Developer","Technical Writer"],
-             company: '<a title="A software consultancy specializing in cross-platform development and analytics" href="http://osiris.agency">OSIRIS</a>',
-             location: "Mount Lavinia, Sri Lanka"
+             position: ["Co-Founder", "Software Developer"],
+             company: '<a title="A software consultancy specialising in cross-platform development and analytics" href="http://osiris.agency">OSIRIS</a>',
+             location: "Remote"
          },
          PORTFOLIO: {
-             a: '<a title="Logos, Identities" href="#">art/branding</a>',
-             b: '<a title="Press Releases, Features, Thought Leadership Articles, AV Scripts, Case Studies, Product Listings, Web Copy, Social Media Copy" href="#">copy/print</a>',
-             c: '<a title="Audio, AVs" href="#">media/digital</a>',
-             d: '<a title="Software Documentation, Reference Manuals" href="#">doc/technical</a>',
+             a: '<a title="Logos, Identities" href="#">art > branding</a>',
+             b: '<a title="Press Releases, Features, Thought Leadership Articles, AV Scripts, Case Studies, Product Listings, Web Copy, Social Media Copy" href="#">copy > print</a>',
+             c: '<a title="Audio, AVs" href="#">media > digital</a>',
+             d: '<a title="Software Documentation, Reference Manuals" href="#">doc > technical</a>',
              
          },
 
          PROJECTS: {
-             1: '<a title="A minimal notepad for heavy deadlines" href="#">app/flow</a> : HTML/ CSS/ JavaScript',
-             2: '<a title="A UX effect to simulate a human typing" href="#">UI/type</a> : JavaScript',
-             3: '<a title="A static website crafted with Jekyll, HTML5, CSS3 and Javascript" href="https://github.com/OSIRISagency/OSIRISagency.github.io">web/osiris</a> : Jekyll',
-             4: '<a title="A to-do list interface" href="apps/list">apps/list</a> : Flask, MySQL, jQuery, PythonAnywhere',
-             5: '<a title="A collaborative code compiler (Python, Java, C, C#, C++, Haskell, Perl, Ruby) built on Heroku and Firebase" href="apps/compile/">apps/compile</a> : Node.js, Firebase, Heroku',
-             6: '<a title="A collection of CSS3 effects" href="apps/float">UI/float</a> : jQuery',
-             7: '<a title="A static website crafted with Bootstrap, HTML5, CSS3 and JavaScript" href="https://github.com/353clothing/353clothing.github.io">web/353</a> : Bootstrap',
-             8: '<a title="An Android app that finds petrol stations and splits costs" href="#">apps/insight</a> : Android Studio, Google Maps API',
-             9: '<a title="A music interface for helping stay focused" href="apps/kyoto">apps/kyoto</a> : jQuery',
+             1: '<a title="A minimal notepad for heavy deadlines" href="#">app > flow</a> : • HTML • CSS • JavaScript',
+             2: '<a title="A UX effect to simulate a human typing" href="#">UI > type</a> : • JavaScript',
+             3: '<a title="A static website crafted with Jekyll, HTML5, CSS3 and Javascript" href="https://github.com/OSIRISagency/OSIRISagency.github.io">web > osiris</a> : • Jekyll',
+             4: '<a title="A to-do list interface" href="apps/list">apps > list</a> : • Flask • MySQL • jQuery • PythonAnywhere',
+             5: '<a title="A collaborative code compiler (Python, Java, C, C#, C++, Haskell, Perl, Ruby) built on Heroku and Firebase" href="apps/compile/">apps > compile</a> : • Node.js • Firebase • Heroku',
+             6: '<a title="A collection of CSS3 effects" href="apps/float">UI > float</a> : • jQuery',
+             7: '<a title="A static website crafted with Bootstrap, HTML5, CSS3 and JavaScript" href="https://github.com/353clothing/353clothing.github.io">web > 353</a> : • Bootstrap',
+             8: '<a title="An Android app that finds petrol stations and splits costs" href="#">apps > insight</a> : • Android Studio • Google Maps API',
+             9: '<a title="A music interface for helping stay focused" href="apps|kyoto">apps > kyoto</a> : • jQuery',
          },
         
-         CONTACT: ['<a class="item" href="mailto:' + a + '">' + a + "</a>", '<a class="item" href="https://api.whatsapp.com/send?phone=940766970959">WhatsApp</a>', '<a class="item" href="http://instagram.com/thatsparrow">Instagram</a>', '<a class="item" href="https://github.com/thatsparrow">GitHub</a>'],
-         LINKS: ['<a class="item" href="about/">About</a>','<a class="item" href="art/">Art</a>', '<a class="item" href="resume/">Résumé</a>'],
-         TOKENS: ['<a class="item" href="PGP.md">PGP</a>','<a class="item" href="LICENSE.md">License</a>', '<a class="item" href="REMINDER.md">Reminder</a>']
+         CONTACT: ['<a class="item" href="mailto:thatsparrow@protonmail.ch">E-mail</a>', '<a class="item" href="https://api.whatsapp.com/send?phone=940766970959">WhatsApp</a>', '<a class="item" href="http://instagram.com/thatsparrow">Instagram</a>', '<a class="item" href="https://github.com/thatsparrow">GitHub</a>'],
+  
+         EXTRA: ['<a class="item" href="PGP.md">PGP</a>','<a class="item" href="LICENSE.md">License</a>', '<a class="item" href="REMINDER.md">Reminder</a>']
      };
      return "<pre id='" + contentId + "'>" + JSON.convertToHumanReadableString(b, 2, window.innerHeight > window.innerWidth) + "</pre>"
  }

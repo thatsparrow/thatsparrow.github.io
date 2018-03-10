@@ -99,7 +99,7 @@ function compileContent() {
      var b = {
          NAME: "Jann Benjamin",
          TITLE: ["Candid Writer", "Agile Developer"],
-         LINKS: ['<a class="item" title="A man of mystery and charm whose charm is exceeded only by his mystery" href="about/">#about</a>','<a class="item" title="An ode to symmetry" href="art/">#art</a>', '<a class="item" title="A summary of my background and skills" href="resume/">#résumé</a>'],
+         LINKS: ['<a class="item" title="A man of mystery and charm whose charm is exceeded only by his mystery" href="about/">#about</a>','<a class="item" title="An ode to symmetry" href="art/">#art</a>', '<a class="item" title="A summary of my background and skills" href="#">#résumé</a>'],
          WORK: {
              position: ["Public Relations Executive", "Content Writer"],
              company: '<a title="A multinational media and digital marketing communications company" href="http://www.dentsuaegisnetwork.com/">Dentsu Aegis Network</a>',

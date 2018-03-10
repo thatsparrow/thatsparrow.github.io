@@ -97,25 +97,24 @@ function reloadContent() {
 function compileContent() {
      var a = "hc.liamnotorp/worrapstaht".split("").reverse().join("").replace("/", "@");
      var b = {
-         NAME: "JANN BENJAMIN",
+         NAME: "Jann Benjamin",
          TITLE: ["Candid Writer", "Agile Developer"],
-         LINKS: ['<a class="item" title="A man of mystery and charm whose charm is exceeded only by his mystery" href="about/">About</a>','<a class="item" title="An ode to symmetry" href="art/">Art</a>', '<a class="item" title="A summary of my background and skills" href="resume/">Résumé</a>'],
+         LINKS: ['<a class="item" title="A man of mystery and charm whose charm is exceeded only by his mystery" href="about/">#about</a>','<a class="item" title="An ode to symmetry" href="art/">#art</a>', '<a class="item" title="A summary of my background and skills" href="resume/">#résumé</a>'],
          WORK: {
              position: ["Public Relations Executive", "Content Writer"],
              company: '<a title="A multinational media and digital marketing communications company" href="http://www.dentsuaegisnetwork.com/">Dentsu Aegis Network</a>',
              location: "Colombo, Sri Lanka"
          },
                  PLAY: {
-             position: ["Co-Founder", "Software Developer"],
+             position: ["Co-Founder", "Project Lead"],
              company: '<a title="A software consultancy specialising in cross-platform development and analytics" href="http://osiris.agency">OSIRIS</a>',
              location: "Remote"
          },
          PORTFOLIO: {
-             a: '<a title="Logos, Identities" href="#">art > branding</a>',
+             a: '<a title="Logos, Identities, Prototypes, Typography" href="#">art > branding</a>',
              b: '<a title="Press Releases, Features, Thought Leadership Articles, AV Scripts, Case Studies, Product Listings, Web Copy, Social Media Copy" href="#">copy > print</a>',
-             c: '<a title="Audio, AVs" href="#">media > digital</a>',
-             d: '<a title="Software Documentation, Reference Manuals" href="#">doc > technical</a>',
-             
+             c: '<a title="Audio, AVs, CAD, " href="#">etc > assorted</a>',
+                          
          },
 
          PROJECTS: {
@@ -130,9 +129,7 @@ function compileContent() {
              9: '<a title="A music interface for helping stay focused" href="apps|kyoto">app > kyoto</a> : • jQuery',
          },
         
-         CONTACT: ['<a class="item" href="mailto:thatsparrow@protonmail.ch">E-mail</a>', '<a class="item" href="https://api.whatsapp.com/send?phone=940766970959">WhatsApp</a>', '<a class="item" href="http://instagram.com/thatsparrow">Instagram</a>', '<a class="item" href="https://github.com/thatsparrow">GitHub</a>'],
-  
-         EXTRA: ['<a class="item" href="PGP.md">PGP</a>','<a class="item" href="LICENSE.md">License</a>', '<a class="item" href="REMINDER.md">Reminder</a>']
+         CREDITS: ['<a class="item" href="PGP.md">PGP</a>', '<a class="item" href="REMINDER.md">Reminder</a>','1994-2018 jannbenjam.in&trade;']
      };
      return "<pre id='" + contentId + "'>" + JSON.convertToHumanReadableString(b, 2, window.innerHeight > window.innerWidth) + "</pre>"
  }

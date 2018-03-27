@@ -6,5 +6,4 @@ Disallow: /resume/
 Disallow: /apps/
 Disallow: /blog/
 
-User-agent: Googlebot-Image
-Disallow: / 
+

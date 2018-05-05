@@ -98,14 +98,14 @@ function compileContent() {
      var a = "hc.liamnotorp/worrapstaht".split("").reverse().join("").replace("/", "@");
      var b = {
          NAME: "Jann Benjamin",
-         TITLE: ["/Candid Writer /Agile Developer"],
+         TITLE: ["Ϧ Candid Writer  Ϩ Agile Developer"],
          LINKS: ['<a class="item" title="1994 - Present" href="about/">About</a>','<a class="item" title="An ode to symmetry" href="art/">Art</a>','<a class="item" title="A compilation of tunes by sparrow 鳥" href="music/">Music</a>','<a class="item" title="A summary of my background and skills" href="#">Résumé</a>'],
          WORK: {
              position: ["PR Executive"],
              company: '<a title="A multinational media and digital marketing communications company" href="http://www.dentsuaegisnetwork.com/">Dentsu Aegis Network</a>',
              location: "Colombo, Sri Lanka"
          },
-                 PLAY: {
+             PLAY: {
              position: ["Co-Founder", "Project Lead"],
              company: '<a title="A software consultancy specialising in cross-platform development and analytics" href="http://osiris.agency">OSIRIS</a>',
              location: "Remote"
@@ -118,15 +118,15 @@ function compileContent() {
          },
 
          PROJECTS: {
-             1: '<a title="A minimal notepad for heavy deadlines" href="compiling">app > flow</a> : • HTML • CSS • JavaScript',
-             2: '<a title="A UX effect to simulate a human typing" href="compiling">UX > type</a> : • JavaScript',
-             3: '<a title="A static website crafted with Jekyll, HTML5, CSS3 and Javascript" href="http://osiris.agency">web > osiris</a> : • Jekyll',
-             4: '<a title="A to-do list interface" href="compiling">app > list</a> : • Flask • MySQL • jQuery • PythonAnywhere',
-             5: '<a title="A collaborative code compiler (Python, Java, C, C#, C++, Haskell, Perl, Ruby) built on Heroku and Firebase" href="apps/compile">app > compile</a> : • Node.js • Firebase • Heroku',
-             6: '<a title="A collection of CSS3 effects" href="apps/float">UI > float</a> : • CSS • jQuery',
-             7: '<a title="A static website crafted for a boutique apparel company" href="http://353clothing.com">web > 353</a> : • Bootstrap • Slack',
-             8: '<a title="An Android app that finds petrol stations and splits costs" href="compiling">app > insight</a> : • Android Studio • Google Maps API',
-             9: '<a title="A series of number theory problems hosted on projecteuler.net" href="https://github.com/thatsparrow/euler">code > euler</a> : • Java • Python • Mathematica • Haskell',
+             1: '<a title="A minimal notepad for heavy deadlines" href="compiling">app > flow</a> | • HTML • CSS • JavaScript',
+             2: '<a title="A UX effect to simulate a human typing" href="apps/type">AI > type</a> | • JavaScript',
+             3: '<a title="A static website crafted with Jekyll, HTML5, CSS3 and Javascript" href="http://osiris.agency">web > osiris</a> | • Jekyll',
+             4: '<a title="A to-do list interface" href="compiling">app > list</a> | • Flask • MySQL • jQuery • PythonAnywhere',
+             5: '<a title="A collaborative code compiler (Python, Java, C, C#, C++, Haskell, Perl, Ruby) built on Heroku and Firebase" href="apps/compile">app > compile</a> | • Node.js • Firebase • Heroku',
+             6: '<a title="A collection of CSS3 effects" href="apps/float">UI > float</a> | • CSS • jQuery',
+             7: '<a title="A static website crafted for a boutique apparel company" href="http://353clothing.com">web > 353</a> | • Bootstrap • Slack',
+             8: '<a title="An Android app that finds petrol stations and splits costs" href="compiling">app > insight</a> | • Android Studio • Google Maps API',
+             9: '<a title="A series of number theory problems hosted on projecteuler.net" href="https://github.com/thatsparrow/euler">code > euler</a> | • Java • Python • Mathematica • Haskell',
          },
         
          CREDITS: ['<a class="item" href="PGP.md">PGP</a>', '<a class="item" href="REMINDER.md">Reminder</a>','1994-Present | jannbenjam.in&trade;']

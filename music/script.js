@@ -14,21 +14,21 @@ function secondsTimeSpanToHMS(s) {
 };
 
 songs = [{
-		src: "ask.mp3",
+		src: "/ask.mp3",
 		title: "Serenity",
 		artist: "sparrow 鳥",
 		coverart: "https://i.pinimg.com/originals/ea/8b/5f/ea8b5f17dbe3090dd3f99a8ac77a9af5.gif"
 	},
 
 	{
-		src: "super.mp3",
+		src: "/super.mp3",
 		title: "Mind Control",
 		artist: "sparrow 鳥",
 		coverart: "https://thumbs.gfycat.com/KindSnappyBison-size_restricted.gif"
 	},
 
 	{
-		src: "",
+		src: "/",
 		title: "Album coming out soon!",
 		artist: ":)",
 		coverart: "http://static.djbooth.net/pics-artist/andy-mineo.jpg"

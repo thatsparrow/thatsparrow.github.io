@@ -102,22 +102,24 @@ function compileContent() {
          LINKS: ['<a class="item" title="1994 - Present" href="about/">About</a>','<a class="item" title="An ode to symmetry" href="art/">Art</a>','<a class="item" title="A compilation of tunes by sparrow 鳥" href="music/">Music</a>','<a class="item" title="A summary of my background and skills" href="#">Résumé</a>'],
               
          PORTFOLIO: {
-             a: '<a title="Logos, Identities, Prototypes, Typography" href="compiling">art > branding</a>',
-             b: '<a title="Press Releases, Features, Thought Leadership Articles, AV Scripts, Case Studies, Product Listings, Web Copy, Social Media Copy" href="compiling">copy > print</a>',
-             c: '<a title="Audio, AVs, CAD" href="compiling">etc > assorted</a>',
+             1: '<a title="Logos, Identities, Prototypes, Typography" href="compiling">art > branding</a>',
+             2: '<a title="Press Releases, Features, Thought Leadership Articles, AV Scripts, Case Studies, Product Listings, Web Copy, Social Media Copy" href="compiling">copy > print</a>',
+             3: '<a title="Audio, AVs, CAD" href="compiling">etc > assorted</a>',
                           
          },
 
          PROJECTS: {
-             1: '<a title="A minimal notepad for heavy deadlines" href="compiling">app > flow</a> : • HTML : • CSS : • JavaScript',
-             2: '<a title="A UX effect to simulate a human typing" href="apps/type">AI > type</a> : • JavaScript',
-             3: '<a title="A static website crafted with Jekyll, HTML5, CSS3 and Javascript" href="http://osiris.agency">web > osiris</a> : • Jekyll',
-             4: '<a title="A to-do list interface" href="compiling">app > list</a> : • Flask : • MySQL : • jQuery : • PythonAnywhere',
-             5: '<a title="A collaborative code compiler (Python, Java, C, C#, C++, Haskell, Perl, Ruby) built on Heroku and Firebase" href="apps/compile">app > compile</a> : • Node.js : • Firebase : • Heroku',
-             6: '<a title="A collection of CSS3 effects" href="apps/float">UI > float</a> : • CSS : • jQuery',
-             7: '<a title="A static website crafted for a boutique apparel company" href="http://353clothing.com">web > 353</a> : • Bootstrap : • Slack',
-             8: '<a title="An Android app that finds petrol stations and splits costs" href="compiling">app > insight</a> : • Android Studio : • Google Maps API',
-             9: '<a title="A series of number theory problems hosted on projecteuler.net" href="https://github.com/thatsparrow/euler">code > euler</a> : • Java : • Python : • Mathematica : • Haskell',
+             a: '<a title="A minimal notepad for heavy deadlines" href="compiling">app > flow</a> : • HTML : • CSS : • JavaScript',
+	     b: '<a title="A UX effect to simulate a human typing" href="apps/type">UX > type</a> : • JavaScript',
+             c: '<a title="A chatbot using Natural Language Processing (NLP)" href="apps/type">AI > chatbot</a> : • Python : • NLTK',
+             d: '<a title="A static website crafted with Jekyll, HTML5, CSS3 and Javascript" href="http://osiris.agency">web > osiris</a> : • Jekyll',
+             e: '<a title="A to-do list interface" href="compiling">app > list</a> : • Flask : • MySQL : • jQuery : • PythonAnywhere',
+             f: '<a title="A collaborative code compiler (Python, Java, C, C#, C++, Haskell, Perl, Ruby) built on Heroku and Firebase" href="apps/compile">app > compile</a> : • Node.js : • Firebase : • Heroku',
+             g: '<a title="A collection of CSS3 effects" href="apps/float">UI > float</a> : • CSS : • jQuery',
+             h: '<a title="A static website crafted for a boutique apparel company" href="http://353clothing.com">web > 353</a> : • Bootstrap : • Slack',
+             i: '<a title="An Android app that finds petrol stations and splits costs" href="compiling">app > insight</a> : • Java : • Android Studio : • Google Maps API',
+             j: '<a title="A series of number theory problems hosted on projecteuler.net" href="https://github.com/thatsparrow/euler">code > euler</a> : • Java : • Python : • Mathematica : • Haskell',
+             k: '<a title="Technical documentation on the UNIX operating system" href="https://github.com/thatsparrow/euler">tutorial > UNIX</a> : • HTML : • CSS : • LaTeX',
          },
         
          CREDITS: ['<a class="item" href="PGP.md">PGP</a>', '<a class="item" href="REMINDER.md">Reminder</a>','Crafted with &#127866;']

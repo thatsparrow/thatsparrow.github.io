@@ -99,7 +99,7 @@ function compileContent() {
      var b = {
          NAME: ["Jann Benjamin"],
          TITLE: ["Candid Writer", "Agile Developer"],
-         LINKS: ['<a class="item" title="1994 - Present" href="about/">About</a>','<a class="item" title="An ode to symmetry" href="art/">Art</a>','<a class="item" title="A compilation of tunes by sparrow 鳥" href="music/">Music</a>','<a class="item" title="A summary of my background and skills" href="#">Résumé</a>'],
+         LINKS: ['<a class="item" title="1994 - Present" href="about/">About</a>','<a class="item" title="An ode to symmetry" href="art/">Art</a>','<a class="item" title="A compilation of tunes by sparrow 鳥" href="music/">Music</a>','<a class="item" title="A summary of my background and skills" href="resume">Résumé</a>'],
               
          PORTFOLIO: {
              1: '<a title="Logos, Identities, Prototypes, Typography" href="compiling">art > branding</a>',
@@ -109,17 +109,17 @@ function compileContent() {
          },
 
          PROJECTS: {
-             a: '<a title="A minimal notepad for heavy deadlines" href="compiling">app > flow</a> : • HTML : • CSS : • JavaScript',
+             a: '<a title="A minimal notepad for heavy deadlines" href="apps/flow">app > flow</a> : • HTML : • CSS : • JavaScript',
 	     b: '<a title="A UX effect to simulate a human typing" href="apps/type">UX > type</a> : • JavaScript',
-             c: '<a title="A chatbot using Natural Language Processing (NLP)" href="apps/type">AI > chatbot</a> : • Python : • NLTK',
+             c: '<a title="A chatbot using Natural Language Processing (NLP)" href="https://github.com/thatsparrow/pulse">AI > pulse</a> : • Python : • NLTK',
              d: '<a title="A static website crafted with Jekyll, HTML5, CSS3 and Javascript" href="http://osiris.agency">web > osiris</a> : • Jekyll',
              e: '<a title="A to-do list interface" href="compiling">app > list</a> : • Flask : • MySQL : • jQuery : • PythonAnywhere',
              f: '<a title="A collaborative code compiler (Python, Java, C, C#, C++, Haskell, Perl, Ruby) built on Heroku and Firebase" href="apps/compile">app > compile</a> : • Node.js : • Firebase : • Heroku',
              g: '<a title="A collection of CSS3 effects" href="apps/float">UI > float</a> : • CSS : • jQuery',
              h: '<a title="A static website crafted for a boutique apparel company" href="http://353clothing.com">web > 353</a> : • Bootstrap : • Slack',
-             i: '<a title="An Android app that finds petrol stations and splits costs" href="compiling">app > insight</a> : • Java : • Android Studio : • Google Maps API',
+             i: '<a title="An app that finds petrol stations and splits costs" href="compiling">app > insight</a> : • Java : • Android Studio : • Google Maps API',
              j: '<a title="A series of number theory problems hosted on projecteuler.net" href="https://github.com/thatsparrow/euler">code > euler</a> : • Java : • Python : • Mathematica : • Haskell',
-             k: '<a title="Technical documentation on the UNIX operating system" href="https://github.com/thatsparrow/euler">tutorial > UNIX</a> : • HTML : • CSS : • LaTeX',
+             k: '<a title="A guide on the UNIX operating system" href="https://github.com/thatsparrow/euler">doc > UNIX</a> : • HTML : • CSS : • LaTeX',
          },
         
          CREDITS: ['<a class="item" href="PGP.md">PGP</a>', '<a class="item" href="REMINDER.md">Reminder</a>','Crafted with &#127866;']

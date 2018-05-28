@@ -14,17 +14,17 @@ function secondsTimeSpanToHMS(s) {
 };
 
 songs = [{
-		src: "ask.mp3",
+		src: "https://jannbenjam.in/music/ask.mp3",
 		title: "Serenity",
 		artist: "sparrow 鳥",
-		coverart: "1.gif"
+		coverart: "https://jannbenjam.in/music/1.gif"
 	},
 
 	{
-		src: "super.mp3",
+		src: "https://jannbenjam.in/music/super.mp3",
 		title: "Mind Control",
 		artist: "sparrow 鳥",
-		coverart: "2.gif"
+		coverart: "https://jannbenjam.in/music/2.gif"
 	},
 
 	{

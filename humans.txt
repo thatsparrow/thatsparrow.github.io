@@ -3,8 +3,7 @@ This site was built by a human named Jann at a remote site on Earth. It's update
 /* AUTHOR */   
 
         Name: Jann Benjamin                     
-        Contact: thatsparrow [at] protonmail.ch                           
-        From: Mount Lavinia, Sri Lanka                                                        
+        Contact: thatsparrow [at] protonmail.ch                                                                           
 
 /* THANKS */
 

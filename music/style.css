@@ -56,21 +56,20 @@
 
   h1 {
     position: relative;
-    z-index: 2;
+    z-index: 3;
     color: rgba(128, 128, 0, 0.8);
     font-weight: 900;
-    font-size: 5em;
+    font-size: 4em;
     font-family: 'Quicksand', sans-serif;
   }
 
   h2 {
     position: relative;
-    z-index: 2;
-    color: white;
-    font-weight: 300;
-    font-size: 1em;
-    margin-bottom: 50px;
-    margin-top: -10px;
+    z-index: 3;
+    color: rgba(128, 128, 0, 0.8);
+    font-weight: 700;
+    font-size: 3em;
+    font-family: 'Quicksand', sans-serif;
   }
 
   #player {

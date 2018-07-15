@@ -14,24 +14,24 @@ function secondsTimeSpanToHMS(s) {
 };
 
 songs = [{
-		src: "https://jannbenjam.in/music/ask.mp3",
-		title: "Serenity",
-		artist: "sparrow 鳥",
-		coverart: "https://jannbenjam.in/music/1.gif"
+		src: "https://jannbenjam.in/music/audio/3.mp3",
+		title: "Special Herbs EP",
+		artist: "Jann Benjamin",
+		coverart: "https://jannbenjam.in/music/3.gif"
 	},
 
 	{
-		src: "https://jannbenjam.in/music/super.mp3",
+		src: "https://jannbenjam.in/music/audio/2.mp3",
 		title: "Mind Control",
-		artist: "sparrow 鳥",
+		artist: "Jann Benjamin",
 		coverart: "https://jannbenjam.in/music/2.gif"
 	},
 
 	{
-		src: "/",
-		title: "Album coming out soon!",
-		artist: ":)",
-		coverart: "http://static.djbooth.net/pics-artist/andy-mineo.jpg"
+		src: "https://jannbenjam.in/music/audio/1.mp3",
+		title: "Serenity",
+		artist: "Jann Benjamin",
+		coverart: "https://jannbenjam.in/music/1.gif"
 	}
 ];
 

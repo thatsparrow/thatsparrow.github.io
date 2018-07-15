@@ -103,7 +103,7 @@ function compileContent() {
               
          PORTFOLIO: {
              1: '<a title="Logos, Identities, Prototypes, Typography" href="branding">art > branding</a>',
-             2: '<a title="Press Releases, Features, Thought Leadership Articles, AV Scripts, Case Studies, Product Listings, Web Copy, Social Media Copy" href="print">copy > print</a>',
+             2: '<a title="Press Releases, Features, Thought Leadership Articles, AV Scripts, Case Studies, Product Listings, Web Copy, Social Media Copy" href="print">copy > print/text</a>',
              3: '<a title="Audio, AVs, CAD" href="assorted">etc > assorted</a>',
                           
          },
@@ -119,7 +119,7 @@ function compileContent() {
              h: '<a title="A static website crafted for a boutique apparel company" href="http://353clothing.com">web > 353</a> : • Bootstrap : • Slack',
              i: '<a title="A mobile app that finds petrol stations and splits costs" href="compiling">app > insight</a> : • Java : • Android Studio : • Google Maps API',
              j: '<a title="A series of number theory problems hosted on projecteuler.net" href="https://github.com/thatsparrow/euler">code > euler</a> : • Java : • Python : • Mathematica : • Haskell',
-             k: '<a title="A technical guide on the UNIX operating system" href="https://github.com/thatsparrow/euler">doc > UNIX</a> : • HTML : • CSS : • LaTeX',
+             k: '<a title="A technical guide on the UNIX operating system" href="apps/unix">doc > UNIX</a> : • HTML : • CSS : • LaTeX',
          },
         
          CREDITS: ['<a class="item" href="PGP.md">PGP</a>', '<a class="item" href="REMINDER.md">Reminder</a>','Crafted with &#127866;']

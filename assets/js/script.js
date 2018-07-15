@@ -98,13 +98,13 @@ function compileContent() {
      var a = "hc.liamnotorp/worrapstaht".split("").reverse().join("").replace("/", "@");
      var b = {
          NAME: ["Jann Benjamin"],
-         TITLE: ["Copywriter", "Full-Stack Developer"],
+         TITLE: ["Copywriter/Illustrator", "Full-Stack Developer"],
          LINKS: ['<a class="item" title="1994 - Present" href="about/">About</a>','<a class="item" title="An ode to symmetry" href="art/">Art</a>','<a class="item" title="A compilation of instrumentals and mixtapes" href="music/">Music</a>','<a class="item" title="A summary of my background and skills" href="resume">Résumé</a>'],
               
          PORTFOLIO: {
              1: '<a title="Logos, Identities, Prototypes, Typography" href="branding">art > branding</a>',
-             2: '<a title="Press Releases, Features, Thought Leadership Articles, AV Scripts, Case Studies, Product Listings, Web Copy, Social Media Copy" href="print">copy > print/text</a>',
-             3: '<a title="Audio, AVs, CAD" href="assorted">etc > assorted</a>',
+             2: '<a title="Press Releases, Features, Thought Leadership Articles, AV Scripts, Case Studies, Product Listings, Web Copy, Social Media Copy" href="#">copy > print/text</a>',
+             3: '<a title="Audio, AVs, CAD" href="#">etc > assorted</a>',
                           
          },
 

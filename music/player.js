@@ -16,7 +16,7 @@ function secondsTimeSpanToHMS(s) {
 songs = [{
 		src: "https://jannbenjam.in/music/audio/3.mp3",
 		title: "Special Herbs EP",
-		artist: "Jann Benjamin",
+		artist: "[1] Gucci Mane – Pillz<br>[2] Gucci Mane - Im Da Shit<br>[3] DJ Smokey - I Can Get Ignorant Part 2<br>[4] Gucci Mane - I Get The Bag feat. Migos<br>[5] Lil Debbie – Break It Down",
 		coverart: "https://jannbenjam.in/music/3.gif"
 	},
 

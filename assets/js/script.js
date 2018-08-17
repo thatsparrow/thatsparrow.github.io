@@ -98,12 +98,12 @@ function compileContent() {
      var a = "hc.liamnotorp/worrapstaht".split("").reverse().join("").replace("/", "@");
      var b = {
          NAME: ["Jann Benjamin"],
-         TITLE: ["Copywriter/Illustrator", "Full-Stack Developer"],
+         ALIASES: ["ජන්", "ジアン", "жэнь", "&#x1f426;"],
          LINKS: ['<a class="item" title="1994 - Present" href="about/">About</a>','<a class="item" title="An ode to symmetry" href="art/">Art</a>','<a class="item" title="A compilation of instrumentals and mixtapes" href="music/">Music</a>','<a class="item" title="A summary of my background and skills" href="resume">Résumé</a>'],
               
          PORTFOLIO: {
              1: '<a title="Logos, Identities, Prototypes, Typography" href="branding">art > branding</a>',
-             2: '<a title="Press Releases, Features, Thought Leadership Articles, AV Scripts, Case Studies, Product Listings, Web Copy, Social Media Copy" href="print">copy > print/text</a>',
+             2: '<a title="Press Releases, Features, Thought Leadership Articles, AV Scripts, Case Studies, Product Listings, Web Copy, Social Media Copy" href="print">print > corporate/press</a>',
              3: '<a title="Audio, AVs, CAD" href="#">etc > assorted</a>',
                           
          },
@@ -114,12 +114,13 @@ function compileContent() {
              c: '<a title="A chatbot using Natural Language Processing (NLP)" href="https://github.com/thatsparrow/pulse">AI > pulse</a> : • Python : • NLTK',
              d: '<a title="A static website crafted with Jekyll, HTML5, CSS3 and Javascript" href="http://osiris.agency">web > osiris</a> : • Jekyll',
              e: '<a title="A to-do list interface" href="compiling">app > list</a> : • Flask : • MySQL : • jQuery : • PythonAnywhere',
-             f: '<a title="A collaborative code compiler (Python, Java, C, C#, C++, Haskell, Perl, Ruby) built on Heroku and Firebase" href="apps/compile">app > compile</a> : • Node.js : • Firebase : • Heroku',
+             f: '<a title="A collaborative code compiler (Python, Java, C, C#, C++, Haskell, Perl, Ruby) built on Heroku and Firebase" href="apps/compile">cloud > compile</a> : • Node.js : • Firebase : • Heroku',
              g: '<a title="A collection of CSS3 effects" href="apps/float">UI > float</a> : • CSS : • jQuery',
              h: '<a title="A static website crafted for a boutique apparel company" href="https://github.com/353clothing/353clothing.github.io">web > 353</a> : • Bootstrap : • Slack',
              i: '<a title="A mobile app that finds petrol stations and splits costs" href="compiling">app > insight</a> : • Java : • Android Studio : • Google Maps API',
              j: '<a title="A series of number theory problems hosted on projecteuler.net" href="https://github.com/thatsparrow/euler">code > euler</a> : • Java : • Python : • Mathematica : • Haskell',
              k: '<a title="A technical guide on the UNIX operating system" href="apps/unix">doc > UNIX</a> : • HTML : • CSS : • LaTeX',
+             l: '<a title="A collection of useful scripts to automate your life" href="apps/unix">code > automate</a> : • Bash : • Fish',
          },
         
          CREDITS: ['<a class="item" href="PGP.md">PGP</a>', '<a class="item" href="REMINDER.md">Reminder</a>','Crafted with &#127866;']

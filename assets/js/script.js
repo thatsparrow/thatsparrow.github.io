@@ -103,7 +103,7 @@ function compileContent() {
               
          PORTFOLIO: {
              1: '<a title="Logos, Identities, Prototypes, Typography" href="branding">art > branding</a>',
-             2: '<a title="Press Releases, Features, Thought Leadership Articles, AV Scripts, Case Studies, Product Listings, Web Copy, Social Media Copy" href="print">print > corporate/press</a>',
+             2: '<a title="Press Releases, Features, Thought Leadership Articles, AV Scripts, Case Studies, Product Listings, Web Copy, Social Media Copy" href="print">copy > corporate + press</a>',
              3: '<a title="Audio, AVs, CAD" href="#">etc > assorted</a>',
                           
          },
@@ -117,10 +117,11 @@ function compileContent() {
              f: '<a title="A collaborative code compiler (Python, Java, C, C#, C++, Haskell, Perl, Ruby) built on Heroku and Firebase" href="apps/compile">cloud > compile</a> : • Node.js : • Firebase : • Heroku',
              g: '<a title="A collection of CSS3 effects" href="apps/float">UI > float</a> : • CSS : • jQuery',
              h: '<a title="A static website crafted for a boutique apparel company" href="https://github.com/353clothing/353clothing.github.io">web > 353</a> : • Bootstrap : • Slack',
-             i: '<a title="A mobile app that finds petrol stations and splits costs" href="compiling">app > insight</a> : • Java : • Android Studio : • Google Maps API',
-             j: '<a title="A series of number theory problems hosted on projecteuler.net" href="https://github.com/thatsparrow/euler">code > euler</a> : • Java : • Python : • Mathematica : • Haskell',
+             i: '<a title="A mobile app that finds petrol stations and splits costs" href="compiling">app > insight</a> : • Java : • Google Maps API',
+             j: '<a title="A series of number theory problems hosted on projecteuler.net" href="https://github.com/thatsparrow/euler">code > euler</a> : • C : • C++ : • Java : • Python + 3 more',
              k: '<a title="A technical guide on the UNIX operating system" href="apps/unix">doc > UNIX</a> : • HTML : • CSS : • LaTeX',
-             l: '<a title="A collection of useful scripts to automate your life" href="apps/unix">code > automate</a> : • Bash : • Fish',
+             l: '<a title="A collection of useful shell scripts to automate your life" href="https://github.com/thatsparrow/scripts">code > automate</a> : • Bash : • Fish',
+             l: '<a title="A collection of useful shell scripts to automate your life" href="apps/kepler">code > kepler</a> : • JavaScript',
          },
         
          CREDITS: ['<a class="item" href="PGP.md">PGP</a>', '<a class="item" href="REMINDER.md">Reminder</a>','Crafted with &#127866;']

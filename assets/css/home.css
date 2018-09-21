@@ -9,11 +9,6 @@
 
 body {
 	background-color: white;
-	background-image: url("https://jannbenjam.in/assets/img/home.png"); no-repeat center center fixed; 
-	  -webkit-background-size: cover;
-	  -moz-background-size: cover;
-	  -o-background-size: cover;
-	background-size: cover;
 	color: #696969;
 	font-family: 'Quicksand', sans-serif;
 	font-size: 13px;
@@ -21,7 +16,7 @@ body {
 
 .value {
 	color: #808000;
-    font-family: 'Quicksand', sans-serif;
+        font-family: 'Quicksand', sans-serif;
 	font-size: 13px;
 	padding: 2px;	
 }

@@ -102,26 +102,26 @@ function compileContent() {
          LINKS: ['<a class="item" title="1994 - Present" href="about/">About</a>','<a class="item" title="An ode to symmetry" href="art/">Art</a>','<a class="item" title="A compilation of instrumentals and mixtapes" href="music/">Music</a>','<a class="item" title="A summary of my background and skills" href="resume">Résumé</a>'],
               
          PORTFOLIO: {
-             1: '<a title="Logos, Identities, Prototypes, Typography" href="branding">art > branding</a>',
-             2: '<a title="Press Releases, Features, Thought Leadership Articles, AV Scripts, Case Studies, Product Listings, Web Copy, Social Media Copy" href="print">copy > corporate + press</a>',
-             3: '<a title="Audio, AVs, CAD" href="#">etc > assorted</a>',
+             1: '<a title="Logos + Wireframes + Typography" href="branding">BRANDING/CAD</a>',
+             2: '<a title="Press Releases + Features + Thought Leadership Articles + AV Scripts + Case Studies + Product Listings + Web Copy + Social Media Copy" href="print">PRINT</a>',
+             3: '<a title="Audio + AVs + CAD" href="#">VIDEO</a>',
                           
          },
 
          PROJECTS: {
-             a: '<a title="A minimal notepad for heavy deadlines" href="apps/flow">app > flow</a> : • HTML : • CSS : • JavaScript',
-	         b: '<a title="A UX effect to simulate a human typing" href="apps/type">UX > type</a> : • JavaScript',
-             c: '<a title="A chatbot using Natural Language Processing (NLP)" href="https://github.com/thatsparrow/pulse">AI > pulse</a> : • Python : • NLTK',
-             d: '<a title="A static website crafted with Jekyll, HTML5, CSS3 and Javascript" href="http://osiris.agency">web > osiris</a> : • Jekyll',
-             e: '<a title="A to-do list interface" href="compiling">app > list</a> : • Flask : • MySQL : • jQuery : • PythonAnywhere',
-             f: '<a title="A collaborative code compiler (Python, Java, C, C#, C++, Haskell, Perl, Ruby) built on Heroku and Firebase" href="apps/compile">cloud > compile</a> : • Node.js : • Firebase : • Heroku',
-             g: '<a title="A collection of CSS3 effects" href="apps/float">UI > float</a> : • CSS : • jQuery',
-             h: '<a title="A static website crafted for a boutique apparel company" href="https://github.com/353clothing/353clothing.github.io">web > 353</a> : • Bootstrap : • Slack',
-             i: '<a title="A mobile app that finds petrol stations and splits costs" href="compiling">app > insight</a> : • Java : • Google Maps API',
-             j: '<a title="A series of number theory problems hosted on projecteuler.net" href="https://github.com/thatsparrow/euler">code > euler</a> : • C : • C++ : • Java : • Python + 3 more',
-             k: '<a title="A technical guide on the UNIX operating system" href="apps/unix">doc > UNIX</a> : • HTML : • CSS : • LaTeX',
-             l: '<a title="A collection of useful shell scripts to automate your life" href="https://github.com/thatsparrow/scripts">code > automate</a> : • Bash : • Fish',
-             l: '<a title="A collection of useful shell scripts to automate your life" href="apps/kepler">code > kepler</a> : • JavaScript',
+             a: '<a title="A minimal notepad for heavy deadlines" href="apps/flow">FLOW » web-app</a> : • HTML : • CSS : • JavaScript',
+	         b: '<a title="A UX effect to simulate a human typing" href="apps/type">TYPE » AI</a> : • JavaScript',
+             c: '<a title="A few chatbot implementations via NLP" href="https://github.com/thatsparrow/pulse">PULSE » AI</a> : • Python : • NLTK',
+             d: '<a title="A static website crafted with Jekyll, HTML5, CSS3 and Javascript" href="http://osiris.agency">OSIRIS » site</a> : • Jekyll',
+             e: '<a title="A to-do list interface" href="compiling">LIST » web-app</a> : • Flask : • MySQL : • jQuery : • PythonAnywhere',
+             f: '<a title="A collaborative code compiler (Python, Java, C, C#, C++, Haskell, Perl, Ruby) built on Heroku and Firebase" href="apps/compile">COMPILE » web-app</a> : • Node.js : • Firebase : • Heroku',
+             g: '<a title="A collection of CSS3 effects" href="apps/float">FLOAT » ui/ux</a> : • CSS : • jQuery',
+             h: '<a title="A static website crafted for a boutique apparel company" href="https://github.com/353clothing/353clothing.github.io">3.5.3™ » site</a> : • Bootstrap : • Slack',
+             i: '<a title="A mobile app that finds petrol stations and splits costs" href="compiling">INSIGHT » mobile-app</a> : • Java : • Google Maps API',
+             j: '<a title="A series of number theory problems hosted on projecteuler.net" href="https://github.com/thatsparrow/euler">EULER » code</a> : • C : • C++ : • Java : • Python + 3 more',
+             k: '<a title="A technical guide on the UNIX operating system" href="apps/unix">UNIX » doc</a> : • HTML : • CSS : • LaTeX',
+             l: '<a title="A few shell scripts to automate your life" href="https://github.com/thatsparrow/scripts">AUTOMATE > scripts</a> : • Bash : • Fish',
+             l: '<a title="An al " href="apps/kepler">KEPLER » algorithm</a> : • JavaScript',
          },
         
          CREDITS: ['<a class="item" href="PGP.md">PGP</a>', '<a class="item" href="REMINDER.md">Reminder</a>','Crafted with &#127866;']

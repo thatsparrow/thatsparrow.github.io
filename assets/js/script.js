@@ -99,29 +99,29 @@ function compileContent() {
      var b = {
          NAME: ["Jann Benjamin"],
          ALIASES: ["ජන්", "ジアン", "жэнь", "&#x1f426;"],
-         LINKS: ['<a class="item" title="1994 - Present" href="about/">About</a>','<a class="item" title="An ode to symmetry" href="art/">Art</a>','<a class="item" title="A compilation of instrumentals and mixtapes" href="music/">Music</a>','<a class="item" title="A summary of my background and skills" href="resume">Résumé</a>'],
+         LINKS: ['<a class="item" title=":)" href="about/">About</a>','<a class="item" title="An ode to symmetry" href="art/">Art</a>','<a class="item" title="A compilation of instrumentals and mixtapes" href="music/">Music</a>','<a class="item" title="A summary of my background and skills" href="resume">Résumé</a>'],
               
          PORTFOLIO: {
-             1: '<a title="Logos + Wireframes + Typography" href="branding">BRANDING/CAD</a>',
-             2: '<a title="Press Releases + Features + Thought Leadership Articles + AV Scripts + Case Studies + Product Listings + Web Copy + Social Media Copy" href="print">PRINT</a>',
-             3: '<a title="Audio + AVs + CAD" href="#">VIDEO</a>',
+             1: '<a title="Logos && Typography && Web && CAD" href="branding">BRANDING/CAD</a>',
+             2: '<a title="Press Releases && Features && Thought Leadership && AV Scripts && Case Studies && Product Listings && Web Copy && Social Media Copy" href="print">PRINT</a>',
+             3: '<a title="Customer Success Stories && ADs" href="#">VIDEO</a>',
                           
          },
 
          PROJECTS: {
              a: '<a title="A minimal notepad for heavy deadlines" href="apps/flow">FLOW » web-app</a> : • HTML : • CSS : • JavaScript',
-	         b: '<a title="A UX effect to simulate a human typing" href="apps/type">TYPE » AI</a> : • JavaScript',
-             c: '<a title="A few chatbot implementations via NLP" href="https://github.com/thatsparrow/pulse">PULSE » AI</a> : • Python : • NLTK',
-             d: '<a title="A static website crafted with Jekyll, HTML5, CSS3 and Javascript" href="http://osiris.agency">OSIRIS » site</a> : • Jekyll',
+	         b: '<a title="For simulating a human typing on-screen" href="apps/type">TYPE » AI</a> : • JavaScript',
+             c: '<a title="A few NLP chatbot implementations written in Python" href="https://github.com/thatsparrow/pulse">PULSE » AI</a> : • Python : • NLTK',
+             d: '<a title="A static website for a software development co-op" href="http://osiris.agency">OSIRIS » site</a> : • Jekyll',
              e: '<a title="A to-do list interface" href="compiling">LIST » web-app</a> : • Flask : • MySQL : • jQuery : • PythonAnywhere',
              f: '<a title="A collaborative code compiler (Python, Java, C, C#, C++, Haskell, Perl, Ruby) built on Heroku and Firebase" href="apps/compile">COMPILE » web-app</a> : • Node.js : • Firebase : • Heroku',
              g: '<a title="A collection of CSS3 effects" href="apps/float">FLOAT » ui/ux</a> : • CSS : • jQuery',
-             h: '<a title="A static website crafted for a boutique apparel company" href="https://github.com/353clothing/353clothing.github.io">3.5.3™ » site</a> : • Bootstrap : • Slack',
-             i: '<a title="A mobile app that finds petrol stations and splits costs" href="compiling">INSIGHT » mobile-app</a> : • Java : • Google Maps API',
-             j: '<a title="A series of number theory problems hosted on projecteuler.net" href="https://github.com/thatsparrow/euler">EULER » code</a> : • C : • C++ : • Java : • Python + 3 more',
-             k: '<a title="A technical guide on the UNIX operating system" href="apps/unix">UNIX » doc</a> : • HTML : • CSS : • LaTeX',
+             h: '<a title="A static website for an apparel boutique" href="https://github.com/353clothing/353clothing.github.io">3.5.3™ » site</a> : • Bootstrap : • Slack',
+             i: '<a title="An Android app that finds petrol stations and splits costs" href="compiling">INSIGHT » mobile-app</a> : • Java : • Google Maps API',
+             j: '<a title="A series of number theory problems and their solutions" href="https://github.com/thatsparrow/euler">EULER » code</a> : • C : • C++ : • Java : • Python + 3 more',
+             k: '<a title="Technical documentation on the UNIX operating system" href="apps/unix">UNIX » doc</a> : • HTML : • CSS : • LaTeX',
              l: '<a title="A few shell scripts to automate your life" href="https://github.com/thatsparrow/scripts">AUTOMATE > scripts</a> : • Bash : • Fish',
-             l: '<a title="An al " href="apps/kepler">KEPLER » algorithm</a> : • JavaScript',
+             l: '<a title="A two-body simulation written in JavaScript" href="apps/kepler">KEPLER » algorithm</a> : • JavaScript',
          },
         
          CREDITS: ['<a class="item" href="PGP.md">PGP</a>', '<a class="item" href="REMINDER.md">Reminder</a>','Crafted with &#127866;']

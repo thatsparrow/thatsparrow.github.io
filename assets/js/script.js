@@ -104,7 +104,7 @@ function compileContent() {
          PORTFOLIO: {
              1: '<a title="Logos && Typography && Web && CAD" href="branding">BRANDING/CAD</a>',
              2: '<a title="Press Releases && Features && Thought Leadership && AV Scripts && Case Studies && Product Listings && Web Copy && Social Media Copy" href="print">PRINT</a>',
-             3: '<a title="Customer Success Stories && ADs" href="#">VIDEO</a>',
+             3: '<a title="Customer Success Stories && ADs" href="video">VIDEO</a>',
                           
          },
 

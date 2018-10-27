@@ -99,7 +99,7 @@ function compileContent() {
      var b = {
          NAME: ["Jann Benjamin"],
          ALIASES: ["ජන්", "ジアン", "жэнь", "&#x1f426;"],
-         LINKS: ['<a class="item" title=":)" href="about/">About 🏠</a>','<a class="item" title="An ode to symmetry" href="art/">Art 🖼</a>','<a class="item" title="A compilation of instrumentals and mixtapes" href="music/">Music 🎧</a>','<a class="item" title="A summary of my background and skills" href="resume">Résumé 📃</a>'],
+         LINKS: ['<a class="item" title=":)" href="about/">About 🏠</a>','<a class="item" title="An ode to symmetry" href="art/">Art 🎨</a>','<a class="item" title="A compilation of instrumentals and mixtapes" href="music/">Music 🎧</a>','<a class="item" title="A summary of my background and skills" href="resume">Résumé 📃</a>'],
               
          PORTFOLIO: {
              16: '<a title="logos && typography && web-design" href="branding">BRANDING</a>',

@@ -99,13 +99,13 @@ function compileContent() {
      var b = {
          NAME: ["Jann Benjamin"],
          ALIASES: ["ජන්", "ジアン", "жэнь", "&#x1f426;"],
-         LINKS: ['<a class="item" title=":)" href="about/">About</a>','<a class="item" title="An ode to symmetry" href="art/">Art</a>','<a class="item" title="A compilation of instrumentals and mixtapes" href="music/">Music</a>','<a class="item" title="A summary of my background and skills" href="resume">Résumé</a>'],
+         LINKS: ['<a class="item" title=":)" href="about/">About 🏠</a>','<a class="item" title="An ode to symmetry" href="art/">Art 🖼</a>','<a class="item" title="A compilation of instrumentals and mixtapes" href="music/">Music 🎧</a>','<a class="item" title="A summary of my background and skills" href="resume">Résumé 📃</a>'],
               
          PORTFOLIO: {
-             16: '<a title="Logos && Typography && Web && CAD" href="branding">BRANDING</a>',
-             17: '<a title="" href="cad">CAD</a>',
-             14: '<a title="Press Releases && Features && Thought Leadership && AV Scripts && Case Studies && Product Listings && Web Copy && Social Media Copy" href="print">PRINT</a>',
-             15: '<a title="Customer Success Stories && ADs" href="video">VIDEO</a>',
+             16: '<a title="logos && typography && web-design" href="branding">BRANDING</a>',
+             17: '<a title="2D && 3D" href="cad">CAD</a>',
+             14: '<a title="press releases && features && thought leadership && AV scripts && case studies && product listings && web copy && social media copy" href="print">PRINT</a>',
+             15: '<a title="customer success stories" href="video">VIDEO</a>',
                           
          },
 
@@ -118,14 +118,14 @@ function compileContent() {
              304: '<a title="A collaborative code compiler (Python, Java, C, C#, C++, Haskell, Perl, Ruby) built on Heroku and Firebase" href="apps/compile">COMPILE » web-app</a> : • Node.js : • Firebase : • Heroku',
              608: '<a title="A collection of CSS3 effects" href="apps/float">FLOAT » ui/ux</a> : • CSS : • jQuery',
              407: '<a title="A static website for an apparel boutique" href="https://github.com/353clothing/353clothing.github.io">3.5.3™ » site</a> : • Bootstrap : • Slack',
-             202: '<a title="An Android app that finds petrol stations and splits costs" href="compiling">INSIGHT » mobile-app</a> : • Java : • Google Maps API',
+             202: '<a title="An Android app that finds petrol stations and splits costs" href="https://github.com/thatsparrow/project-insight">INSIGHT » mobile-app</a> : • Java : • Google Maps API',
              703: '<a title="A series of number theory problems and their solutions" href="https://github.com/thatsparrow/euler">EULER » code</a> : • C : • C++ : • Java : • Python + 3 more',
              802: '<a title="Technical documentation on the UNIX operating system" href="apps/unix">UNIX » documentation</a> : • HTML : • PDF : • LaTeX',
-             704: '<a title="A few shell scripts to automate your life" href="https://github.com/thatsparrow/scripts">AUTOMATE > code</a> : • Bash : • Fish',
+             704: '<a title="A few shell scripts to automate your life" href="https://github.com/thatsparrow/scripts">AUTOMATE » code</a> : • Bash : • Fish',
              702: '<a title="A two-body simulation written in JavaScript" href="apps/kepler">KEPLER » code</a> : • JavaScript',
          },
         
-         CREDITS: ['<a class="item" href="PGP.md">PGP</a>', '<a class="item" href="REMINDER.md">Reminder</a>','Crafted with &#127866;']
+         CREDITS: ['<a class="item" href="PGP.md">PGP</a>', '<a class="item" href="REMINDER.md">Reminder</a>','Crafted with &#127866; and 🍕']
      };
      return "<pre id='" + contentId + "'>" + JSON.convertToHumanReadableString(b, 2, window.innerHeight > window.innerWidth) + "</pre>"
  }

@@ -102,29 +102,44 @@ function compileContent() {
          LINKS: ['<a class="item" title=":)" href="about/">About</a>','<a class="item" title="An ode to symmetry" href="art/">Art</a>','<a class="item" title="A compilation of instrumentals and mixtapes" href="music/">Music</a>','<a class="item" title="A summary of my background and skills" href="resume">Résumé</a>'],
               
          PORTFOLIO: {
-             1: '<a title="Logos && Typography && Web && CAD" href="branding">BRANDING/CAD</a>',
-             2: '<a title="Press Releases && Features && Thought Leadership && AV Scripts && Case Studies && Product Listings && Web Copy && Social Media Copy" href="print">PRINT</a>',
-             3: '<a title="Customer Success Stories && ADs" href="video">VIDEO</a>',
+             16: '<a title="Logos && Typography && Web && CAD" href="branding">BRANDING</a>',
+             17: '<a title="" href="cad">CAD</a>',
+             14: '<a title="Press Releases && Features && Thought Leadership && AV Scripts && Case Studies && Product Listings && Web Copy && Social Media Copy" href="print">PRINT</a>',
+             15: '<a title="Customer Success Stories && ADs" href="video">VIDEO</a>',
                           
          },
 
          PROJECTS: {
-             a: '<a title="A minimal notepad for heavy deadlines" href="apps/flow">FLOW » web-app</a> : • HTML : • CSS : • JavaScript',
-	         b: '<a title="For simulating a human typing on-screen" href="apps/type">TYPE » AI</a> : • JavaScript',
-             c: '<a title="A few NLP chatbot implementations written in Python" href="https://github.com/thatsparrow/pulse">PULSE » AI</a> : • Python : • NLTK',
-             d: '<a title="A static website for a software development co-op" href="http://osiris.agency">OSIRIS » site</a> : • Jekyll',
-             e: '<a title="A to-do list interface" href="compiling">LIST » web-app</a> : • Flask : • MySQL : • jQuery : • PythonAnywhere',
-             f: '<a title="A collaborative code compiler (Python, Java, C, C#, C++, Haskell, Perl, Ruby) built on Heroku and Firebase" href="apps/compile">COMPILE » web-app</a> : • Node.js : • Firebase : • Heroku',
-             g: '<a title="A collection of CSS3 effects" href="apps/float">FLOAT » ui/ux</a> : • CSS : • jQuery',
-             h: '<a title="A static website for an apparel boutique" href="https://github.com/353clothing/353clothing.github.io">3.5.3™ » site</a> : • Bootstrap : • Slack',
-             i: '<a title="An Android app that finds petrol stations and splits costs" href="compiling">INSIGHT » mobile-app</a> : • Java : • Google Maps API',
-             j: '<a title="A series of number theory problems and their solutions" href="https://github.com/thatsparrow/euler">EULER » code</a> : • C : • C++ : • Java : • Python + 3 more',
-             k: '<a title="Technical documentation on the UNIX operating system" href="apps/unix">UNIX » doc</a> : • HTML : • CSS : • LaTeX',
-             l: '<a title="A few shell scripts to automate your life" href="https://github.com/thatsparrow/scripts">AUTOMATE > scripts</a> : • Bash : • Fish',
-             l: '<a title="A two-body simulation written in JavaScript" href="apps/kepler">KEPLER » algorithm</a> : • JavaScript',
+             302: '<a title="A minimal notepad for heavy deadlines" href="apps/flow">FLOW » web-app</a> : • HTML : • CSS : • JavaScript',
+	         503: '<a title="For simulating a human typing on-screen" href="apps/type">TYPE » AI</a> : • JavaScript',
+             504: '<a title="A few NLP chatbot implementations written in Python" href="https://github.com/thatsparrow/pulse">PULSE » AI</a> : • Python : • NLTK',
+             406: '<a title="A static website for a software development co-op" href="http://osiris.agency">OSIRIS » site</a> : • Jekyll',
+             303: '<a title="A to-do list interface" href="compiling">LIST » web-app</a> : • Flask : • MySQL : • jQuery',
+             304: '<a title="A collaborative code compiler (Python, Java, C, C#, C++, Haskell, Perl, Ruby) built on Heroku and Firebase" href="apps/compile">COMPILE » web-app</a> : • Node.js : • Firebase : • Heroku',
+             608: '<a title="A collection of CSS3 effects" href="apps/float">FLOAT » ui/ux</a> : • CSS : • jQuery',
+             407: '<a title="A static website for an apparel boutique" href="https://github.com/353clothing/353clothing.github.io">3.5.3™ » site</a> : • Bootstrap : • Slack',
+             202: '<a title="An Android app that finds petrol stations and splits costs" href="compiling">INSIGHT » mobile-app</a> : • Java : • Google Maps API',
+             703: '<a title="A series of number theory problems and their solutions" href="https://github.com/thatsparrow/euler">EULER » code</a> : • C : • C++ : • Java : • Python + 3 more',
+             802: '<a title="Technical documentation on the UNIX operating system" href="apps/unix">UNIX » documentation</a> : • HTML : • PDF : • LaTeX',
+             704: '<a title="A few shell scripts to automate your life" href="https://github.com/thatsparrow/scripts">AUTOMATE > code</a> : • Bash : • Fish',
+             702: '<a title="A two-body simulation written in JavaScript" href="apps/kepler">KEPLER » code</a> : • JavaScript',
          },
         
          CREDITS: ['<a class="item" href="PGP.md">PGP</a>', '<a class="item" href="REMINDER.md">Reminder</a>','Crafted with &#127866;']
      };
      return "<pre id='" + contentId + "'>" + JSON.convertToHumanReadableString(b, 2, window.innerHeight > window.innerWidth) + "</pre>"
  }
+
+        (function(i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function() {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+        ga('create', 'UA-100462785-1', 'auto');
+        ga('send', 'pageview');

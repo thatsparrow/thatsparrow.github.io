@@ -9,19 +9,9 @@
 
 body {
 	background-color: white;
-	color: #000;
+	color: #696969;
 	font-family: 'Quicksand', sans-serif;
 	font-size: 13px;
-}
-
-h1 {
-    font-family: 'Quicksand', sans-serif;
-    font-size: 15px;
-    color: #000;
-}
-
-h4 {
-    font-family: 'Quicksand', sans-serif;
 }
 
 section{
@@ -31,20 +21,18 @@ section{
 /*	gallery */
 
 .gallery-title{
-    font-family: 'Quicksand', sans-serif;
     font-size: 36px;
-    color: #000;
+    color: #3F6184;
     text-align: center;
     font-weight: 500;
     margin-bottom: 70px;
 }
 .filter-button{
-    font-family: 'Quicksand', sans-serif;
     font-size: 18px;
     border: 2px solid #000;
 	padding:5px 10px;
     text-align: center;
-    color: #000;
+    color: #808000;
     margin-bottom: 30px;
 	background:transparent;
 }
@@ -56,30 +44,26 @@ section{
 	outline:none;
 }
 .gallery_product{
-    font-family: 'Quicksand', sans-serif;
     margin: 0px;
 	padding:0;
 	position:relative;
 }
 .gallery_product .img-info{
-    font-family: 'Quicksand', sans-serif;
 	position: absolute;
-    background: #000;
+    background: rgba(0,0,0,0.5);
     left: 0;
     right: 0;
     bottom: 0;
-    padding: 90px;
+    padding: 20px;
 	overflow:hidden;
 	color:#fff;
 	top:0;
 	display:none;
 	   -webkit-transition: 2s;
     transition: 2s;
-    text-align: center;
 }
 
 .gallery_product:hover .img-info{
-    font-family: 'Quicksand', sans-serif;
 	display:block;
    -webkit-transition: 2s;
     transition: 2s;

@@ -12,7 +12,7 @@ body {
 }
 
 a {
-  color: #808000;	
+  color: #000;	
   text-decoration: none;
   border-bottom: 1px solid;
 }
@@ -84,7 +84,7 @@ footer {
 h1, h2, h3, h4 {
   font-weight: normal;
   margin: 0;
-  color: #808000;
+  color: #000;
 }
 
 .container .label {

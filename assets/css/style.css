@@ -9,13 +9,16 @@
 
 body {
 	background-color: white;
+	 background-image: url("");
+	  background-repeat: no-repeat;
+	    background-position: right; /* Center the image */
 	color: #696969;
 	font-family: 'Quicksand', sans-serif;
 	font-size: 13px;
 }
 
 .value {
-	color: #808000;
+	color: #000;
     font-family: 'Quicksand', sans-serif;
 	font-size: 13px;
 	padding: 2px;	
@@ -25,8 +28,8 @@ a {
 	border: none;
 	cursor: pointer;
 	color: inherit !important;
-	text-decoration: underline;
-	/* border-bottom: 2px solid #696969;*/
+	text-decoration: none;
+	border-bottom: 2px solid #696969;
 	font-size: 13px;
 }
 

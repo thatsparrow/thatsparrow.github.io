@@ -9,9 +9,10 @@
 
 body {
 	background-color: white;
-	 background-image: url("");
-	  background-repeat: no-repeat;
-	    background-position: right; /* Center the image */
+	background-image: url("https://jannbenjam.in/assets/img/home.png");
+	background-size: 20em;
+	background-repeat: no-repeat;
+	background-position: right top; /* Center the image */
 	color: #696969;
 	font-family: 'Quicksand', sans-serif;
 	font-size: 13px;

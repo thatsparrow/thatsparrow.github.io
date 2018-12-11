@@ -7,16 +7,27 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css?family=Quicksand:500');
 
-body {
-	background-color: white;
-	background-image: url("https://jannbenjam.in/assets/img/home.png");
-	background-size: 10em;
-	background-repeat: no-repeat;
-	background-position: right top; /* Center the image */
-	color: #696969;
-	font-family: 'Quicksand', sans-serif;
-	font-size: 13px;
+@media only screen  and (min-width : 1224px) {
+/* Styles */
+	body {
+		background-color: white;
+		background-image: url("https://jannbenjam.in/assets/img/home.png");
+		background-size: 10em;
+		background-repeat: no-repeat;
+		background-position: right top; /* Center the image */
+		color: #696969;
+		font-family: 'Quicksand', sans-serif;
+		font-size: 13px;
+	}
 }
+
+body {
+		background-color: white;
+		color: #696969;
+		font-family: 'Quicksand', sans-serif;
+		font-size: 13px;
+	}
+
 
 .value {
 	color: #000;

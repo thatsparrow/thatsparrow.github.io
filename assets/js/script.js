@@ -131,15 +131,16 @@ function compileContent() {
              704: '<a title="A few shell scripts to automate your life" href="https://github.com/thatsparrow/scripts">Scripts</a> » ⌨️ : • Bash : • Fish : • Python ',
              702: '<a title="A two-body simulation written in JavaScript" href="apps/kepler">Kepler</a> » 📈 : • JavaScript',
              703: '<a title="A simulation of wind-driven ocean waves in 2D" href="">Waves</a> » 📈 : • Fortran',
-             705: '<a title="An offline html editor" href="">HTML</a> » 📈 : • JavaScript  ',
+             705: '<a title="An offline html editor" href="">HTML-editor</a> » 📈 : • JavaScript  ',
              707: '<a title="A background music player" href="">Kyoto</a> » 📈 : • Fortran',
+             708: '<a title="A background music player" href="FOSS_PROJECTS/calculator-master">Calculator</a> » 📈 : • JavaScript',
              803: '<a title="A touch-typing interface for improving WPM" href="">Touch-type</a> » 📱 💻 : • HTML5 : • CSS3 : • JS',
              809: '<a title="" href="">Notice-board</a> » 📱 💻 : • HTML5 : • CSS3 : • JS (React.js)',
              902: '<a title="A game" href="">Bong-hit</a> » 💻 : • Python : • PyGame ',
        
          },
 
-          INFO: ['<a class="item" title="?" href="about/">About</a>','<a class="item" title="=)" href="INFO/contact/">Contact</a>','<a class="item" title="=P" href="INFO/resume/">Résumé</a>'],
+          INFO: ['<a class="item" title="?" href="INFO/about/">About</a>','<a class="item" title="=)" href="INFO/contact/">Contact</a>','<a class="item" title="=P" href="INFO/resume/">Résumé</a>'],
  
         
          CREDITS: ['<a class="item" href="PGP.md">PGP</a>', '<a class="item" href="REMINDER.md">Reminder</a>', '<a class="item" href="PGP.md">Donate</a>','Crafted with &#127866; and 🍕']

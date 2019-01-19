@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand:500');
+body {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 13px;
+  padding: 2em 4em;
+  color: #696969;
+}
+
+.container, header, footer {
+  max-width: 72em;
+  margin: auto;
+}
+
+a {
+  color: #000;	
+  text-decoration: none;
+  border-bottom: 1px solid;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 1.4em;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+#name {
+  font-size: 2.6em;
+  /*font-variant: small-caps;*/
+  /*font-style: italic;*/
+  padding-bottom: .1em;
+}
+
+#objective {
+  font-style: 
+}
+
+@media screen and (min-width: 72em) {
+  #name {
+    float: left;
+    text-align: left;
+    /*border-bottom: 5px double darkgrey;*/
+  }
+
+  #contact, #objective {
+    text-align: right;
+  }
+}
+
+@media screen {
+    .print-only {
+        display: none;
+    }
+}
+
+
+header ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+header li {
+  display: inline-block;
+  line-height: 1.5em;
+}
+
+header li::after{
+  content: " |";
+}
+
+header li:last-child::after {
+  content: "";
+}
+
+footer {
+  text-align: center;
+}
+
+h1, h2, h3, h4 {
+  font-weight: normal;
+  margin: 0;
+  color: #000;
+}
+
+.container .label {
+  /*text-decoration: underline;*/
+  border-bottom: 1px solid;
+}
+
+section {
+  margin: 1.5em 0;
+}
+
+section:first-child {
+  margin-top: .25em;
+}
+
+h2 {
+  /*font-weight: bold;*/
+  border-bottom: 1px solid grey;
+  margin-bottom: .5em;
+}
+
+.container ul {
+  margin-top: .1em;
+  margin-bottom: .1em;
+  padding-left: 20px;
+}
+
+.entry {
+  margin: .75em 0;
+}
+
+h3 {
+  display: inline-block;
+  /*font-weight: bold;*/
+}
+
+.entry .role {
+  /*font-style: italic;*/
+}
+
+.entry .role::before {
+  content: "(";
+}
+
+.entry .role::after {
+  content: ")";
+}
+
+.entry .loc {
+  font-style: 
+}
+
+.entry .date {
+  float: right;
+  /*font-style: italic;*/
+}
+
+.entry .des {
+  font-style: 
+}
+
+p .entry .des {
+  margin-top: .1em;
+}
+
+.resume-objective {
+  /*padding-top: 1.3em;
+  border-top: 1px solid grey;
+  font-style: italic;
+  text-align: center;
+  font-size: 1.15em;
+  line-height: 90%;*/
+}
+
+.resume-project .project-name {
+  /*text-decoration: underline;*/
+  /*border-bottom: 1px solid;*/
+  font-weight: bold;
+  line-height: 1.6em;
+}
+
+.resume-project h3 {
+  /*font-size: 100%;*/
+}
+
+.meta {
+}

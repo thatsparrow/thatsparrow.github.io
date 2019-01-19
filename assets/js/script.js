@@ -97,38 +97,52 @@ function reloadContent() {
 function compileContent() {
      var a = "hc.liamnotorp/worrapstaht".split("").reverse().join("").replace("/", "@");
      var b = {
-         NAME: ["Jann Benjamin"],
-         ALIASES: ["ජන්", "ジアン", "жэнь", "&#x1f426;"],
-         LINKS: ['<a class="item" title=":)" href="about/">🐐 About</a>','<a class="item" title="Musings" href="blog/">✍️ Blog</a>','<a class="item" title="A compilation of instrumentals and mixtapes" href="music/">🎧 Music</a>','<a class="item" title="A summary of my background and skills" href="resume">📃 Résumé</a>'],
-              
+         ALIASES: ["ජාන්", "ジアン", "жэнь", "&#x1f426;"],
+                     
+         BLOG: {
+             2: '<a title="" href="BLOG/2.html">THOUGHTS ON WORK</a> ⏰ 2018FEB22',
+             3: '<a title="" href="BLOG/3.html">THE RETURN OF 師父 JANN</a> ⏰ 2015SEP12',
+             4: '<a title="" href="BLOG/4.html">YO-YO</a> ⏰ 2014MAR23',
+             5: '<a title="" href="BLOG/5.html">HELLO, WORLD!</a> ⏰ 2013FEB17',
+                          
+         },     
+
          PORTFOLIO: {
-             12: '<a title="Logo // Typography // Web Design" href="branding">Branding</a>',
-             13: '<a title="2D // 3D" href="">CAD</a>',
-             14: '<a title="Press Release // Feature // Thought Leadership // AV Script // Case Study // Web Copy" href="print">Print</a>',
-             15: '<a title="Texture // Abstract" href="art">Photography</a>',
-             16: '<a title="Album Art // Concept Art // Publication" href="">Illustrations</a>',
+             13: '<a title="Logo // Typography // Web Design" href="PORTFOLIO/branding/">Branding</a>',
+             15: '<a title="Press Release // Feature // Thought Leadership // AV Script // Case Study // Web Copy" href="PORTFOLIO/copywriting/">Copywriting</a>',
+             16: '<a title="Serenity" href="PORTFOLIO/photography/">Photography</a>',
+             12: '<a title="Tank Tops // Leggings // Long Sleeve Tees" href="PORTFOLIO/apparel/">Apparel</a>',
+             17: '<a title="Minimal // Hip Hop // Trap" href="PORTFOLIO/music/">Music</a>',
                           
          },
 
-         PROJECT: {
-             302: '<a title="A minimal notepad for heavy deadlines" href="apps/flow">FLOW</a> » 💻 : • HTML5 : • CSS3 : • JS',
-	         503: '<a title="For simulating a human typing on-screen" href="apps/type">TYPE</a> » 🤖 : • JavaScript',
-             504: '<a title="A few NLP chatbot implementations written in Python" href="https://github.com/thatsparrow/pulse">PULSE</a> » 🤖 : • Python : • NLTK',
-             406: '<a title="A static website for a software development co-op" href="http://osiris.agency">OSIRIS</a> » 📱 💻 : • Jekyll',
-             303: '<a title="A to-do list interface" href="compiling">LIST</a> » 💻 : • Flask : • MySQL : • jQuery',
-             304: '<a title="A collaborative code compiler (Python, Java, C, C#, C++, Haskell, Perl, Ruby) built on Heroku and Firebase" href="apps/compile">COMPILE</a> » 💻 🖧 : • Node.js : • Firebase : • Heroku',
-             608: '<a title="A collection of CSS3 effects" href="apps/float">FLOAT</a> » 😊 : • CSS : • jQuery',
+         FOSS_PROJECTS: {
+             302: '<a title="A minimal notepad for heavy deadlines" href="apps/flow">Notepad</a> » 💻 : • HTML5 : • CSS3 : • JS',
+	         503: '<a title="For simulating a human typing on-screen" href="apps/type">AI-type</a> » 🤖 : • JavaScript',
+             504: '<a title="A few NLP chatbot implementations written in Python" href="https://github.com/thatsparrow/pulse">Pulse</a> » 🤖 : • Python : • NLTK',
+             406: '<a title="A static website for a software development co-op" href="http://osiris.agency">Osiris</a> » 📱 💻 : • Jekyll',
+             303: '<a title="A to-do list interface" href="compiling">List</a> » 💻 : • Flask : • MySQL : • jQuery',
+             304: '<a title="A collaborative code compiler (Python, Java, C, C#, C++, Haskell, Perl, Ruby) built on Heroku and Firebase" href="apps/compile">Compile</a> » 💻 : • Node.js : • Firebase : • Heroku',
+             608: '<a title="A collection of CSS3 effects" href="apps/float">Float</a> » 😊 : • CSS : • jQuery',
              407: '<a title="A static website for an apparel boutique" href="https://github.com/353clothing/353clothing.github.io">353</a> » 📱 💻 : • Bootstrap : • Slack',
-             202: '<a title="An Android app that finds petrol stations and splits costs" href="https://github.com/thatsparrow/project-insight">INSIGHT</a> » 📱 : • Java : • Google Maps API',
+             202: '<a title="An Android app that finds petrol stations and splits costs" href="https://github.com/thatsparrow/project-insight">Insight</a> » 📱 : • Java : • Google Maps API',
              703: '<a title="A series of number theory problems and their solutions" href="https://github.com/thatsparrow/euler">EULER » code</a>  : • C : • C++ : • Java : • Python + 3 more',
              802: '<a title="Technical documentation on the UNIX operating system" href="apps/unix">UNIX</a> » 📚 : • HTML : • PDF : • LaTeX',
-             704: '<a title="A few shell scripts to automate your life" href="https://github.com/thatsparrow/scripts">AUTOMATE </a> » ⌨️ : • Bash : • Fish',
-             702: '<a title="A two-body simulation written in JavaScript" href="apps/kepler">KEPLER</a> » 📈 : • JS',
-             703: '<a title="A two-body simulation written in JavaScript" href="">WAVES</a> » 📈 : • Fortran',
-             803: '<a title="A two-body simulation written in JavaScript" href="">TYPIST</a> » 📱 💻 : • HTML5 : • CSS3 : • JS',
+             704: '<a title="A few shell scripts to automate your life" href="https://github.com/thatsparrow/scripts">Scripts</a> » ⌨️ : • Bash : • Fish : • Python ',
+             702: '<a title="A two-body simulation written in JavaScript" href="apps/kepler">Kepler</a> » 📈 : • JavaScript',
+             703: '<a title="A simulation of wind-driven ocean waves in 2D" href="">Waves</a> » 📈 : • Fortran',
+             705: '<a title="An offline html editor" href="">HTML</a> » 📈 : • JavaScript  ',
+             707: '<a title="A background music player" href="">Kyoto</a> » 📈 : • Fortran',
+             803: '<a title="A touch-typing interface for improving WPM" href="">Touch-type</a> » 📱 💻 : • HTML5 : • CSS3 : • JS',
+             809: '<a title="" href="">Notice-board</a> » 📱 💻 : • HTML5 : • CSS3 : • JS (React.js)',
+             902: '<a title="A game" href="">Bong-hit</a> » 💻 : • Python : • PyGame ',
+       
          },
+
+          INFO: ['<a class="item" title="?" href="about/">About</a>','<a class="item" title="=)" href="INFO/contact/">Contact</a>','<a class="item" title="=P" href="INFO/resume/">Résumé</a>'],
+ 
         
-         CREDITS: ['<a class="item" href="PGP.md">PGP</a>', '<a class="item" href="REMINDER.md">Reminder</a>','Crafted with &#127866; and 🍕']
+         CREDITS: ['<a class="item" href="PGP.md">PGP</a>', '<a class="item" href="REMINDER.md">Reminder</a>', '<a class="item" href="PGP.md">Donate</a>','Crafted with &#127866; and 🍕']
      };
      return "<pre id='" + contentId + "'>" + JSON.convertToHumanReadableString(b, 2, window.innerHeight > window.innerWidth) + "</pre>"
  }

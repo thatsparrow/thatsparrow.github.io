@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Maps Practice</string>
+    <string name="title_activity_maps">Map</string>
+
+    <string-array name="car_model_array">
+        <item>Prius</item>
+    </string-array>
+
+    <string-array name="car_make_array">
+        <item>Toyota</item>
+    </string-array>
+
+    <string-array name="car_year_array">
+        <item>2009</item>
+    </string-array>
+
+</resources>

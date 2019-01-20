@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/car_selector_listview">
+
+    </ListView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="car selector"/>
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:spinnerMode="dropdown"
+        android:id="@+id/make_spinner"
+        android:entries="@array/car_make_array"
+        android:minWidth="200dp"
+        android:layout_margin="16dp">
+    </Spinner>
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:spinnerMode="dropdown"
+        android:id="@+id/model_spinner"
+        android:entries="@array/car_model_array"
+        android:minWidth="200dp"
+        android:layout_margin="16dp">
+    </Spinner>
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:spinnerMode="dropdown"
+        android:id="@+id/year_spinner"
+        android:entries="@array/car_year_array"
+        android:minWidth="200dp"
+        android:layout_margin="16dp">
+    </Spinner>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/submit_button"
+        android:onClick="submit"/>
+
+</LinearLayout>

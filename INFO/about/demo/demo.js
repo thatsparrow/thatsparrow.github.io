@@ -8,7 +8,8 @@ var corpus2 =
 \n\I used to be a speck of stardust, but a few decades ago a serendipitous event allowed me to materialize on Earth, and I love it!\n\
 \n\I'm very much a demi-god at heart, love to eat, create, destroy, and travel whenever I feel like it.\n\
 \n\I also have an innate ability to 'slip' punches and 'check' kicks. \n\
-\n\Let's get in touch and share a few stories.";
+\n\Let's get in touch and share a few stories.\n\
+\n\✌";
 
 var cb1 = function(){
     setTimeout(function(){

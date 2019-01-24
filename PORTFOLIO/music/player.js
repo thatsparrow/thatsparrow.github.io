@@ -14,24 +14,24 @@ function secondsTimeSpanToHMS(s) {
 };
 
 songs = [{
-		src: "https://jannbenjam.in/music/audio/3.mp3",
+		src: "https://jannbenjam.in/PORTFOLIO/music/audio/3.mp3",
 		title: "Special Herbs EP",
 		artist: "Gucci Mane – Pillz<br>Gucci Mane - Im Da Shit<br>DJ Smokey - I Can Get Ignorant Part 2<br>Gucci Mane - I Get The Bag feat. Migos<br>Lil Debbie – Break It Down",
-		coverart: "https://jannbenjam.in/music/3.gif"
+		coverart: "https://jannbenjam.in/PORTFOLIO/music/3.gif"
 	},
 
 	{
-		src: "https://jannbenjam.in/music/audio/2.mp3",
+		src: "https://jannbenjam.in/PORTFOLIO/music/audio/2.mp3",
 		title: "Mind Control",
-		artist: "Jann Benjamin",
-		coverart: "https://jannbenjam.in/music/2.gif"
+		artist: "&#x1f426;",
+		coverart: "https://jannbenjam.in/PORTFOLIO/music/2.gif"
 	},
 
 	{
-		src: "https://jannbenjam.in/music/audio/1.mp3",
+		src: "https://jannbenjam.in/PORTFOLIO/music/audio/1.mp3",
 		title: "Serenity",
-		artist: "Jann Benjamin",
-		coverart: "https://jannbenjam.in/music/1.gif"
+		artist: "&#x1f426;",
+		coverart: "https://jannbenjam.in/PORTFOLIO/music/1.gif"
 	}
 ];
 

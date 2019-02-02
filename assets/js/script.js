@@ -100,15 +100,16 @@ function compileContent() {
          ALIASES: ["ජාන්", "ジアン", "жэнь", "&#x1f426;"],
                      
          BLOG: {
-             2: '<a title="" href="BLOG/2.html">THOUGHTS ON WORK</a> ⏰ 2018FEB22',
-             3: '<a title="" href="BLOG/3.html">THE RETURN OF 師父 JANN</a> ⏰ 2015SEP12',
+             2: '<a title="" href="BLOG/1.html">THOUGHTS ON WORK</a> ⏰ 2018FEB22',
+             3: '<a title="" href="BLOG/2.html">THE RETURN OF 師父 JANN</a> ⏰ 2015SEP12',
              4: '<a title="" href="BLOG/4.html">YO-YO</a> ⏰ 2014MAR23',
              5: '<a title="" href="BLOG/5.html">HELLO, WORLD!</a> ⏰ 2013FEB17',
+             6: '<a title="" href="BLOG/5.html">FUNCTIONAL LANGUAGES</a> ⏰ 2018FEB17',
                           
          },     
 
          PORTFOLIO: {
-             13: '<a title="Logo // Typography // Web Design" href="PORTFOLIO/branding/">Branding</a>',
+             13: '<a title="Logo // Typography // Web Design" href="PORTFOLIO/branding/">Branding/UI-Design</a>',
              15: '<a title="Press Release // Feature // Thought Leadership // AV Script // Case Study // Web Copy" href="PORTFOLIO/copywriting/">Copywriting</a>',
              16: '<a title="Serenity" href="PORTFOLIO/photography/">Photography</a>',
              12: '<a title="Tank Tops // Leggings // Long Sleeve Tees" href="PORTFOLIO/apparel/">Apparel</a>',
@@ -117,17 +118,17 @@ function compileContent() {
          },
 
          FOSS_PROJECTS: {
-             302: '<a title="A minimal notepad for heavy deadlines" href="apps/flow">Notepad</a> » 💻 : • HTML5 : • CSS3 : • JS',
-	         503: '<a title="For simulating a human typing on-screen" href="apps/type">AI-type</a> » 🤖 : • JavaScript',
-             504: '<a title="A few NLP chatbot implementations written in Python" href="https://github.com/thatsparrow/pulse">Pulse</a> » 🤖 : • Python : • NLTK',
-             406: '<a title="A static website for a software development co-op" href="http://osiris.agency">Osiris</a> » 📱 💻 : • Jekyll',
+             302: '<a title="A minimal notepad for heavy deadlines" href="FOSS_PROJECTS/notepad-master">Notepad</a> » 💻 : • HTML5 : • CSS3 : • JS',
+	         503: '<a title="For simulating a human typing on-screen" href="FOSS_PROJECTS/type-ai-master">Type-AI</a> » 🤖 : • JavaScript : • CoffeeScript',
+             504: '<a title="A few NLP chatbot implementations written in Python" href="FOSS_PROJECTS/pulse-ai-master">Pulse-AI</a> » 🤖 : • Python : • NLTK',
+             406: '<a title="A static website for a software development co-op" href="https://osiris.agency">Osiris</a> » 📱 💻 : • Jekyll : • Semantic UI',
              303: '<a title="A to-do list interface" href="compiling">List</a> » 💻 : • Flask : • MySQL : • jQuery',
              304: '<a title="A collaborative code compiler (Python, Java, C, C#, C++, Haskell, Perl, Ruby) built on Heroku and Firebase" href="apps/compile">Compile</a> » 💻 : • Node.js : • Firebase : • Heroku',
-             608: '<a title="A collection of CSS3 effects" href="apps/float">Float</a> » 😊 : • CSS : • jQuery',
-             407: '<a title="A static website for an apparel boutique" href="https://github.com/353clothing/353clothing.github.io">353</a> » 📱 💻 : • Bootstrap : • Slack',
-             202: '<a title="An Android app that finds petrol stations and splits costs" href="https://github.com/thatsparrow/project-insight">Insight</a> » 📱 : • Java : • Google Maps API',
+             608: '<a title="A collection of CSS3 effects" href="FOSS_PROJECTS/float-master">Float</a> » 😊 : • JavaScript',
+             407: '<a title="A static website for an apparel boutique" href="http://353clothing.com">353</a> » 📱 💻 : • Bootstrap : • Slack',
+             202: '<a title="An Android app that finds petrol stations and splits costs" href="https://github.com/thatsparrow/thatsparrow.github.io/tree/master/FOSS_PROJECTS/insight-master">Insight</a> » 📱 : • Java : • Google Maps API',
              703: '<a title="A series of number theory problems and their solutions" href="https://github.com/thatsparrow/euler">EULER » code</a>  : • C : • C++ : • Java : • Python + 3 more',
-             802: '<a title="Technical documentation on the UNIX operating system" href="apps/unix">UNIX</a> » 📚 : • HTML : • PDF : • LaTeX',
+             802: '<a title="Technical documentation on the UNIX operating system" href="apps/unix">UNIX</a> » 📚 : • HTML5 : • LaTeX',
              704: '<a title="A few shell scripts to automate your life" href="https://github.com/thatsparrow/scripts">Scripts</a> » ⌨️ : • Bash : • Fish : • Python ',
              702: '<a title="A two-body simulation written in JavaScript" href="apps/kepler">Kepler</a> » 📈 : • JavaScript',
              703: '<a title="A simulation of wind-driven ocean waves in 2D" href="">Waves</a> » 📈 : • Fortran',
@@ -143,7 +144,7 @@ function compileContent() {
           INFO: ['<a class="item" title="?" href="INFO/about/">About</a>','<a class="item" title="=)" href="INFO/contact/">Contact</a>','<a class="item" title="=P" href="INFO/resume/">Résumé</a>'],
  
         
-         CREDITS: ['<a class="item" href="PGP.md">PGP</a>', '<a class="item" href="REMINDER.md">Reminder</a>', '<a class="item" href="PGP.md">Donate</a>','Crafted with &#127866; and 🍕']
+         CREDITS: ['<a class="item" href="PGP.md">PGP</a>', '<a class="item" href="REMINDER.md">Reminder</a>','Crafted with &#127866; and 🍕']
      };
      return "<pre id='" + contentId + "'>" + JSON.convertToHumanReadableString(b, 2, window.innerHeight > window.innerWidth) + "</pre>"
  }

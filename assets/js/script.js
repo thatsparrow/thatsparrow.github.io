@@ -100,16 +100,19 @@ function compileContent() {
          ALIASES: ["ජාන්", "ジアン", "жэнь", "&#x1f426;"],
                      
          BLOG: {
-             2: '<a title="" href="BLOG/1.html">THOUGHTS ON WORK</a> ⏰ 2018FEB22',
-             3: '<a title="" href="BLOG/2.html">THE RETURN OF 師父 JANN</a> ⏰ 2015SEP12',
-             4: '<a title="" href="BLOG/4.html">YO-YO</a> ⏰ 2014MAR23',
-             5: '<a title="" href="BLOG/5.html">HELLO, WORLD!</a> ⏰ 2013FEB17',
-             6: '<a title="" href="BLOG/5.html">FUNCTIONAL LANGUAGES</a> ⏰ 2018FEB17',
+             _2: '<a title="" href="BLOG/2.html">Hello, World!</a> ⏰ 2007OCT21',
+             _3: '<a title="" href="BLOG/3.html">MATLAB or Mathematica</a> ⏰ 2013JAN12',
+             _4: '<a title="" href="BLOG/4.html">Nickel Telescope Bias Subtraction (Python 2.7)</a> ⏰ 2014MAR23',
+             _5: '<a title="" href="BLOG/5.html">Beckler on Aristotle`s Theory of Actuality</a> ⏰ 2014SEB17',
+             _6: '<a title="" href="BLOG/6.html">The Turtle School</a> ⏰ 2017APR09',
+             _7: '<a title="" href="BLOG/7.html">Thoughts on Functional Languages</a> ⏰ 2017DEC17',
+             _8: '<a title="" href="BLOG/8.html">Creating your own neural network</a> ⏰ 2018FEB17',
+             
                           
          },     
 
          PORTFOLIO: {
-             13: '<a title="Logo // Typography // Web Design" href="PORTFOLIO/branding/">Branding/UI-Design</a>',
+             13: '<a title="Logo // Typography // Web Design" href="PORTFOLIO/branding/">Branding | UI-Design</a>',
              15: '<a title="Press Release // Feature // Thought Leadership // AV Script // Case Study // Web Copy" href="PORTFOLIO/copywriting/">Copywriting</a>',
              16: '<a title="Serenity" href="PORTFOLIO/photography/">Photography</a>',
              12: '<a title="Tank Tops // Leggings // Long Sleeve Tees" href="PORTFOLIO/apparel/">Apparel</a>',

@@ -97,22 +97,24 @@ function reloadContent() {
 function compileContent() {
      var a = "hc.liamnotorp/worrapstaht".split("").reverse().join("").replace("/", "@");
      var b = {
-         ALIASES: ["ජාන්", "ジアン", "жэнь", "&#x1f426;"],
+         ALIASES: ["ජාන්", "スズメ", "жэнь", "&#x1f426;"],
                      
          BLOG: {
-             _2: '<a title="" href="BLOG/2.html">Hello, World!</a> ⏰ 2007OCT21',
-             _3: '<a title="" href="BLOG/3.html">MATLAB or Mathematica</a> ⏰ 2013JAN12',
-             _4: '<a title="" href="BLOG/4.html">Nickel Telescope Bias Subtraction (Python 2.7)</a> ⏰ 2014MAR23',
-             _5: '<a title="" href="BLOG/5.html">Beckler on Aristotle`s Theory of Actuality</a> ⏰ 2014SEB17',
-             _6: '<a title="" href="BLOG/6.html">The Turtle School</a> ⏰ 2017APR09',
-             _7: '<a title="" href="BLOG/7.html">Thoughts on Functional Languages</a> ⏰ 2017DEC17',
-             _8: '<a title="" href="BLOG/8.html">Creating your own neural network</a> ⏰ 2018FEB17',
+             _c1: '<a title="" href="BLOG/2.html">Hello, World!</a> #code',
+             _c2: '<a title="" href="BLOG/3.html">MATLAB or Mathematica</a> #code',
+             _p1: '<a title="" href="BLOG/3.html">Finding ethics outside Religion</a> #morality',
+             _c3: '<a title="" href="BLOG/4.html">Nickel Telescope Bias Subtraction (Python 2.7)</a> #code',
+             _p2: '<a title="" href="BLOG/5.html">Beckler on Aristotle`s Theory of Actuality</a> #philosophy',
+             _p3: '<a title="" href="BLOG/6.html">The Turtle School</a> #combat',
+             _c4: '<a title="" href="BLOG/7.html">Thoughts on Functional Languages</a> #code',
+             _c5: '<a title="" href="BLOG/8.html">Creating your own neural network</a> #code',
+             _p4: '<a title="" href="BLOG/9.html">The Postmodernist</a> #philosophy',
              
                           
          },     
 
          PORTFOLIO: {
-             13: '<a title="Logo // Typography // Web Design" href="PORTFOLIO/branding/">Branding | UI-Design</a>',
+             13: '<a title="Logo // Typography // Web Design" href="PORTFOLIO/branding/">Branding</a>',
              15: '<a title="Press Release // Feature // Thought Leadership // AV Script // Case Study // Web Copy" href="PORTFOLIO/copywriting/">Copywriting</a>',
              16: '<a title="Serenity" href="PORTFOLIO/photography/">Photography</a>',
              12: '<a title="Tank Tops // Leggings // Long Sleeve Tees" href="PORTFOLIO/apparel/">Apparel</a>',
@@ -120,7 +122,7 @@ function compileContent() {
                           
          },
 
-         FOSS_PROJECTS: {
+         FOSS: {
              302: '<a title="A minimal notepad for heavy deadlines" href="FOSS_PROJECTS/notepad-master">Notepad</a> » 💻 : • HTML5 : • CSS3 : • JS',
 	         503: '<a title="For simulating a human typing on-screen" href="FOSS_PROJECTS/type-ai-master">Type-AI</a> » 🤖 : • JavaScript : • CoffeeScript',
              504: '<a title="A few NLP chatbot implementations written in Python" href="FOSS_PROJECTS/pulse-ai-master">Pulse-AI</a> » 🤖 : • Python : • NLTK',
@@ -144,7 +146,7 @@ function compileContent() {
        
          },
 
-          INFO: ['<a class="item" title="?" href="INFO/about/">About</a>','<a class="item" title="=)" href="INFO/contact/">Contact</a>','<a class="item" title="=P" href="INFO/resume/">Résumé</a>'],
+          INFO: ['<a class="item" title="?" href="INFO/about/">About</a>','<a class="item" title="=)" href="INFO/contact/">Contact</a>','<a class="item" title="=P" href="INFO/resume/">Résumé</a>','<a class="item" title=">=D" href="INFO/services/">Services</a>'],
  
         
          CREDITS: ['<a class="item" href="PGP.md">PGP</a>', '<a class="item" href="REMINDER.md">Reminder</a>','Crafted with &#127866; and 🍕']

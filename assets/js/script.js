@@ -99,7 +99,7 @@ function compileContent() {
      var b = {
          ALIASES: ["ජාන්", "スズメ", "жэнь", "&#x1f426;"],
                      
-         BLOG: {
+         SELECTED_PUBLICATIONS: {
              0: '<a title="" href="BLOG/0.html">Hello, World!</a> #code',
              1: '<a title="" href="BLOG/1.html">MATLAB or Mathematica</a> #code',
              2: '<a title="" href="BLOG/2.html">Finding ethics outside Religion</a> #morality',
@@ -109,7 +109,7 @@ function compileContent() {
              6: '<a title="" href="BLOG/6.html">Thoughts on Functional Languages</a> #code',
              7: '<a title="" href="BLOG/7.html">Creating your own neural network</a> #code',
              8: '<a title="" href="BLOG/8.html">The Postmodernist</a> #philosophy',
-             9: '<a title="" href="BLOG/9.html">Sifu Jann</a> #self',
+             9: '<a title="" href="BLOG/9.html">Sifu</a> #self',
              
                           
          },     
@@ -135,7 +135,7 @@ function compileContent() {
              24: '<a title="An Android app that finds petrol stations and splits costs" href="https://github.com/thatsparrow/thatsparrow.github.io/tree/master/FOSS_PROJECTS/insight-master">Insight</a> » 📱 : • Java : • Google Maps API',
              25: '<a title="A series of number theory problems and their solutions" href="https://github.com/thatsparrow/euler">EULER</a> » >_ : • C : • C++ : • Java : • Python + 3 more',
              26: '<a title="Technical documentation on the UNIX operating system" href="apps/unix">UNIX</a> » 📚 : • HTML5 : • LaTeX',
-             27: '<a title="A few shell scripts to automate your life" href="https://github.com/thatsparrow/scripts">Scripts</a> » ⌨️ : • Bash : • Fish : • Python ',
+             27: '<a title="A few shell scripts to automate your life" href="https://github.com/thatsparrow/scripts">Scripts</a> » >_ : • Bash : • Fish : • Python ',
              28: '<a title="A two-body simulation written in JavaScript" href="apps/kepler">Kepler</a> » 📈 : • JavaScript',
              29: '<a title="A simulation of wind-driven ocean waves in 2D" href="">Waves</a> » 📈 : • Fortran',
              30: '<a title="An offline html editor" href="">HTML-editor</a> » 📈 : • JavaScript  ',

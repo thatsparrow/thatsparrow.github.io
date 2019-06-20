@@ -1,4 +1,4 @@
-﻿@charset "UTF-8";
+@charset "UTF-8";
 @import url('https://fonts.googleapis.com/css?family=Quicksand:500');
 @media only screen  and (min-width : 1224px) {
 	body {
@@ -11,7 +11,13 @@
 	}
 }
 
+
 body {
+	background-image: url("jann_bwinv.jpg");
+		background-size: 15em;
+		background-repeat: no-repeat;
+		background-position: left top; 
+		padding: 27em;
 		background-color: white;
 		color: #696969;
 		font-family: 'Quicksand', sans-serif;

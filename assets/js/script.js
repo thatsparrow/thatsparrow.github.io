@@ -97,41 +97,43 @@ function reloadContent() {
 function compileContent() {
      var a = "hc.liamnotorp/worrapstaht".split("").reverse().join("").replace("/", "@");
      var b = {
-         ALIASES: ["ජාන්", "スズメ", "жэнь", "&#x1f426;"],
+         ALIASES: ["ගල්කිස්ස​ ජාන්", "スズメ", "жэнь", "&#x1F422;"],
                      
-         SELECTED_PUBLICATIONS: {
-             0: '<a title="" href="BLOG/0.html">Hello, World!</a> #code',
-             1: '<a title="" href="BLOG/1.html">MATLAB or Mathematica</a> #code',
-             2: '<a title="" href="BLOG/2.html">Finding ethics outside Religion</a> #morality',
-             3: '<a title="" href="BLOG/3.html">Nickel Telescope Bias Subtraction (Python 2.7)</a> #code',
-             4: '<a title="" href="BLOG/4.html">Beckler on Aristotle`s Theory of Actuality</a> #philosophy',
-             5: '<a title="" href="BLOG/5.html">The Turtle School</a> #combat',
-             6: '<a title="" href="BLOG/6.html">Thoughts on Functional Languages</a> #code',
-             7: '<a title="" href="BLOG/7.html">Creating your own neural network</a> #code',
-             8: '<a title="" href="BLOG/8.html">The Postmodernist</a> #philosophy',
-             9: '<a title="" href="BLOG/9.html">Sifu</a> #self',
+         BLOG_ENTRIES: {
+             x: '<a title="" href="BLOG/0.html">Hello, World!</a>',
+             xx: '<a title="" href="BLOG/1.html">MATLAB or Mathematica?</a>',
+             xxx: '<a title="" href="BLOG/2.html">The autonomy of ethics II</a>',
+             xxxx: '<a title="" href="BLOG/3.html">Nickel Telescope Bias Subtraction (Python 2.7)</a>',
+             xxxxx: '<a title="" href="BLOG/4.html">Beckler on Aristotle&#39;s Theory of Actuality</a>',
+             xxxxxx: '<a title="" href="BLOG/5.html">Turtle School - The Tao of Jann</a>',
+             xxxxxxx: '<a title="" href="BLOG/6.html">Thoughts on Functional Languages</a>',
+             xxxxxxxx: '<a title="" href="BLOG/7.html">Creating your own neural network</a>',
+             xxxxxxxxx: '<a title="" href="BLOG/8.html">The Allure of Female Independence</a>',
+             xxxxxxxxxx: '<a title="" href="BLOG/">READ MORE!</a>',
              
                           
          },     
 
          PORTFOLIO: {
-             11: '<a title="Logo // Typography // Web Design" href="PORTFOLIO/branding/">Branding</a>',
-             12: '<a title="Press Release // Feature // Thought Leadership // AV Script // Case Study // Web Copy" href="PORTFOLIO/copywriting/">Copywriting</a>',
-             13: '<a title="Serenity" href="PORTFOLIO/photography/">Photography</a>',
-             10: '<a title="Tank Tops // Leggings // Long Sleeve Tees" href="PORTFOLIO/apparel/">Apparel</a>',
-             14: '<a title="Minimal // Hip Hop // Trap" href="PORTFOLIO/music/">Music</a>',
-             15: '<a title="Customer Success Stories" href="PORTFOLIO/video/">Video</a>', 
+             _: '<a title="Tank Tops // Leggings // Long Sleeve Tees" href="PORTFOLIO/apparel/">Apparel</a>',
+             __: '<a title="Logo // Typography // Web Design" href="PORTFOLIO/branding/">Branding</a>',
+             ____: '<a title="Press Release // Feature // Thought Leadership // AV Script // Case Study // Web Copy" href="PORTFOLIO/copywriting/">Copywriting</a>',
+             _____: '<a title="Minimal // Hip Hop // Trap" href="PORTFOLIO/music/">Music</a>', 
+             ______: '<a title="Serenity" href="PORTFOLIO/photography/">Photography</a>',
+             
+            
+             _______: '<a title="Customer Success Stories" href="PORTFOLIO/video/">Video</a>', 
          },
 
          PROJECTS: {
-             16: '<a title="A minimal notepad for heavy deadlines" href="FOSS_PROJECTS/notepad-master">Notepad</a> » 💻 : • HTML5 : • CSS3 : • JS',
-	         17: '<a title="For simulating a human typing on-screen" href="FOSS_PROJECTS/type-ai-master">Type-AI</a> » 🤖 : • JavaScript : • CoffeeScript',
-             18: '<a title="A few NLP chatbot implementations written in Python" href="FOSS_PROJECTS/pulse-ai-master">Pulse-AI</a> » 🤖 : • Python : • NLTK',
-             19: '<a title="A static website for a software development co-op" href="https://osiris.agency">Osiris</a> » 📱 💻 : • Jekyll : • Semantic UI',
+             16: '<a title="A minimal notepad for heavy deadlines" href="FOSS_PROJECTS/notepad-master">notepad</a> » 💻 : • HTML5 : • CSS3 : • JS',
+	         17: '<a title="For simulating a human typing on-screen" href="FOSS_PROJECTS/type-ai-master">type</a> » AI : • JavaScript : • CoffeeScript',
+             18: '<a title="A few NLP chatbot implementations written in Python" href="FOSS_PROJECTS/pulse-ai-master">pulse</a> » AI : • Python : • NLTK',
+             19: '<a title="A static website for a software development co-op" href="https://osiris.agency">www.osiris.agency</a> » 📱 💻 : • Jekyll : • Semantic UI',
              20: '<a title="A to-do list interface" href="compiling">List</a> » 💻 : • Flask : • MySQL : • jQuery',
              21: '<a title="A collaborative code compiler (Python, Java, C, C#, C++, Haskell, Perl, Ruby) built on Heroku and Firebase" href="apps/compile">Compile</a> » 💻 : • Node.js : • Firebase : • Heroku',
              22: '<a title="A collection of CSS3 effects" href="FOSS_PROJECTS/float-master">Float</a> » 😊 : • JavaScript',
-             23: '<a title="A static website for an apparel boutique" href="http://353clothing.com">353</a> » 📱 💻 : • Bootstrap : • Slack',
+             23: '<a title="A static website for an apparel boutique" href="http://353clothing.com">www.353clothing.com</a> » 📱 💻 : • Bootstrap : • Slack',
              24: '<a title="An Android app that finds petrol stations and splits costs" href="https://github.com/thatsparrow/thatsparrow.github.io/tree/master/FOSS_PROJECTS/insight-master">Insight</a> » 📱 : • Java : • Google Maps API',
              25: '<a title="A series of number theory problems and their solutions" href="https://github.com/thatsparrow/euler">EULER</a> » >_ : • C : • C++ : • Java : • Python + 3 more',
              26: '<a title="Technical documentation on the UNIX operating system" href="apps/unix">UNIX</a> » 📚 : • HTML5 : • LaTeX',

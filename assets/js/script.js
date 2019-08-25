@@ -97,36 +97,21 @@ function reloadContent() {
 function compileContent() {
      var a = "hc.liamnotorp/worrapstaht".split("").reverse().join("").replace("/", "@");
      var b = {
-         ALIASES: ["ගල්කිස්ස​ ජාන්", "スズメ", "жэнь", "&#x1F422;"],
-                     
-         BLOG_ENTRIES: {
-             x: '<a title="" href="BLOG/0.html">Hello, World!</a>',
-             xx: '<a title="" href="BLOG/1.html">MATLAB or Mathematica?</a>',
-             xxx: '<a title="" href="BLOG/2.html">The Autonomy of Ethics II</a>',
-             xxxx: '<a title="" href="BLOG/3.html">Nickel Telescope Bias Subtraction (Python 2.7)</a>',
-             xxxxx: '<a title="" href="BLOG/4.html">Beckler on Aristotle&#39;s Theory of Actuality</a>',
-             xxxxxx: '<a title="" href="BLOG/5.html">Turtle School - The Tao of Jann</a>',
-             xxxxxxx: '<a title="" href="BLOG/6.html">Thoughts on Functional Languages</a>',
-             xxxxxxxx: '<a title="" href="BLOG/7.html">Creating your own neural network</a>',
-             xxxxxxxxx: '<a title="" href="BLOG/8.html">The Allure of Female Independence</a>',
-             xxxxxxxxxx: '<a title="" href="BLOG/">READ MORE!</a>',
+        INFO: ['<a class="item" title="?" href="about">About</a>','<a class="item" href="blog">Blog</a>','<a class="item" href="contact">Contact</a>','<a class="item" href="INFO/resume/">Résumé</a>'],
+               
+          
+         PORTFOLIO_creative: {
              
-                          
-         },     
-
-         PORTFOLIO: {
-             _: '<a title="Tank Tops // Leggings // Long Sleeve Tees" href="bugs">Apparel</a>',
-             __: '<a title="Logo // Typography // Web Design" href="bugs">Branding</a>',
-             ___: '<a title="Press Release // Feature // Thought Leadership // AV Script // Case Study // Web Copy" href="PORTFOLIO/copywriting/">Copy</a>',
-             ____: '<a title="Minimal // Hip Hop // Trap" href="PORTFOLIO/music/">Music</a>', 
-             _____: '<a title="Serenity" href="PORTFOLIO/photography/">Pictures</a>',
-             
-            
-             ______: '<a title="Customer Success Stories" href="bugs">Video</a>', 
+             _: '<a title="Minimal // Hip Hop // Trap" href="bugs">Sampling (Music)</a>', 
+             __: '<a title="Serenity" href="bugs">Photography</a>', 
+             ___: '<a title="Tank Tops // Leggings // Long Sleeve Tees" href="bugs">Corporate Design</a>',
+             ____: '<a title="Logo // Typography // Web Design" href="bugs">Web & UI Design</a>',
+             _____: '<a title="Press Release // Feature // Thought Leadership // AV Script // Case Study // Web Copy" href="bugs">Content Writing & Editing</a>',
+             ______: '<a title="Customer Success Stories" href="bugs">Scripts & Storyboards</a>', 
          },
 
-         PROJECTS: {
-             16: '<a title="A minimal notepad for heavy deadlines" href="FOSS_PROJECTS/notepad-master">Notepad</a> » 💻 : • HTML5 : • CSS3 : • JS',
+         PORTFOLIO_software: {
+             16: '<a title="A minimal notepad for heavy deadlines" href="software/notepad-master">Notepad</a> » 💻 : • HTML5 : • CSS3 : • JS',
 	         17: '<a title="For simulating a human typing on-screen" href="FOSS_PROJECTS/type-ai-master">TypeUX</a> » AI : • JavaScript : • CoffeeScript',
              18: '<a title="A few NLP chatbot implementations written in Python" href="FOSS_PROJECTS/pulse-ai-master">Pulse Chatbot(s)</a> » AI : • Python : • NLTK',
              19: '<a title="A static website for a digital agency" href="https://www.behance.net/gallery/71725979/OSIRIS">www.osiris.agency</a> » 📱 💻 : • Jekyll : • Semantic UI',
@@ -149,24 +134,9 @@ function compileContent() {
        
          },
 
-          INFO: ['<a class="item" title="?" href="INFO/about/">About</a>','<a class="item" title="=)" href="INFO/contact/">Contact</a>','<a class="item" title="=P" href="INFO/resume/">Résumé</a>','<a class="item" title=">=D" href="INFO/services/">Services</a>'],
- 
+    
         
          CREDITS: ['<a class="item" href="PGP.md">PGP</a>', '<a class="item" href="REMINDER.md">Reminder</a>','Crafted with &#127866; and 🍕']
      };
      return "<pre id='" + contentId + "'>" + JSON.convertToHumanReadableString(b, 2, window.innerHeight > window.innerWidth) + "</pre>"
  }
-
-        (function(i, s, o, g, r, a, m) {
-            i['GoogleAnalyticsObject'] = r;
-            i[r] = i[r] || function() {
-                (i[r].q = i[r].q || []).push(arguments)
-            }, i[r].l = 1 * new Date();
-            a = s.createElement(o),
-                m = s.getElementsByTagName(o)[0];
-            a.async = 1;
-            a.src = g;
-            m.parentNode.insertBefore(a, m)
-        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
-        ga('create', 'UA-100462785-1', 'auto');
-        ga('send', 'pageview');

@@ -1,7 +1,6 @@
 # robots.txt for https://jannbenjam.in/
 
 User-agent: *
-Disallow: /assets/
 Disallow: /INFO/
 Disallow: /FOSS_PROJECTS/
 Disallow: /PORTFOLIO/

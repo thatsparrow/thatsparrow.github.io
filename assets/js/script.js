@@ -102,12 +102,12 @@ function compileContent() {
           
          PORTFOLIO_creative: {
              
-             _: '<a title="Minimal // Hip Hop // Trap" href="bugs">Sampling (Music)</a>', 
-             __: '<a title="Serenity" href="bugs">Photography</a>', 
-             ___: '<a title="Tank Tops // Leggings // Long Sleeve Tees" href="bugs">Corporate Design</a>',
-             ____: '<a title="Logo // Typography // Web Design" href="bugs">Web & UI Design</a>',
+             _: '<a title="Minimal // Hip Hop // Trap" href="portfolio/sampling">Sampling (Music)</a>', 
+             __: '<a title="Serenity" href="portfolio/photography">Photography</a>', 
+             ___: '<a title="" href="portfolio/corporate-design">Corporate Design</a>',
+             ____: '<a title="Logo // Typography // Web Design" href="portfolio/web-ui-design">Web & UI Design</a>',
              _____: '<a title="Press Release // Feature // Thought Leadership // AV Script // Case Study // Web Copy" href="bugs">Content Writing & Editing</a>',
-             ______: '<a title="Customer Success Stories" href="bugs">Scripts & Storyboards</a>', 
+             ______: '<a title="Customer Success Stories" href="portfolio/scripts-storyboards">Scripts & Storyboards</a>', 
          },
 
          PORTFOLIO_software: {

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Portfolio: Sampling (Music)</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width">
+  <meta name="author" href="humans.txt">
+  <link rel="shortcut icon" href="../../assets/img/favicon.ico">
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Quicksand:500">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css'>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/animsition/4.0.2/css/animsition.min.css" rel="stylesheet">
+  
+  <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+  <noscript><style type="text/css">.animsition { opacity: 1; }</style></noscript>
+
+</head>
+<body class="animsition" >
+<div class="wrapper">
+	<!--<h1>sparrow 鳥</h1>-->
+	<h2></h2>
+	<audio src="" id="hidden-player"></audio>
+	<div id="player">
+		<img src="" class="coverr" alt="" height="200" width="200" />
+		<div class="player-song">
+			<div class="title"></div>
+			<div class="artist"></div>
+			<progress value="0" max="1"></progress>
+			<div class="timestamps">
+				<div class="time-now">0:00:00</div>
+				<div class="time-finish">0:00:00</div>
+			</div>
+			<div class="actions">
+				<div class="prev">
+					<i class="material-icons">fast_rewind</i>
+				</div>
+				<div class="play">
+					<a class="play-button paused" href="#">
+						<div class="left"></div>
+						<div class="right"></div>
+						<div class="triangle-1"></div>
+						<div class="triangle-2"></div>
+					</a>
+				</div>
+				<div class="next">
+					<i class="material-icons">fast_forward</i>
+				</div>					
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+<script src="player.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animsition/4.0.2/js/animsition.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script>$(".animsition").animsition();</script>
+<script>
+		type="text/javascript">
+		$(document).ready(function () {
+		$('body').bind('cut copy paste', function (e) {
+		e.preventDefault();
+		});
+		$("body").on("contextmenu",function(e){
+		return false;
+		});
+		});</script>
+				
+</body></html>

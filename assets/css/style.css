@@ -1,6 +1,7 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css?family=Quicksand:500');
-@media only screen  and (min-width : 1224px) {
+
+/*@media only screen  and (min-width : 1224px) {
 	body {
 		background-color: white;
 		background-image: url("jann_bwinv.jpg");
@@ -10,19 +11,20 @@
 		padding: 27em;
 	}
 }
-
+*/
 
 body {
-	background-image: url("jann_bwinv.jpg");
+	   /* background-image: url("jann_bwinv.jpg");
 		background-size: 15em;
 		background-repeat: no-repeat;
-		background-position: left top; 
-		padding: 27em;
-		background-color: white;
+		background-position: left top; */
+		padding: 0em;
+		/* background-color: white; */
 		color: #696969;
 		font-family: 'Quicksand', sans-serif;
 		font-size: 13px;
 	}
+
 
 
 .value {

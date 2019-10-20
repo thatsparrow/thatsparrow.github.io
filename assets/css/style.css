@@ -19,6 +19,9 @@ body {
 		background-repeat: no-repeat;
 		background-position: left top; */
 		padding: 0em;
+		background-image: url("https://i.pinimg.com/originals/b4/24/2b/b4242b3c4210343737281e0e64e64905.gif");
+		background-repeat: no-repeat;
+		background-position: right top; 
 		/* background-color: white; */
 		color: #696969;
 		font-family: 'Quicksand', sans-serif;

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<meta charset=utf-8>
+<title>Jann's Invoice</title>
+<style>
+    @import url(https://fonts.googleapis.com/css?family=Quicksand:500);
+    .invoice-box {
+        max-width: 800px;
+        margin: auto;
+        padding: 30px;
+        border: 1px solid #eee;
+        box-shadow: 0 0 10px rgba(0, 0, 0, .15);
+        font-size: 16px;
+        line-height: 24px;
+        font-family: Quicksand, sans-serif;
+        color: #555
+    }
+    
+    .invoice-box table {
+        width: 100%;
+        line-height: inherit;
+        text-align: left
+    }
+    
+    .invoice-box table td {
+        padding: 5px;
+        vertical-align: top
+    }
+    
+    .invoice-box table tr td:nth-child(2) {
+        text-align: right
+    }
+    
+    .invoice-box table tr.top table td {
+        padding-bottom: 20px
+    }
+    
+    .invoice-box table tr.top table td.title {
+        font-size: 45px;
+        line-height: 45px;
+        color: #333
+    }
+    
+    .invoice-box table tr.information table td {
+        padding-bottom: 40px
+    }
+    
+    .invoice-box table tr.heading td {
+        background: #eee;
+        border-bottom: 1px solid #ddd;
+        font-weight: 700
+    }
+    
+    .invoice-box table tr.details td {
+        padding-bottom: 20px
+    }
+    
+    .invoice-box table tr.item td {
+        border-bottom: 1px solid #eee
+    }
+    
+    .invoice-box table tr.item.last td {
+        border-bottom: none
+    }
+    
+    .invoice-box table tr.total td:nth-child(2) {
+        border-top: 2px solid #eee;
+        font-weight: 700
+    }
+    
+    @media only screen and (max-width:600px) {
+        .invoice-box table tr.top table td {
+            width: 100%;
+            display: block;
+            text-align: center
+        }
+        .invoice-box table tr.information table td {
+            width: 100%;
+            display: block;
+            text-align: center
+        }
+    }
+    
+    .rtl {
+        direction: rtl;
+        font-family: Tahoma, 'Helvetica Neue', Helvetica, Helvetica, Arial, sans-serif
+    }
+    
+    .rtl table {
+        text-align: right
+    }
+    
+    .rtl table tr td:nth-child(2) {
+        text-align: left
+    }
+</style>
+<div class=invoice-box>
+    <table cellpadding=0 cellspacing=0>
+        <tr class=top>
+            <td colspan=2>
+                <table>
+                    <tr>
+                        <td>Invoice #: 16
+                            <br>Created: December 2nd, 2019
+                            <br>Due: ASAP </table>
+                <tr class=information>
+                    <td colspan=2>
+                        <table>
+                            <tr>
+                                <td>
+                                    <h3>Jann Benjamin</h3>
+                                    <br>15/2 Off De Seram Rd.
+                                    <br>Mount Lavinia
+                                    <br>
+                                    <br>📨 user@jannbenjam.in
+                                    <br>🌐 https://jannbenjam.in/rate-card.pdf
+                                    <br>📱 +94 766 970 959
+                                    <td>Dentsu Aegis Network
+                                        <br>176/1 Thimbirigasyaya Road
+                                        <br>Colombo 5 </table>
+                        <tr class=heading>
+                            <td>Payment Method(s)
+                                <td>Check #
+                                    <tr class=details>
+                                        <td>Check
+                                            <td>16
+                                                <tr class=details>
+                                                    <td>Direct Deposit
+                                                        <td>JMF Benjamin
+                                                            <br>Account No : 1000164853
+                                                            <br>Bank : Commercial Bank
+                                                            <br>Branch : Mount Lavinia
+                                                            <br>SWIFT Code : CCEYLKLX
+                                                            <br>Branch Code : 093
+                                                            <tr class=heading>
+                                                                <td>Item(s)
+                                                                    <td>Price (LKR)
+                                                                        <tr class=item>
+                                                                            <td>Retainer Fee for November 2019 (November 1st - November 30th)
+                                                                                <br>x Short Form Web/Blog Content - Hasitha x2
+                                                                                <br>x Short Form Web/Blog Content - Sook Hoon x2
+                                                                                <br>x Short Form Web/Blog Content - Afif x1
+                                                                                <br>x Photo Caption - Microsoft at Dev Day 2019 
+                                                                                <br>x Long Form Web/ Blog Content - Sook Hoon LinkedIn Blog II
+                                                                                <br>
+                                                                                <td>85,000.00
+                                                                                	 <tr class=item>
+                                                                                        <td>ADD-ON: Press Release - Microsoft 365/ Security
+                                                                                            <br>
+                                                                                            <td>6,000.00
+                                                                                    <tr class=item>
+                                                                                        <td>ADD-ON: Press Release - Arimac at APICTA Awards 2019
+                                                                                            <br>
+                                                                                            <td>6,000.00
+                                                                                                <tr class=item>
+                                                                                                    <td>ADD-ON: Internal Business Letter - Sampath Bank
+                                                                                                        <br>
+                                                                                                        <td>6,000.00
+                                                                                                            <tr class=item>
+                                                                                                                <td>ADD-ON: Thought Leadership/ Byline Article - Sampath Bank
+                                                                                                                    <br>
+                                                                                                                    <td>15,000.00
+                                                                                                                    	 <tr class=item>
+                                                                                                                <td>ADD-ON: Copy Editing - Mohenesh Chamith Buthgumwa Q&A
+                                                                                                                    <br>
+                                                                                                                    <td>5,000.00
+                                                                                                                        <tr class=total>
+                                                                                                                            <td>
+                                                                                                                                <td>Total: LKR 123,000 </table>
+</div>

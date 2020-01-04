@@ -708,7 +708,7 @@ a:hover {
 }
 
 .Blog__title {
-	font-size: 20px
+	font-size: 40px
 }
 
 .Blog__links {
@@ -729,7 +729,7 @@ a:hover {
 }
 
 .Blog__body {
-	margin-top: 50px
+	margin-top: 10px
 }
 
 .Blog__footer {

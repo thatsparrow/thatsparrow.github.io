@@ -97,7 +97,7 @@ function reloadContent() {
 function compileContent() {
      var a = "hc.liamnotorp/worrapstaht".split("").reverse().join("").replace("/", "@");
      var b = {
-        INFO: ['<a class="item" title="?" href="about">Who is 👉 guy?</a>','<a class="item" href="store">Store</a>','<a class="item" href="blog">Blog</a>','<a class="item" href="contact/">Contact</a>'],
+        INFO: ['<a class="item" href="blog">Blog</a>','<a class="item" href="contact/">Contact</a>','<a class="item" title="?" href="hello">Who is 👉 guy?</a>'],
                
           
          PORTFOLIO_creative: {
@@ -105,7 +105,7 @@ function compileContent() {
              _: '<a title="Minimal // Hip Hop // Trap" href="portfolio/sampling">Sampling (Music)</a>', 
              __: '<a title="Serenity" href="portfolio/photography">Photography</a>', 
              ___: '<a title="" href="portfolio/corporate-design">Corporate Design</a>',
-             ____: '<a title="Logo // Typography // Web Design" href="portfolio/web-ui-design">Web & UI Design</a>',
+             ____: '<a title="Logo // Typography // Web Design" href="portfolio/web-ui-design">UI & UX Design</a>',
              _____: '<a title="Press Release // Feature // Thought Leadership // AV Script // Case Study // Web Copy" href="bugs">Content Writing & Editing</a>',
              ______: '<a title="Customer Success Stories" href="portfolio/scripts-storyboards">Scripts & Storyboards</a>', 
          },

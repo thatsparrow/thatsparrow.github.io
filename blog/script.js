@@ -1518,7 +1518,7 @@ require = function(r, e, n) {
                         }, e.name)
                     })), t.createElement("span", {
                         className: "Article__comments"
-                    }, "Comments ", l.comments))), t.createElement("div", {
+                    }, "Comments ", l.comments))), t.createElement("div", {
                         className: "Article__body"
                     }, t.createElement("div", {
                         className: "Article__content markdown-body",
@@ -1732,20 +1732,8 @@ require = function(r, e, n) {
                     }, r.createElement("li", {
                         className: "Blog__link"
                     }, r.createElement("a", {
-                        href: "../about"
-                    }, "About")), r.createElement("li", {
-                        className: "Blog__link"
-                    }, r.createElement("a", {
-                        href: "../contact"
-                    }, "Contact")), r.createElement("li", {
-                        className: "Blog__link"
-                    }, r.createElement("a", {
-                        href: "../services"
-                    }, "Services")), r.createElement("li", {
-                        className: "Blog__link"
-                    }, r.createElement("a", {
                         href: "../resume"
-                    }, "Résumé")))), r.createElement("div", {
+                    }, "")))), r.createElement("div", {
                         className: "Blog__body"
                     }, r.createElement(a.Router, {
                         history: n

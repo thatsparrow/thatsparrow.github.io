@@ -125,7 +125,7 @@ function compileContent() {
              27: '<a title="A few shell scripts to automate your life" href="https://github.com/thatsparrow/scripts">My Scripts</a> » >_ : • Bash : • Fish : • Python ',
              28: '<a title="A two-body simulation written in JavaScript" href="">Kepler Orbits</a> » 📈 : • JavaScript',
              29: '<a title="A simulation of wind-driven ocean waves in 2D" href="">2D Ray Tracing</a> » 📈 : • Fortran',
-             30: '<a title="An offline html editor" href="html-editor">HTML Editor</a> » 📱 💻 : • JavaScript  ',
+             30: '<a title="An offline html editor" href="apps/html-editor">HTML Editor</a> » 📱 💻 : • JavaScript  ',
              31: '<a title="A background music player" href="apps/background-music-player">Background Music Player</a> » 📱 💻 : • JavaScript',
              32: '<a title="A calculator written in JavaScript" href="">CalculatorJS</a> » 📱 💻 : • JavaScript',
              33: '<a title="A touch-typing interface for improving WPM" href="apps/keyboard-warrior">Keyboard Warrior</a> » 📱 💻 : • HTML5 : • CSS3 : • JS',

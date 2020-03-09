@@ -279,7 +279,7 @@ h3 {
 
 label {
 	color: transparent;
-	background: url("https://jannbenjam.in/apps/background-music-player/img/sprite.png") -40px 0 no-repeat;
+	background: url("https://jannbenjam.in/apps/background-music/img/sprite.png") -40px 0 no-repeat;
 	border-radius: 14px;
 	box-shadow: 0 1px 2px #888,0 0 3px #777,inset 0 -1px 5px #333;
 	display: block;
@@ -305,7 +305,7 @@ input[type=checkbox] {
 }
 
 label span {
-	background: url("https://jannbenjam.in/apps/background-music-player/img/sprite.png") -1px -30px no-repeat;
+	background: url("https://jannbenjam.in/apps/background-music/img/sprite.png") -1px -30px no-repeat;
 	border: 0 solid transparent;
 	border-radius: 14px;
 	box-shadow: 0 1px 3px #000,0 2px 13px #000;

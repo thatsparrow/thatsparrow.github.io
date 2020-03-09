@@ -4,12 +4,12 @@
 <url>
   <loc>https://jannbenjam.in/</loc>
   <image:image>
-       <image:loc>https://jannbenjam.in/assets/img/jann.png</image:loc>
+       <image:loc>https://jannbenjam.in/jann_benjamin_400x400.jpg</image:loc>
        <image:caption>Jann Benjamin</image:caption>
   </image:image>
 </url>
 <url>
-  <loc>https://jannbenjam.in/about/</loc>
+  <loc>https://jannbenjam.in/hello/</loc>
 </url>
 <url>
   <loc>https://jannbenjam.in/blog/</loc>

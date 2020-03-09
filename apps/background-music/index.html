@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>Background Music</title>
+	<meta name="viewport" content="width=device-width" />
+	<link rel="stylesheet" href="rain.css" />	
+	<!--[if lt IE 9]> <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script> <![endif]-->
+</head>
+
+<body>
+
+   <div id="switchbox">
+            <ul>
+                <li>
+                    <h2>Cafe</h2>
+                    <h3>Volume</h3>
+                    <div class="clear"></div>
+                    <!-- Cafe recording by Samuel Justice / https://soundcloud.com/samueljustice --><audio id="cafe"
+                    loop="" preload="">
+                    <source src="cafe.mp3" type="audio/mpeg">
+                    <source src="cafe.ogg" type="audio/ogg">Sorry, your browser does not support HTML5 audio.</audio>
+                    <div>
+                        <input id="cafeToggle" type="checkbox" value="cafe">
+                        <label for="cafeToggle"><span>Toggle Audio</span></label> 
+                        <input max="100" min="0" step="1" type="range" value="100">
+                        <div class="clear"></div>
+                    </div>
+                </li>
+
+                <li style="border-top: 1px solid #fff;">
+                    <h2>Rain</h2>
+                    <h3>Volume</h3>
+                    <div class="clear"></div>
+                    <!-- Rain recording by Matt Barnard  / https://soundcloud.com/mattt --><audio id="rain"
+                    loop="" preload="">
+                    <source src="rain.mp3" type="audio/mpeg">
+                    <source src="rain.ogg" type="audio/ogg">Sorry, your browser does not support HTML5 audio.</audio>
+                    <div>
+                        <input id="rainToggle" type="checkbox" value="rain"> 
+                        <label for="rainToggle"><span>Toggle Audio</span></label> 
+                        <input max="100" min="0" step="1" type="range" value="100">
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+
+	<script>
+	// Audio Controls
+    var a=document.getElementsByTagName("input");
+    for(var i=0;i<a.length;i++){
+        var b = a[i].type;
+        if (b == "checkbox") {
+            a[i].onclick=function(e){
+                var t=this.checked===true;
+                document.getElementById(this.value)[t?"play":"pause"]();
+                this.checked=t?true:false;
+            }
+        } else if (b == "range") {
+            a[i].onchange=function(e){
+                document.getElementById(this.parentNode.children[0].value).volume = this.value/100;
+            }
+        }
+    }
+    // retina.js, a high-resolution image swapper (https://retinajs.com), v0.0.2
+    (function(){function t(e){this.path=e;var t=this.path.split("."),n=t.slice(0,t.length-1).join("."),r=t[t.length-1];this.at_2x_path=n+"@2x."+r}function n(e){this.el=e,this.path=new t(this.el.getAttribute("src"));var n=this;this.path.check_2x_variant(function(e){e&&n.swap()})}var e=typeof exports=="undefined"?window:exports;e.RetinaImagePath=t,t.confirmed_paths=[],t.prototype.is_external=function(){return!!this.path.match(/^https?\:/i)&&!this.path.match("//"+document.domain)},t.prototype.check_2x_variant=function(e){var n,r=this;if(this.is_external())return e(!1);if(this.at_2x_path in t.confirmed_paths)return e(!0);n=new XMLHttpRequest,n.open("HEAD",this.at_2x_path),n.onreadystatechange=function(){return n.readyState!=4?e(!1):n.status>=200&&n.status<=399?(t.confirmed_paths.push(r.at_2x_path),e(!0)):e(!1)},n.send()},e.RetinaImage=n,n.prototype.swap=function(e){function n(){t.el.complete?(t.el.setAttribute("width",t.el.offsetWidth),t.el.setAttribute("height",t.el.offsetHeight),t.el.setAttribute("src",e)):setTimeout(n,5)}typeof e=="undefined"&&(e=this.path.at_2x_path);var t=this;n()},e.devicePixelRatio>1&&(window.onload=function(){var e=document.getElementsByTagName("img"),t=[],r,i;for(r=0;r<e.length;r++)i=e[r],t.push(new n(i))})})();
+    (function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(d.getElementById(id))return;js=d.createElement(s);js.id=id;js.src="//connect.facebook.net/en_US/all.js#xfbml=1&appId=443400879031715";fjs.parentNode.insertBefore(js,fjs)}(document,'script','facebook-jssdk'));
+    !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs)}}(document,"script","twitter-wjs");
+	
+
+    </script>
+
+</body>
+</html>

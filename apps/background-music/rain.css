@@ -1,0 +1,498 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand:500');
+
+article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,summary {
+	display: block;
+}
+
+audio,canvas,video {
+	display: inline-block;
+	display: inline;
+	zoom: 1;
+}
+
+audio:not([controls]) {
+	display: none;
+	height: 0;
+}
+
+[hidden] {
+	display: none;
+}
+
+html {
+	font-size: 100%;
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+}
+
+html,button,input,select,textarea {
+	font-family: 'Quicksand', sans-serif;
+}
+
+body {
+	margin: 0;
+}
+
+a:focus {
+	outline: 0;
+}
+
+a:active,a:hover {
+	outline: 0;
+}
+
+h1 {
+	font-size: 2em;
+	/*margin: .67em 0;*/
+}
+
+h2 {
+	font-size: 1.5em;
+	margin: .83em 0;
+}
+
+abbr[title] {
+	border-bottom: 1px dotted;
+}
+
+b,strong {
+	font-weight: 700;
+}
+
+blockquote {
+	margin: 1em 40px;
+}
+
+p {
+	margin: 1em 0;
+}
+
+q {
+	quotes: none;
+}
+
+q:before,q:after {
+	content: '';
+	content: none;
+}
+
+small {
+	font-size: 80%;
+}
+
+sub,sup {
+	font-size: 75%;
+	line-height: 0;
+	position: relative;
+	vertical-align: baseline;
+}
+
+sup {
+	top: -.5em;
+}
+
+sub {
+	bottom: -.25em;
+}
+
+dl,menu,ol,ul {
+	margin: 1em 0;
+}
+
+dd {
+	margin: 0 0 0 40px;
+}
+
+menu,ol,ul {
+	padding: 0 0 0 40px;
+}
+
+img {
+	border: 0;
+	-ms-interpolation-mode: bicubic;
+}
+
+svg:not(:root) {
+	overflow: hidden;
+}
+
+figure {
+	margin: 0;
+}
+
+form {
+	margin: 0;
+}
+
+button,input,select,textarea {
+	font-size: 100%;
+	margin: 0;
+	vertical-align: baseline;
+	vertical-align: middle;
+}
+
+button,input {
+	line-height: normal;
+}
+
+button,select {
+	text-transform: none;
+}
+
+button,html input[type=button],input[type=reset],input[type=submit] {
+	-webkit-appearance: button;
+	cursor: pointer;
+	overflow: visible;
+}
+
+button[disabled],html input[disabled] {
+	cursor: default;
+}
+
+input[type=checkbox],input[type=radio] {
+	box-sizing: border-box;
+	padding: 0;
+	height: 13px;
+	width: 13px;
+}
+
+input[type=search] {
+	-webkit-appearance: textfield;
+	-moz-box-sizing: content-box;
+	-webkit-box-sizing: content-box;
+	box-sizing: content-box;
+}
+
+input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration {
+	-webkit-appearance: none;
+}
+
+button::-moz-focus-inner,input::-moz-focus-inner {
+	border: 0;
+	padding: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+html,button,input,select,textarea {
+	color: #222;
+}
+
+body {
+	font-size: 1em;
+	line-height: 1.4;
+}
+
+::-moz-selection {
+	background: #b3d4fc;
+	text-shadow: none;
+}
+
+::selection {
+	background: #b3d4fc;
+	text-shadow: none;
+}
+
+img {
+	vertical-align: middle;
+}
+
+body {
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+#holder {
+	max-width: 745px;
+	padding: 20px;
+	margin: 20px auto;
+	background: rgba(0,0,0,.7);
+	border-radius: 10px;
+}
+
+h1 {
+	font-size: 1.625em;
+	color: #cecece;
+	font-family: 'Quicksand', sans-serif;
+	margin: 0 0 30px 0;
+	padding-left: 10px;
+	position: relative;
+}
+
+h1:before {
+	content: '';
+	width: 25px;
+	height: 23px;
+	position: absolute;
+	left: -2px;
+	top: 6px;
+}
+
+#switchbox {
+	background-color: #fff;
+	width: 100%;
+	padding: 10px 0;
+	text-align: center;
+}
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+li {
+	float: left;
+	margin: 0;
+	padding: 25px 36px;
+	text-align: center;
+}
+
+li div {
+	margin: 1.125em 0;
+}
+
+h2 {
+	font-family: 'Quicksand', sans-serif;
+	margin: 0 0 15px;
+	font-size: 1.5em;
+	color: #202020;
+	float: left;
+	width: 35%;
+	text-align: left;
+}
+
+h3 {
+	font-family: 'Quicksand', sans-serif;
+	margin: 5px 0 0;
+	font-size: 1em;
+	color: #202020;
+	float: left;
+	width: 65%;
+	text-align: center;
+	display: block;
+}
+
+label {
+	color: transparent;
+	background: url("https://jannbenjam.in/apps/background-music-player/img/sprite.png") -40px 0 no-repeat;
+	border-radius: 14px;
+	box-shadow: 0 1px 2px #888,0 0 3px #777,inset 0 -1px 5px #333;
+	display: block;
+	position: relative;
+	text-indent: 100%;
+	width: 65px;
+	height: 29px;
+	-webkit-transition: background-position .3s ease;
+	-moz-transition: background-position .3s ease;
+	cursor: pointer;
+	font-size: .01em;
+	float: left;
+}
+
+input[type=range] {
+	float: left;
+	width: 155px;
+	margin: 5px 0 0 20px;
+}
+
+input[type=checkbox] {
+	display: none;
+}
+
+label span {
+	background: url("https://jannbenjam.in/apps/background-music-player/img/sprite.png") -1px -30px no-repeat;
+	border: 0 solid transparent;
+	border-radius: 14px;
+	box-shadow: 0 1px 3px #000,0 2px 13px #000;
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: -1px;
+	width: 28px;
+	height: 28px;
+	-webkit-transition: left .3s ease;
+	-moz-transition: left .3s ease;
+}
+
+input[type=checkbox]:checked + label {
+	background-position: 0 0;
+}
+
+input[type=checkbox]:checked + label span {
+	left: 40px;
+}
+
+#words {
+	float: left;
+	margin-left: 25px;
+	width: 54%;
+	font-size: 1.18em;
+	color: #cec2be;
+	font-family: Georgia,serif;
+	margin-bottom: 90px;
+}
+
+#words p {
+	margin: 0;
+}
+
+#words span {
+	font-size: .65em;
+	color: #797879;
+	font-family: Helvetica,Arial,sans-serif;
+}
+
+#words a {
+	color: #888;
+	text-decoration: none;
+}
+
+#words a:hover {
+	text-decoration: underline;
+}
+
+#private {
+	margin: 0;
+	font-size: .8em;
+	color: #797879;
+}
+
+#private a {
+	color: #888;
+	text-decoration: none;
+}
+
+#private a:hover {
+	text-decoration: underline;
+}
+
+#linky {
+	clear: both;
+	display: block;
+	margin: 20px auto 0 auto;
+	width: auto;
+	text-align: center;
+	line-height: .6;
+}
+
+/*#linky img:first-of-type {
+	width: 167px;
+	height: 50px;
+	display: block;
+	margin: 0 auto 20px;
+}*/
+
+.facebook {
+	display: inline-block;
+	margin-right: 5%;
+}
+
+.twitter {
+	display: inline-block;
+	text-align: left;
+}
+
+#beg {
+	margin: 10px auto;
+	color: #cec2be;
+	text-align: center;
+}
+
+#beg a,#beg a:visited {
+	color: #A7C363;
+	font-weight: 700;
+	text-decoration: none;
+}
+
+#beg a:hover {
+	text-decoration: underline;
+}
+
+
+@media only screen and (max-width: 770px) {
+	body {
+		font-size: 14px;
+		padding: 7px;
+	}
+	
+	h1 {
+		margin-bottom: 30px;
+	}
+	
+	#switchbox {
+		float: none;
+		width: 65%;
+		margin: auto;
+	}
+	
+	h2 {
+		margin-bottom: 5px;
+		float: none;
+		width: 100%;
+		text-align: center;
+	}
+	
+	h3 {
+		display: none;
+	}
+	
+	#switchbox li {
+		float: none;
+		padding: 15px 0 0;
+		width: 100%;
+	}
+	
+	#switchbox li:nth-of-type(2) {
+		margin-top: 20px;
+	}
+	
+	#switchbox div {
+		width: 68px;
+		margin: 1.125em auto;
+	}
+	
+	label {
+		float: none;
+	}
+	
+	#words {
+		float: none;
+		width: 100%;
+		margin: 15px 0 0;
+	}
+	
+	#words span {
+		font-size: .75em;
+	}
+	
+	.facebook,.twitter {
+		display: none !important;
+	}
+	
+	input[type=range] {
+		display: none;
+	}
+
+	#google-ads-1 {display: none;}
+
+	.switchad {display: none;}
+
+}
+
+	
+
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5) {
+	h1:before,.label,label span {
+		background-image: url(/img/sprite@2x.png);
+		background-size: 105px 59px;
+	}
+
+}

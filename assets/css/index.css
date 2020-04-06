@@ -1,0 +1,107 @@
+/*
+ * #004ba8;
+ * #07070a;
+ * #24272b;
+ * #495057;
+ * #4a525a;
+*/
+
+h1 {
+  font-size: 2rem;
+  line-height: 1.5rem;
+  font-variant: small-caps;
+}
+
+body {
+  font-family: 'Quicksand', sans-serif;
+  color: #07070a;
+  width: 300px
+}
+
+@media (min-width: 384px) {
+  body {
+      padding-top: 1rem;
+      padding-left: 1rem;
+  }
+
+  h1 {
+      font-size: 3rem;
+      line-height: 3rem;
+  }
+}
+
+@media (min-width: 768px) {
+  body {
+      padding-top: 3rem;
+      padding-left: 3rem;
+      padding-bottom: 3rem;
+  }
+
+  h1 {
+      font-size: 4rem;
+      line-height: 3.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  body {
+      padding-top: 5rem;
+      padding-left: 5rem;
+      padding-bottom: 5rem;
+  }
+
+  h1 {
+      font-size: 5rem;
+      line-height: 4.5rem;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+  color: #4a525a;
+}
+
+
+p.lead {
+  font-size: 1.15rem;
+  font-weight: 400;
+}
+
+.social-icons a {
+  color: #495057;
+  display: inline-block;
+  height: 2.5rem;
+  line-height: 3.0rem;
+  text-align: center;
+  border-radius: 5%;
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  margin-right: 1rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+.social-icons a.resume {
+  text-decoration: underline;
+}
+.social-icons a:hover {
+  background-color: #495057;
+  color: #fff;
+}
+
+.text-primary {
+  color: #07070a !important;
+}
+
+a {
+  color: #24272b;
+}
+
+a:hover, a:focus, a:active {
+  color: #004ba8;
+}
+

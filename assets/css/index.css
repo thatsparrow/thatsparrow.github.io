@@ -30,19 +30,6 @@ body {
   }
 }
 
-@media (min-width: 768px) {
-  body {
-      padding-top: 3rem;
-      padding-left: 3rem;
-      padding-bottom: 3rem;
-  }
-
-  h1 {
-      font-size: 4rem;
-      line-height: 3.5rem;
-  }
-}
-
 @media (min-width: 1024px) {
   body {
       padding-top: 5rem;
@@ -55,6 +42,8 @@ body {
       line-height: 4.5rem;
   }
 }
+
+
 
 h1,
 h2,
@@ -89,7 +78,7 @@ p.lead {
   text-decoration: underline;
 }
 .social-icons a:hover {
-  background-color: #495057;
+  background-color: #fff;
   color: #fff;
 }
 

@@ -13,7 +13,12 @@ h1 {
 }
 
 body {
-  font-family: 'Quicksand', sans-serif;
+  
+  background-image: url("jann_bwinv.jpg");
+	background-size: 11em;
+	background-repeat: no-repeat;
+	background-position: right top; 
+	font-family: 'Quicksand', sans-serif;
   color: #07070a;
   width: 300px
 }
@@ -32,9 +37,9 @@ body {
 
 @media (min-width: 1024px) {
   body {
-      padding-top: 5rem;
+      padding-top: 4rem;
       padding-left: 5rem;
-      padding-bottom: 5rem;
+      padding-bottom: 0rem;
   }
 
   h1 {

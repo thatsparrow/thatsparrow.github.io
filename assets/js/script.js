@@ -97,7 +97,7 @@ function reloadContent() {
 function compileContent() {
      var a = "hc.liamnotorp/worrapstaht".split("").reverse().join("").replace("/", "@");
      var b = {
-        INFO: ['<a class="item" href="../">Home Page</a>','<a class="item" href="../resume/">Résumé/CV</a>','<a class="item" title="?" href="../hello">Who is 👉 guy?</a>'],
+        INFO: ['<a class="item" href="../">Home Page</a>','<a class="item" title="?" href="../resume">Résumé/CV</a>'],
                
           
          PORTFOLIO_creative: {
@@ -107,7 +107,7 @@ function compileContent() {
              ___: '<a title="" href="../portfolio/corporate-design">Corporate Design</a>',
              ____: '<a title="Logo // Typography // Web Design" href="../portfolio/web-ui-design">UI & UX Design</a>',
              _____: '<a title="Press Release // Feature // Thought Leadership // AV Script // Case Study // Web Copy" href="bugs">Content Writing & Editing</a>',
-             ______: '<a title="Customer Success Stories" href="../portfolio/scripts-storyboards">Scripts & Storyboards</a>', 
+             
          },
 
          PORTFOLIO_software: {
@@ -120,9 +120,9 @@ function compileContent() {
              22: '<a title="Animation effects for links, buttons, logos, SVGs, etc." href="../apps/float-ux">FloatUX</a> » 📱 💻 : • JavaScript',
              23: '<a title="A static website for an apparel boutique" href="../apps/353-clothing">353clothing.com</a> » 📱 💻 : • Bootstrap : • Slack',
              24: '<a title="An Android app that finds petrol stations and splits costs" href="https://github.com/thatsparrow/thatsparrow.github.io/tree/master/FOSS_PROJECTS/insight-master">Insight</a> » 📱 : • Java : • Google Maps API',
-             25: '<a title="A series of number theory problems and their solutions" href="https://github.com/thatsparrow/euler">Project Euler</a> » >_ : • C : • C++ : • Python',
+             25: '<a title="A series of number theory problems and their solutions" href="https://github.com/thatsparrow/euler">Project Euler</a> » 📚 : • C : • C++ : • Python',
              26: '<a title="Technical documentation on the UNIX operating system" href="">UNIX 101</a> » 📚 : • HTML5 : • LaTeX',
-             27: '<a title="A few shell scripts to automate your life" href="https://github.com/thatsparrow/scripts">My Scripts</a> » >_ : • Bash : • Fish : • Python ',
+             27: '<a title="A few shell scripts to automate your life" href="https://github.com/thatsparrow/scripts">My Scripts</a> » 📚 : • Bash : • Fish : • Python ',
              28: '<a title="A two-body simulation written in JavaScript" href="../apps/kepler-orbits">Kepler Orbits</a> » 📈 : • JavaScript',
              29: '<a title="A simulation of wind-driven ocean waves in 2D" href="">2D Ray Tracing</a> » 📈 : • Fortran',
              30: '<a title="An offline html editor" href="../apps/html-editor">HTML Editor</a> » 📱 💻 : • JavaScript  ',
@@ -136,7 +136,7 @@ function compileContent() {
 
     
         
-         CREDITS: ['<a class="item" href="resume/">Résumé</a>', '<a class="item" href="REMINDER.md">Reminder</a>','Crafted with &#127866; and 🍕']
+         CREDITS: ['<a class="item" href="../REMINDER.md">Reminder</a>','Crafted with &#127866; and 🍕']
      };
      return "<pre id='" + contentId + "'>" + JSON.convertToHumanReadableString(b, 2, window.innerHeight > window.innerWidth) + "</pre>"
  }

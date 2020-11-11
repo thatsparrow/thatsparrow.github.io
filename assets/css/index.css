@@ -13,11 +13,13 @@ h1 {
 }
 
 body {
+
+  background: #67B26F;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #F8F8F8, #fff);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #F8F8F8, #fff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
   
-  background-image: url("jann_bwinv.jpg");
-	background-size: 11em;
-	background-repeat: no-repeat;
-	background-position: right top; 
+ 
 	font-family: 'Quicksand', sans-serif;
   color: #07070a;
   width: 300px
@@ -83,8 +85,8 @@ p.lead {
   text-decoration: underline;
 }
 .social-icons a:hover {
-  background-color: #fff;
-  color: #fff;
+  background-color: #F8F8F8;
+  color: #000;
 }
 
 .text-primary {

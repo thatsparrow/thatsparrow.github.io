@@ -92,8 +92,8 @@ p.lead {
   text-decoration: underline;
 }
 .social-icons a:hover {
-  background-color: #F8F8F8;
-  color: #000;
+  background-color: #ffffff;
+  color: rgb(223, 102, 102);
 }
 
 .text-primary {
@@ -101,7 +101,7 @@ p.lead {
 }
 
 a {
-  color: #24272b;
+  color: #001127;
 }
 
 a:hover, a:focus, a:active {

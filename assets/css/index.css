@@ -14,17 +14,16 @@ h1 {
 
 body {
 
-  background-image: url("https://images.squarespace-cdn.com/content/v1/5b28fae431d4df6596716d16/1533871829510-5HDT1HWYLM1MAZWIYV9P/ke17ZwdGBToddI8pDm48kK_97XZKSFfaqITFlElAJv1Zw-zPPgdn4jUwVcJE1ZvWhcwhEtWJXoshNdA9f1qD7SWQ2jRIjdsAnJr4FtnFyzykodlwgOGcuNz5eUT-EKH7fiPyLKNTIJZT1a7QKpqpww/tesseract.gif");
+  
+background-image: url("https://images.squarespace-cdn.com/content/v1/5b28fae431d4df6596716d16/1533871829510-5HDT1HWYLM1MAZWIYV9P/ke17ZwdGBToddI8pDm48kK_97XZKSFfaqITFlElAJv1Zw-zPPgdn4jUwVcJE1ZvWhcwhEtWJXoshNdA9f1qD7SWQ2jRIjdsAnJr4FtnFyzykodlwgOGcuNz5eUT-EKH7fiPyLKNTIJZT1a7QKpqpww/tesseract.gif");
+    
+  
   background-color: #000;
   background-size: 15em;
   background-repeat: no-repeat;
-  background-position: right bottom; 
+  background-position: bottom right; 
   padding: 0em;
 
- /* 
-background: #fff;  /* fallback for old browsers 
-background: -webkit-linear-gradient(to right, #F8F8F8, #fff);  /* Chrome 10-25, Safari 5.1-6 */
-/* background: linear-gradient(to right, #F8F8F8, #fff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
 
  
@@ -94,7 +93,7 @@ p.lead {
 }
 .social-icons a:hover {
   background-color: #000;
-  color: rgb(223, 102, 102);
+  color: rgb(243, 243, 243);
 }
 
 .text-primary {

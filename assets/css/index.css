@@ -15,11 +15,11 @@ h1 {
 body {
 
   
-background-image: url("https://images.squarespace-cdn.com/content/v1/5b28fae431d4df6596716d16/1533871829510-5HDT1HWYLM1MAZWIYV9P/ke17ZwdGBToddI8pDm48kK_97XZKSFfaqITFlElAJv1Zw-zPPgdn4jUwVcJE1ZvWhcwhEtWJXoshNdA9f1qD7SWQ2jRIjdsAnJr4FtnFyzykodlwgOGcuNz5eUT-EKH7fiPyLKNTIJZT1a7QKpqpww/tesseract.gif");
+background-image: url("https://bestanimations.com/media/spheres/1692615557sphere-computer-effects-3d-animated-gif-40.gif");
     
   
-  background-color: #000;
-  background-size: 15em;
+  background-color: #111111;
+  background-size: 25em;
   background-repeat: no-repeat;
   background-position: bottom; 
   padding: 15em;
@@ -92,7 +92,7 @@ p.lead {
   text-decoration: underline;
 }
 .social-icons a:hover {
-  background-color: #000;
+  background-color: #111111;
   color: rgb(243, 243, 243);
 }
 

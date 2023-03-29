@@ -13,20 +13,14 @@ h1 {
 }
 
 body {
-
-  
-background-image: url("https://bestanimations.com/media/spheres/1692615557sphere-computer-effects-3d-animated-gif-40.gif");
-    
-  
+/*
+  background-image: url("https://bestanimations.com/media/spheres/1692615557sphere-computer-effects-3d-animated-gif-40.gif"); 
+  */
   background-color: #111111;
   background-size: 25em;
   background-repeat: no-repeat;
   background-position: bottom; 
   padding: 15em;
-
-
-
- 
 	font-family: 'Quicksand', sans-serif;
   color: #fff;
   width: 300px

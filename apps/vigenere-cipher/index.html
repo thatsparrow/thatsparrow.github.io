@@ -1,0 +1,28 @@
+<html>
+
+<h2>Vigenère cipher</h2>
+<noscript>
+	<p>This requires JavaScript, which is not supported by your browser or is disabled.</p>
+</noscript>
+<script src="/apps//vigenere-cipher/vigenere-cipher.js" defer="defer"></script>
+<table class="noborder">
+	<tbody>
+		<tr>
+			<td><label for="text">Text:</label></td>
+			<td><textarea id="text" cols="50" rows="10" style="width:40em; height:15em">THE QUICK BROWN FOX JUMPS OVER THE LAZY DOG.</textarea></td>
+		</tr>
+		<tr>
+			<td><label for="key">Key:</label></td>
+			<td><input type="text" value="abc" id="key" style="width:10em"/></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td>
+				<button onclick="app.doCrypt(false);">Encrypt</button>
+				<button onclick="app.doCrypt(true);">Decrypt</button>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+</html>

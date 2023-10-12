@@ -1,9 +1,9 @@
-This site was built by a human named Jann at a remote site on Earth. It's updated continuously, and built with more tools and technologies than I can shake a stick at. If you'd like to help him out, point your browser to https://www.effectivealtruism.org/.
+This site was built by a human named Jann at a remote site on Earth. It's updated continuously, and built with more tools and technologies than I can shake a stick at. 
 
 /* AUTHOR */   
 
         Name: Jann Benjamin                     
-        Contact: thatsparrow [at] protonmail.ch                                                                           
+        Contact: user [at] jannbenjam.in                                                                           
 
 /* THANKS */
 
@@ -11,10 +11,11 @@ This site was built by a human named Jann at a remote site on Earth. It's update
 
 /* SITE */                          
 
-        Last update: 2018/05/05  
+        Last update: October 12, 2023  
         Language: English                           
         Doctype: HTML5
-        IDE: Sublime Text, Bash, Git, GIMP
+        IDE: Sublime Text, Bash, Git, GIMP, Visual Studio Code
         Platform1: Acer Chromebook 11 CB3-111 (Gallium OS 2.1) 
         Platform2: Compaq Presario CQ62 (Xubuntu 16.04)
-        Platform3: Samsung Galaxy Note 3 (Android 5.0.1 + Desbian)   
+        Platform3: Samsung Galaxy Note 3 (Android 5.0.1 + Desbian) 
+        Platform4: Acer Veriton X4620G (Windows 10)  

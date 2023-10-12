@@ -4,7 +4,7 @@
 <url>
   <loc>https://jannbenjam.in/</loc>
   <image:image>
-       <image:loc>https://jannbenjam.in/jann_benjamin_400x400.jpg</image:loc>
+       <image:loc>https://jannbenjam.in/jann_benjamin_800x800.jpg</image:loc>
        <image:caption>Jann Benjamin</image:caption>
   </image:image>
 </url>
@@ -13,6 +13,9 @@
 </url>
 <url>
   <loc>https://jannbenjam.in/blog/</loc>
+</url>
+<url>
+  <loc>https://jannbenjam.in/portfolio/</loc>
 </url>
 <url>
   <loc>https://jannbenjam.in/resume/</loc>

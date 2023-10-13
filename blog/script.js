@@ -1727,7 +1727,7 @@ require = function(r, e, n) {
                         className: "Blog__title"
                     }, r.createElement("a", {
                         href: "../"
-                    }, "🏠")), r.createElement("ul", {
+                    }, "")), r.createElement("ul", {
                         className: "Blog__links"
                     }, r.createElement("li", {
                         className: "Blog__link"

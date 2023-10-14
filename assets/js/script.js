@@ -102,9 +102,9 @@ function compileContent() {
           
          PORTFOLIO_creative: {
              
-            _2: '<a title="Press Release // Feature // Thought Leadership // AV Script // Case Study // Web Copy" href="bugs">Content Writing & Editing</a>',
+            _2: '<a title="Press Release // Feature // Thought Leadership // AV Script // Case Study // Web Copy" href="../portfolio/content-writing-editing">Content Writing &amp; Editing</a>',
             _3: '<a title="" href="../portfolio/corporate-design">Corporate Design</a>',    
-            _4: '<a title="Logo // Typography // Web Design" href="../portfolio/web-ui-design">UI & UX Design</a>',
+            _4: '<a title="Logo // Typography // Web Design" href="../portfolio/web-ui-design">UI &amp; UX Design</a>',
             _5: '<a title="Serenity" href="../portfolio/photography">Photography</a>',  
             _6: '<a title="Minimal // Hip Hop // Trap" href="../portfolio/sampling">Music</a>', 
              
@@ -117,11 +117,11 @@ function compileContent() {
              16: '<a title="A minimal notepad for heavy deadlines" href="../apps/notepad">Notepad</a> » 💻 : • HTML5 : • CSS3 : • JS',
 	         17: '<a title="For simulating a human typing on-screen" href="../apps/type-ux">TypeUX</a> » 🤖 : • JavaScript : • CoffeeScript',
              18: '<a title="A few NLP chatbot implementations written in Python" href="">Pulse Chatbots</a> » 🤖 : • Python : • NLTK',
-             19: '<a title="A static website for a digital agency" href="../apps/osiris-agency">osiris.agency</a> » 📱 💻 : • Jekyll : • Semantic UI',
+             19: '<a title="A static website for a digital agency" href="https://OSIRISagency.github.io">osiris.agency</a> » 🌐 : • Jekyll : • Semantic UI',
              20: '<a title="AI: Camera Object Detection" href="">Objection Detection</a> » 🤖 : • Python : • ImageAI : • Keras',
              21: '<a title="A collaborative code compiler (Python, Java, C, C#, C++, Haskell, Perl, Ruby) built on Heroku and Firebase" href="apps/compiler">Compiler</a> » 💻 : • Node.js : • Firebase : • Heroku',
              22: '<a title="Animation effects for links, buttons, logos, SVGs, etc." href="../apps/float-ux">FloatUX</a> » 📱 💻 : • JavaScript',
-             23: '<a title="A static website for an apparel boutique" href="../apps/353-clothing">353clothing.com</a> » 📱 💻 : • Bootstrap : • Slack',
+             23: '<a title="A static website for an apparel boutique" href="https://353clothing.github.io/">353clothing.com</a> » 🌐 : • Bootstrap : • Slack',
              24: '<a title="An Android app that finds petrol stations and splits costs" href="https://github.com/thatsparrow/thatsparrow.github.io/tree/master/FOSS_PROJECTS/insight-master">Insight</a> » 📱 : • Java : • Google Maps API',
              25: '<a title="A series of number theory problems and their solutions" href="https://github.com/thatsparrow/euler">Project Euler</a> » 📚 : • C : • C++ : • Python',
              26: '<a title="Technical documentation on the UNIX operating system" href="">UNIX 101</a> » 📚 : • HTML5 : • LaTeX',
@@ -130,9 +130,9 @@ function compileContent() {
              29: '<a title="A simulation of wind-driven ocean waves in 2D" href="">2D Ray Tracing</a> » 📈 : • Fortran',
              30: '<a title="An offline html editor" href="../apps/html-editor">HTML Editor</a> » 📱 💻 : • JavaScript  ',
              31: '<a title="A background music player" href="../apps/background-music">Background Music</a> » 📱 💻 : • JavaScript',
-             32: '<a title="A calculator written in JavaScript" href="../apps/calculator-js">CalculatorJS</a> » 📱 💻 : • JavaScript',
+             32: '<a title="An encryption and decryption algorithm first described by Giovan Battista Bellaso in 1553" href="../apps/vigenere-cipher">Vigenère Cipher</a> » 🔐 : • JavaScript',
              33: '<a title="A touch-typing interface for improving WPM" href="../apps/keyboard-warrior">Keyboard Warrior</a> » 📱 💻 : • HTML5 : • CSS3 : • JS',
-             34: '<a title="A modified KANBAN board" href="../apps/notice-board-ui">Notice Board UI</a> » 📱 💻 : • HTML5 : • CSS3 : • JS (React.js)',
+             34: '<a title="A modified  KANBAN board" href="../apps/notice-board-ui">Notice Board UI</a> » 📱 💻 : • HTML5 : • CSS3 : • JS (React.js)',
              35: '<a title="My first Python game!" href="../apps/bong-hit">Bong Hit</a> » 💻 : • Python : • PyGame ',
        
          },

@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mount Lavinia — Wave Ray Tracing</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: #f5f4f0;
+      color: #1a1a1a;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 2rem 1rem;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      body { background: #1a1a1a; color: #e0e0e0; }
+      .card { background: #242424; border-color: rgba(255,255,255,0.1); }
+      .label { color: rgba(200,200,200,0.75); }
+      .val { color: #e8e8e8; }
+      h1 { color: #e0e0e0; }
+      .subtitle { color: rgba(200,200,200,0.6); }
+      .legend-item { color: rgba(200,200,200,0.7); }
+      input[type=range] { accent-color: #4a9eff; }
+    }
+
+    h1 {
+      font-size: 1.3rem;
+      font-weight: 600;
+      margin-bottom: 0.3rem;
+      color: #ffffff;
+    }
+    .subtitle {
+      font-size: 0.85rem;
+      color: #666;
+      margin-bottom: 1.5rem;
+    }
+
+    .card {
+      background: #fff;
+      border: 1px solid rgba(0,0,0,0.1);
+      border-radius: 12px;
+      padding: 1.25rem;
+      width: 100%;
+      max-width: 780px;
+    }
+
+    .controls {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1rem;
+      margin-bottom: 1.2rem;
+    }
+
+    .ctrl { display: flex; flex-direction: column; gap: 4px; }
+
+    .label {
+      font-size: 12px;
+      color: #666;
+    }
+    .val { font-weight: 500; }
+
+    input[type=range] {
+      width: 100%;
+      cursor: pointer;
+      accent-color: #2a7de1;
+    }
+
+    canvas#rc {
+      width: 100%;
+      display: block;
+      border-radius: 8px;
+      border: 0.5px solid rgba(0,0,0,0.1);
+    }
+
+    .legend {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      margin-top: 10px;
+      font-size: 11px;
+    }
+    .legend-item {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      color: #555;
+    }
+    .swatch-grad { width: 48px; height: 10px; border-radius: 2px; }
+    .swatch-line { width: 18px; height: 2px; }
+    .swatch-dash { width: 20px; height: 0; border-top: 1px dashed rgba(80,160,220,0.8); }
+
+    .info {
+      margin-top: 1.5rem;
+      max-width: 780px;
+      font-size: 0.82rem;
+      color: #666;
+      line-height: 1.6;
+    }
+    @media (prefers-color-scheme: dark) { .info { color: rgba(200,200,200,0.55); } }
+    .info strong { color: #888; }
+
+    @media (max-width: 500px) {
+      .controls { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<h1>Mount Lavinia Beach — Wave Ray Tracing</h1>
+<p class="subtitle">SW monsoon swell refracting across the west-coast Sri Lanka shelf &nbsp;·&nbsp; 6.83°N 79.87°E</p>
+
+<div class="card">
+  <div class="controls">
+    <div class="ctrl">
+      <div class="label">rays: <span class="val" id="v-nr">18</span></div>
+      <input type="range" id="c-nr" min="4" max="36" step="2" value="18">
+    </div>
+    <div class="ctrl">
+      <div class="label">seafloor variation ε: <span class="val" id="v-ep">0.10</span></div>
+      <input type="range" id="c-ep" min="0" max="0.45" step="0.05" value="0.10">
+    </div>
+    <div class="ctrl">
+      <div class="label">period: <span class="val" id="v-pd">14</span>s</div>
+      <input type="range" id="c-pd" min="8" max="20" step="1" value="14">
+    </div>
+  </div>
+
+  <canvas id="rc"></canvas>
+
+  <div class="legend">
+    <div class="legend-item"><canvas class="swatch-grad" id="lc"></canvas><span>deep → shallow</span></div>
+    <div class="legend-item"><div class="swatch-line" style="background:#ff6e40;"></div><span>SW monsoon swell</span></div>
+    <div class="legend-item"><div class="swatch-line" style="background:#ffe082;"></div><span>shoreline</span></div>
+    <div class="legend-item"><div class="swatch-dash"></div><span>depth contours</span></div>
+  </div>
+</div>
+
+<div class="info">
+  <strong>Bathymetry:</strong> The west coast shelf off Mount Lavinia is Sri Lanka's narrowest (&lt;10 km), reaching ~22 m depth at 3 km offshore.
+  The headland models the rocky promontory on which the Mount Lavinia Hotel sits.
+  <strong>Physics:</strong> Rays follow Hamilton's equations for linear water waves with the full tanh dispersion relation.
+  Time integration uses leapfrog (2nd-order) after a forward Euler first step.
+  <strong>Wave climate:</strong> SW monsoon swell from ~225° compass at 30° incidence from the shore normal (dominant May–September).
+  Rays bending toward the headland show wave energy focussing — the physical reason surf is stronger at the hotel end of the beach.
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/topojson/3.0.2/topojson.min.js"></script>
+<script>
+(function () {
+  /* ── Physical constants and domain ───────────────────────────────────── */
+  var G = 9.8, X0 = -3000, DIST = 4000;
+  var AL = 0.007, BE = 2 * Math.PI / 2000;
+  var ML = 50, MR = 22, MT = 12, MB = 42;
+
+  // Mount Lavinia Hotel headland — protrudes ~180 m into sea at y ≈ 2000 m
+  var HA = 180, HY = 2000, HS = 650;
+
+  function xshore(y) { return -HA * Math.exp(-(y - HY) * (y - HY) / (2 * HS * HS)); }
+  function dxshore(y) { var e = Math.exp(-(y - HY) * (y - HY) / (2 * HS * HS)); return HA * (y - HY) / (HS * HS) * e; }
+
+  function Hf(x, y, e) {
+    var xs = xshore(y), d = xs - x;
+    if (d <= 0) return 0.5;
+    return Math.max(0.5, AL * d * (1 + e * Math.cos(BE * y)) + 1);
+  }
+  function HXf(x, y, e) { return -AL * (1 + e * Math.cos(BE * y)); }
+  function HYf(x, y, e) {
+    var xs = xshore(y), d = xs - x, dxs = dxshore(y);
+    return AL * dxs * (1 + e * Math.cos(BE * y)) - AL * d * e * BE * Math.sin(BE * y);
+  }
+  function sech2(a) { if (Math.abs(a) > 20) return 0; var c = Math.cosh(a); return 1 / (c * c); }
+
+  // Newton-Raphson solution of omega^2 = G*k*tanh(k*h)
+  function solveK(om, h) {
+    var k = om * om / G;
+    for (var i = 0; i < 25; i++) {
+      var kh = k * h, th = Math.tanh(kh), ch = Math.cosh(kh);
+      var f = G * k * th - om * om, df = G * (th + kh / (ch * ch));
+      if (Math.abs(df) < 1e-20) break;
+      k -= f / df;
+      if (k < 1e-10) k = 1e-10;
+      if (Math.abs(f) < 1e-8 * om * om) break;
+    }
+    return k;
+  }
+
+  /* ── Ray tracing ─────────────────────────────────────────────────────── */
+  function traceRays(nr, eps, T) {
+    var om = 2 * Math.PI / T, h0 = Hf(X0, DIST / 2, eps), k0 = solveK(om, h0);
+    // SW monsoon: ~225° compass, 30° incidence from shore normal (+x east)
+    var ang = Math.PI / 6, kx0 = k0 * Math.cos(ang), ky0 = k0 * Math.sin(ang);
+    var dt = 15 / Math.sqrt(G * Math.max(h0, 1));
+    var rays = [];
+    for (var j = 0; j < nr; j++) {
+      var y0 = (j / Math.max(nr - 1, 1)) * (DIST + 400) - 200;
+      var xs = [X0], ys = [y0], kxs = [kx0], kys = [ky0];
+      for (var i = 0; i < 2500; i++) {
+        var xi = xs[i], yi = ys[i], kxi = kxs[i], kyi = kys[i];
+        if (xi >= xshore(yi) || yi < -250 || yi > DIST + 250) break;
+        var hv = Hf(xi, yi, eps);
+        if (hv < 0.55) break;
+        var k = Math.sqrt(kxi * kxi + kyi * kyi);
+        if (k < 1e-12) break;
+        var ag = k * hv, th = Math.tanh(ag), ss = sech2(ag);
+        var omv = Math.sqrt(Math.max(G * k * th, 1e-12));
+        var cg = G * (th + ag * ss) / (2 * omv), dw = G * k * k * ss / (2 * omv);
+        var dxdt = cg * kxi / k, dydt = cg * kyi / k;
+        var dkx = -dw * HXf(xi, yi, eps), dky = -dw * HYf(xi, yi, eps);
+        var xn, yn, kxn, kyn;
+        if (i === 0) {
+          xn = xi + dt * dxdt; yn = yi + dt * dydt; kxn = kxi + dt * dkx; kyn = kyi + dt * dky;
+        } else {
+          xn = xs[i - 1] + 2 * dt * dxdt; yn = ys[i - 1] + 2 * dt * dydt;
+          kxn = kxs[i - 1] + 2 * dt * dkx; kyn = kys[i - 1] + 2 * dt * dky;
+        }
+        if (!isFinite(xn) || !isFinite(yn)) break;
+        xs.push(xn); ys.push(yn); kxs.push(kxn); kys.push(kyn);
+      }
+      rays.push({ xs: xs, ys: ys });
+    }
+    return rays;
+  }
+
+  /* ── Colour helpers ──────────────────────────────────────────────────── */
+  function hCol(t) {
+    return [Math.round(8 + (175 - 8) * (1 - t)), Math.round(22 + (215 - 22) * (1 - t)), Math.round(90 + (240 - 90) * (1 - t))];
+  }
+
+  /* ── Canvas setup ────────────────────────────────────────────────────── */
+  var cv = document.getElementById('rc'), ct = cv.getContext('2d');
+  var pw = 0, ph = 0, dpr = 1;
+
+  function initCanvas() {
+    dpr = window.devicePixelRatio || 1;
+    var cssW = Math.max((cv.parentElement || document.body).offsetWidth || 560, 200);
+    pw = cssW - ML - MR; ph = Math.round(pw * 1.3);
+    var cssH = ph + MT + MB;
+    cv.width = Math.round(cssW * dpr); cv.height = Math.round(cssH * dpr);
+    cv.style.height = cssH + 'px';
+  }
+
+  function toC(x, y) { return { cx: ML + (x - X0) / (-X0) * pw, cy: MT + (1 - y / DIST) * ph }; }
+  function shoreC(y) { return ML + (xshore(y) - X0) / (-X0) * pw; }
+
+  /* ── Sri Lanka inset (TopoJSON + accurate fallback) ──────────────────── */
+  // Accurate hand-traced fallback: ~36 points tracing the real coastline
+  var slFallback = [
+    [9.83,80.24],[9.78,80.57],[9.72,80.72],[9.55,80.89],[9.30,80.97],
+    [9.10,81.20],[8.87,81.00],[8.55,81.23],[8.43,81.35],[8.12,81.67],
+    [7.73,81.88],[7.30,81.84],[6.93,81.73],[6.58,81.48],[6.28,81.22],
+    [6.07,80.87],[5.92,80.59],[5.97,80.37],[6.05,80.21],[6.20,80.08],
+    [6.45,80.03],[6.72,79.96],[6.92,79.86],[7.18,79.83],[7.50,79.83],
+    [7.87,79.84],[8.23,79.72],[8.52,79.84],[8.78,79.86],[9.02,79.87],
+    [9.25,79.97],[9.47,79.93],[9.62,79.85],[9.72,79.89],[9.80,79.97],
+    [9.83,80.24]
+  ];
+  var slGeo = { loaded: false, feature: null };
+  d3.json('https://cdn.jsdelivr.net/npm/world-atlas@2/countries-110m.json').then(function (world) {
+    var countries = topojson.feature(world, world.objects.countries);
+    var feat = countries.features.find(function (f) { return f.id === '144'; });
+    if (feat) { slGeo.loaded = true; slGeo.feature = feat; lastPw = 0; }
+  }).catch(function () { /* silent fallback */ });
+
+  function drawSriLankaInset(dark) {
+    var iW = 68, iH = 88;
+    var ilx = ML + pw - iW - 8, ily = MT + ph - iH - 8;
+    ct.save();
+    ct.fillStyle = dark ? 'rgba(8,18,45,0.88)' : 'rgba(170,215,255,0.88)';
+    ct.beginPath(); ct.roundRect(ilx - 4, ily - 16, iW + 8, iH + 20, 4); ct.fill();
+    ct.strokeStyle = dark ? 'rgba(200,200,200,0.2)' : 'rgba(60,100,150,0.35)';
+    ct.lineWidth = 0.5; ct.stroke();
+
+    var lon0 = 79.60, lon1 = 82.05, lat0 = 5.75, lat1 = 9.95;
+    function ip(lat, lon) { return { x: ilx + (lon - lon0) / (lon1 - lon0) * iW, y: ily + (1 - (lat - lat0) / (lat1 - lat0)) * iH }; }
+
+    ct.beginPath();
+    if (slGeo.loaded && slGeo.feature) {
+      var coords = slGeo.feature.geometry.type === 'Polygon'
+        ? slGeo.feature.geometry.coordinates[0]
+        : slGeo.feature.geometry.coordinates[0][0];
+      for (var ci = 0; ci < coords.length; ci++) {
+        var p = ip(coords[ci][1], coords[ci][0]);
+        if (ci === 0) ct.moveTo(p.x, p.y); else ct.lineTo(p.x, p.y);
+      }
+    } else {
+      for (var si = 0; si < slFallback.length; si++) {
+        var p2 = ip(slFallback[si][0], slFallback[si][1]);
+        if (si === 0) ct.moveTo(p2.x, p2.y); else ct.lineTo(p2.x, p2.y);
+      }
+    }
+    ct.closePath();
+    ct.fillStyle = dark ? 'rgba(85,120,60,0.7)' : 'rgba(170,210,130,0.85)';
+    ct.fill();
+    ct.strokeStyle = dark ? 'rgba(160,180,140,0.6)' : 'rgba(70,90,40,0.7)';
+    ct.lineWidth = 0.7; ct.stroke();
+
+    var mlp = ip(6.83, 79.87);
+    ct.fillStyle = '#ff6e40';
+    ct.beginPath(); ct.arc(mlp.x, mlp.y, 2.8, 0, Math.PI * 2); ct.fill();
+    ct.strokeStyle = 'rgba(255,255,255,0.6)'; ct.lineWidth = 0.5; ct.stroke();
+    ct.fillStyle = dark ? 'rgba(255,190,140,0.95)' : 'rgba(180,60,10,0.95)';
+    ct.font = '500 7px sans-serif'; ct.textAlign = 'left';
+    ct.fillText('Mt Lavinia', mlp.x + 4, mlp.y + 3);
+
+    var cop = ip(6.92, 79.86);
+    ct.fillStyle = dark ? 'rgba(220,220,200,0.6)' : 'rgba(60,60,40,0.6)';
+    ct.beginPath(); ct.arc(cop.x, cop.y, 1.5, 0, Math.PI * 2); ct.fill();
+
+    ct.fillStyle = dark ? 'rgba(200,210,195,0.9)' : 'rgba(40,65,25,0.9)';
+    ct.font = '500 8px sans-serif'; ct.textAlign = 'center';
+    ct.fillText('Sri Lanka', ilx + iW / 2, ily - 4);
+    ct.restore();
+  }
+
+  /* ── Main render loop ────────────────────────────────────────────────── */
+  var lastNr = -1, lastEps = -1, lastT = -1, lastPw = 0;
+
+  function draw() {
+    var nr  = +document.getElementById('c-nr').value;
+    var eps = +document.getElementById('c-ep').value;
+    var T   = +document.getElementById('c-pd').value;
+    document.getElementById('v-nr').textContent = nr;
+    document.getElementById('v-ep').textContent = eps.toFixed(2);
+    document.getElementById('v-pd').textContent = T;
+
+    if (nr === lastNr && eps === lastEps && T === lastT && pw === lastPw) {
+      requestAnimationFrame(draw); return;
+    }
+    lastNr = nr; lastEps = eps; lastT = T; lastPw = pw;
+
+    var dark = matchMedia('(prefers-color-scheme:dark)').matches;
+    var ax = dark ? 'rgba(210,210,210,0.9)' : 'rgba(35,35,35,0.9)';
+    var cssW = pw + ML + MR, cssH = ph + MT + MB;
+    ct.setTransform(dpr, 0, 0, dpr, 0, 0);
+    ct.clearRect(0, 0, cssW, cssH);
+
+    // Bathymetry raster
+    var sx = Math.max(2, Math.round(pw / 2)), sy = Math.max(2, Math.round(ph / 2));
+    var hvals = [], hmin = 1e9, hmax = -1e9;
+    for (var iy = 0; iy < sy; iy++) for (var ix = 0; ix < sx; ix++) {
+      var v = Hf(X0 + ix / (sx - 1) * (-X0), DIST * (1 - iy / Math.max(sy - 1, 1)), eps);
+      hvals.push(v); if (v < hmin) hmin = v; if (v > hmax) hmax = v;
+    }
+    var imgd = ct.createImageData(sx, sy);
+    for (var p = 0; p < hvals.length; p++) {
+      var t = (hvals[p] - hmin) / (hmax - hmin), rgb = hCol(t), q = p * 4;
+      imgd.data[q] = rgb[0]; imgd.data[q + 1] = rgb[1]; imgd.data[q + 2] = rgb[2]; imgd.data[q + 3] = 255;
+    }
+    var tmp = document.createElement('canvas'); tmp.width = sx; tmp.height = sy;
+    tmp.getContext('2d').putImageData(imgd, 0, 0);
+    ct.save();
+    ct.beginPath(); ct.moveTo(ML, MT); ct.lineTo(ML, MT + ph);
+    for (var py = ph; py >= 0; py--) { var y = DIST * (1 - py / ph); ct.lineTo(shoreC(y), MT + py); }
+    ct.closePath(); ct.clip();
+    ct.drawImage(tmp, ML, MT, pw, ph);
+    ct.restore();
+
+    // Land
+    ct.save();
+    ct.beginPath(); ct.moveTo(ML + pw, MT);
+    for (var py2 = 0; py2 <= ph; py2++) { var y2 = DIST * (1 - py2 / ph); ct.lineTo(shoreC(y2), MT + py2); }
+    ct.lineTo(ML + pw, MT + ph); ct.closePath();
+    ct.fillStyle = dark ? 'rgba(160,140,100,0.35)' : 'rgba(230,210,160,0.55)'; ct.fill();
+    ct.restore();
+
+    // Depth contours
+    ct.save();
+    ct.strokeStyle = 'rgba(160,210,255,0.45)'; ct.lineWidth = 0.6; ct.setLineDash([4, 4]);
+    ct.fillStyle = 'rgba(190,230,255,0.9)'; ct.font = '9px sans-serif'; ct.textAlign = 'center';
+    var depths = [5, 10, 15, 20];
+    for (var di = 0; di < depths.length; di++) {
+      var cd = depths[di];
+      ct.beginPath(); var first = true;
+      for (var iy2 = 0; iy2 <= ph * 4; iy2++) {
+        var yv = DIST * (1 - iy2 / (ph * 4));
+        var xs_y = xshore(yv), fac = 1 + eps * Math.cos(BE * yv);
+        if (Math.abs(fac) < 0.01) continue;
+        var xv = xs_y - (cd - 1) / (AL * fac);
+        if (xv < X0 || xv > xs_y - 5) continue;
+        var pc = toC(xv, yv);
+        if (first) { ct.moveTo(pc.cx, pc.cy); first = false; } else ct.lineTo(pc.cx, pc.cy);
+      }
+      ct.stroke();
+      var ym = DIST * 0.4, xs_m = xshore(ym), fm = 1 + eps * Math.cos(BE * ym);
+      if (Math.abs(fm) > 0.01) {
+        var xm = xs_m - (cd - 1) / (AL * fm);
+        if (xm > X0 && xm < xs_m - 20) { var pm = toC(xm, ym); ct.fillText(cd + 'm', pm.cx, pm.cy - 3); }
+      }
+    }
+    ct.restore();
+
+    // Wave rays
+    var rays = traceRays(nr, eps, T);
+    ct.save();
+    ct.strokeStyle = '#ff6e40'; ct.lineWidth = 1.6; ct.lineJoin = 'round'; ct.setLineDash([]);
+    for (var r = 0; r < rays.length; r++) {
+      var ray = rays[r]; if (ray.xs.length < 2) continue;
+      ct.beginPath();
+      var p0 = toC(ray.xs[0], ray.ys[0]); ct.moveTo(p0.cx, p0.cy);
+      for (var i = 1; i < ray.xs.length; i++) {
+        var pi = toC(ray.xs[i], ray.ys[i]);
+        if (pi.cy < MT - 2 || pi.cy > MT + ph + 2 || pi.cx < ML - 2) break;
+        ct.lineTo(pi.cx, pi.cy);
+      }
+      ct.stroke();
+    }
+    ct.restore();
+
+    // Shoreline
+    ct.save();
+    ct.strokeStyle = '#ffe082'; ct.lineWidth = 2.5; ct.setLineDash([]);
+    ct.beginPath();
+    for (var py3 = 0; py3 <= ph; py3++) {
+      var y3 = DIST * (1 - py3 / ph);
+      if (py3 === 0) ct.moveTo(shoreC(y3), MT); else ct.lineTo(shoreC(y3), MT + py3);
+    }
+    ct.stroke(); ct.restore();
+
+    // Geographic labels
+    ct.save();
+    var lbg = dark ? 'rgba(255,255,200,0.92)' : 'rgba(70,50,10,0.88)';
+    var lbgsub = dark ? 'rgba(220,210,160,0.7)' : 'rgba(110,80,20,0.7)';
+    var hpc = toC(xshore(HY) - 80, HY);
+    ct.fillStyle = lbg; ct.font = '500 11px sans-serif'; ct.textAlign = 'right';
+    ct.fillText('Mt. Lavinia Hotel', hpc.cx - 6, hpc.cy - 4);
+    ct.fillStyle = '#ffe082';
+    ct.beginPath(); ct.arc(hpc.cx + 4, hpc.cy, 3, 0, Math.PI * 2); ct.fill();
+    ct.fillStyle = lbgsub; ct.font = '10px sans-serif'; ct.textAlign = 'right';
+    var npc = toC(xshore(3600) + 50, 3600), spc = toC(xshore(300) + 50, 300);
+    ct.fillText('↑ Dehiwala', npc.cx - 4, npc.cy + 4);
+    ct.fillText('↓ Ratmalana', spc.cx - 4, spc.cy + 4);
+    // SW swell arrow
+    var wax = ML + pw * 0.18, way = MT + ph * 0.72;
+    ct.strokeStyle = 'rgba(255,200,100,0.6)'; ct.lineWidth = 1.2; ct.setLineDash([3, 3]);
+    ct.beginPath(); ct.moveTo(wax - 22, way + 13); ct.lineTo(wax, way); ct.stroke();
+    ct.setLineDash([]);
+    ct.fillStyle = 'rgba(255,200,100,0.6)';
+    ct.beginPath(); ct.moveTo(wax, way); ct.lineTo(wax - 8, way + 4); ct.lineTo(wax - 4, way + 10); ct.closePath(); ct.fill();
+    ct.font = '9px sans-serif'; ct.textAlign = 'left'; ct.fillStyle = 'rgba(255,220,140,0.8)';
+    ct.fillText('SW swell', wax - 44, way + 26);
+    ct.restore();
+
+    // Border
+    ct.save();
+    ct.strokeStyle = dark ? 'rgba(255,255,255,0.1)' : 'rgba(0,0,0,0.08)'; ct.lineWidth = 0.5;
+    ct.strokeRect(ML, MT, pw, ph); ct.restore();
+
+    // X axis
+    ct.save(); ct.fillStyle = ax; ct.strokeStyle = ax; ct.lineWidth = 0.5;
+    ct.font = '11px sans-serif'; ct.textAlign = 'center';
+    var xmarks = [-3000, -2000, -1000, 0];
+    for (var xi2 = 0; xi2 < xmarks.length; xi2++) {
+      var xw = xmarks[xi2], pc2 = toC(xw, 0);
+      ct.beginPath(); ct.moveTo(pc2.cx, MT + ph); ct.lineTo(pc2.cx, MT + ph + 5); ct.stroke();
+      ct.fillText(Math.abs(xw / 1000) + 'km', pc2.cx, MT + ph + 16);
+    }
+    ct.fillText('← offshore  (west)', ML + pw / 2, MT + ph + 32);
+    ct.restore();
+
+    // Y axis
+    ct.save(); ct.fillStyle = ax; ct.strokeStyle = ax; ct.lineWidth = 0.5;
+    ct.font = '11px sans-serif'; ct.textAlign = 'right';
+    var ymarks = [0, 1000, 2000, 3000, 4000];
+    for (var yi2 = 0; yi2 < ymarks.length; yi2++) {
+      var yw = ymarks[yi2], pc3 = toC(0, yw);
+      ct.beginPath(); ct.moveTo(ML - 5, pc3.cy); ct.lineTo(ML, pc3.cy); ct.stroke();
+      ct.fillText((yw / 1000) + 'km', ML - 7, pc3.cy + 4);
+    }
+    ct.translate(14, MT + ph / 2); ct.rotate(-Math.PI / 2);
+    ct.textAlign = 'center'; ct.fillText('along-shore (south → north)', 0, 0);
+    ct.restore();
+
+    // Compass rose
+    var crx = ML + pw - 44, cry = MT + 40;
+    ct.save(); ct.strokeStyle = ax; ct.lineWidth = 1; ct.fillStyle = ax;
+    ct.font = '500 10px sans-serif'; ct.textAlign = 'center'; ct.fillText('N', crx, cry - 20);
+    ct.beginPath(); ct.moveTo(crx, cry - 16); ct.lineTo(crx, cry + 14); ct.stroke();
+    ct.beginPath(); ct.moveTo(crx, cry - 16); ct.lineTo(crx - 4, cry - 7); ct.lineTo(crx + 4, cry - 7); ct.closePath(); ct.fill();
+    ct.strokeStyle = dark ? 'rgba(200,200,200,0.4)' : 'rgba(80,80,80,0.4)';
+    ct.beginPath(); ct.moveTo(crx - 13, cry); ct.lineTo(crx + 13, cry); ct.stroke();
+    ct.font = '9px sans-serif'; ct.fillStyle = dark ? 'rgba(200,200,200,0.5)' : 'rgba(80,80,80,0.5)';
+    ct.fillText('W', crx - 19, cry + 3); ct.fillText('E', crx + 19, cry + 3);
+    ct.restore();
+
+    // Sri Lanka inset
+    drawSriLankaInset(dark);
+
+    // Legend gradient
+    var lc = document.getElementById('lc'), lx = lc.getContext('2d');
+    for (var i = 0; i < 48; i++) { var rgb2 = hCol(i / 47); lx.fillStyle = 'rgb(' + rgb2[0] + ',' + rgb2[1] + ',' + rgb2[2] + ')'; lx.fillRect(i, 0, 1, 10); }
+
+    requestAnimationFrame(draw);
+  }
+
+  window.addEventListener('resize', function () { initCanvas(); lastPw = 0; });
+  setTimeout(function () { initCanvas(); requestAnimationFrame(draw); }, 150);
+})();
+</script>
+</body>
+</html>
